@@ -74,6 +74,7 @@ Partial Class frmRIESGO
         Me.ToolExtras = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ProgressBar1 = New System.Windows.Forms.ToolStripProgressBar()
         Me.TextSucural22 = New System.Windows.Forms.TextBox()
+        Me.NuevoMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip2.SuspendLayout()
         Me.SuspendLayout()
@@ -81,7 +82,7 @@ Partial Class frmRIESGO
         'MenuStrip1
         '
         Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EVALUAR, Me.ESTADOS, Me.AUDITORIA, Me.ESTADISTICAS, Me.PERFIL, Me.OTROS, Me.VENTANA, Me.SALIR})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EVALUAR, Me.ESTADOS, Me.AUDITORIA, Me.ESTADISTICAS, Me.PERFIL, Me.OTROS, Me.VENTANA, Me.SALIR, Me.NuevoMenuToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1317, 24)
@@ -435,6 +436,12 @@ Partial Class frmRIESGO
         Me.TextSucural22.TabIndex = 30
         Me.TextSucural22.Visible = False
         '
+        'NuevoMenuToolStripMenuItem
+        '
+        Me.NuevoMenuToolStripMenuItem.Name = "NuevoMenuToolStripMenuItem"
+        Me.NuevoMenuToolStripMenuItem.Size = New System.Drawing.Size(89, 20)
+        Me.NuevoMenuToolStripMenuItem.Text = "nuevo menu"
+        '
         'frmRIESGO
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -507,4 +514,5 @@ Partial Class frmRIESGO
     Friend WithEvents CartasEnviadasToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SUBIDAADJUNTOSToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ActualizacionesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NuevoMenuToolStripMenuItem As ToolStripMenuItem
 End Class
