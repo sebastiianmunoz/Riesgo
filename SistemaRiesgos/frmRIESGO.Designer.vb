@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmRIESGO
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmRIESGO
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRIESGO))
@@ -74,7 +74,6 @@ Partial Class frmRIESGO
         Me.ToolExtras = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ProgressBar1 = New System.Windows.Forms.ToolStripProgressBar()
         Me.TextSucural22 = New System.Windows.Forms.TextBox()
-        Me.NuevoMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip2.SuspendLayout()
         Me.SuspendLayout()
@@ -82,7 +81,7 @@ Partial Class frmRIESGO
         'MenuStrip1
         '
         Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EVALUAR, Me.ESTADOS, Me.AUDITORIA, Me.ESTADISTICAS, Me.PERFIL, Me.OTROS, Me.VENTANA, Me.SALIR, Me.NuevoMenuToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EVALUAR, Me.ESTADOS, Me.AUDITORIA, Me.ESTADISTICAS, Me.PERFIL, Me.OTROS, Me.VENTANA, Me.SALIR})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1317, 24)
@@ -100,20 +99,20 @@ Partial Class frmRIESGO
         'MenuEvaluarPersonas
         '
         Me.MenuEvaluarPersonas.Name = "MenuEvaluarPersonas"
-        Me.MenuEvaluarPersonas.Size = New System.Drawing.Size(126, 22)
+        Me.MenuEvaluarPersonas.Size = New System.Drawing.Size(180, 22)
         Me.MenuEvaluarPersonas.Text = "Personas"
         '
         'MenuEvaluarEmpresas
         '
         Me.MenuEvaluarEmpresas.Enabled = False
         Me.MenuEvaluarEmpresas.Name = "MenuEvaluarEmpresas"
-        Me.MenuEvaluarEmpresas.Size = New System.Drawing.Size(126, 22)
+        Me.MenuEvaluarEmpresas.Size = New System.Drawing.Size(180, 22)
         Me.MenuEvaluarEmpresas.Text = "Empresas"
         '
         'CapitalToolStripMenuItem
         '
         Me.CapitalToolStripMenuItem.Name = "CapitalToolStripMenuItem"
-        Me.CapitalToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
+        Me.CapitalToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.CapitalToolStripMenuItem.Text = "Capital"
         '
         'ESTADOS
@@ -436,12 +435,6 @@ Partial Class frmRIESGO
         Me.TextSucural22.TabIndex = 30
         Me.TextSucural22.Visible = False
         '
-        'NuevoMenuToolStripMenuItem
-        '
-        Me.NuevoMenuToolStripMenuItem.Name = "NuevoMenuToolStripMenuItem"
-        Me.NuevoMenuToolStripMenuItem.Size = New System.Drawing.Size(89, 20)
-        Me.NuevoMenuToolStripMenuItem.Text = "nuevo menu"
-        '
         'frmRIESGO
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -514,5 +507,4 @@ Partial Class frmRIESGO
     Friend WithEvents CartasEnviadasToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SUBIDAADJUNTOSToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ActualizacionesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents NuevoMenuToolStripMenuItem As ToolStripMenuItem
 End Class
