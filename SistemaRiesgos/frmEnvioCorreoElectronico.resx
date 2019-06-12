@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="txtmensaje1.Text" xml:space="preserve">
+    <value>&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text- align:justify'&gt;&lt;b&gt;Ant.:&lt;/b&gt; Solicitud de retiro de capital o cuotas de participación.-&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;&lt;b&gt;Ref.:&lt;/b&gt; Responde solicitud en los términos planteados.-&amp;quot;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;&lt;b&gt;SR(A)&lt;o:p&gt;&lt;/o:p&gt;&lt;/b&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;&lt;b&gt;</value>
+  </data>
+  <metadata name="OpenFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="textmensajecorreo2muestra.Text" xml:space="preserve">
+    <value>&lt;!doctype html public "-//w3c//dtd html 4.0 transitional//en"&gt;
+&lt;!-- https://www.lautarorosas.cl/mailing/2017/carta_prelacion/index.html --&gt;
+&lt;html&gt;&lt;head&gt;&lt;title&gt;Carta Prelación Giro Capital&lt;/title&gt;
+&lt;meta http-equiv="Content-type" content="text/html; charset=utf-8" /&gt;
+&lt;link rel="shortcut icon" href="https://www.lautarorosas.cl/mailing/2017/prelacion/lautaro.ico"&gt;
+
+
+&lt;!-- Latest compiled and minified CSS --&gt;
+&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"&gt;
+
+&lt;!-- Optional theme --&gt;
+&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"&gt;
+
+&lt;!-- Latest compiled and minified JavaScript --&gt;
+&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"&gt;&lt;/script&gt;
+
+
+&lt;style type="text/css" media="screen"&gt;
+
+body{
+                text-align: center; 
+                font-family: verdana, arial, helvetica, sans-serif; 
+                font-size: 12px;
+                color:#000000;
+                background: #666;
+                               
+}
+
+
+p{
+                font-size: 12px;
+                margin: auto;
+                padding-left:50px;
+                padding-right:50px;
+                
+}
+
+a{
+                font-size: 12px;
+                margin: auto;
+                padding-left:50px;
+                padding-right:50px;
+                color:#000000;
+
+}
+
+td p{
+
+text-indent: 1cm;
+
+}
+
+a{
+                color: blue;
+                text-decoration:blink;
+}
+
+
+
+#tabla tbody tr td {
+                background-color: #FFF;
+}
+
+body tr td {
+                color: #000;
+                background-color: #FFF;
+}
+
+img {
+  border: none;
+}
+
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+                &lt;body&gt;
+
+                               
+                               
+                  &lt;table width="600" height="900" border="0" align="center" &gt;
+                                               
+                                                   &lt;tbody&gt;
+
+                                                               &lt;tr&gt;
+                                                                               &lt;td&gt;
+                                                                                                              &lt;img src="https://www.lautarorosas.cl/mailing/2017/carta_prelacion/encabezado.jpg" width="913" height="143" &gt;
+                                                                               &lt;/td&gt;
+                                                   &lt;/tr&gt;
+
+                                                               &lt;tr height="70"&gt;
+                                                                              &lt;td&gt;
+                                                                                              
+                                                                              &lt;/td&gt;
+                                                               &lt;/tr&gt;
+                                                                              &lt;br&gt;
+                                                               &lt;tr&gt;
+                                                                              &lt;td&gt;
+                                                                                              &lt;a style="color:#000000;"&gt;Estimado Socio:&lt;/a&gt;
+                                                                                              &lt;br&gt;
+                                                                                              &lt;br&gt;
+                                                                              &lt;/td&gt;
+                                                               &lt;/tr&gt;
+
+
+                                                               &lt;tr&gt;
+                                                                                              &lt;td height="430"&gt;&lt;p align="justify"&gt; Junto con saludarle muy cordialmente, le informo que hemos recibido su solicitud de devolución de Cuotas de Participación, por lo que resulta fundamental comunicarle el procedimiento que se sigue para hacer efectiva esta devolución.&lt;/p&gt;
+                                                                                                              &lt;br&gt;
+
+                                                                                                              &lt;p align="justify"&gt; En primer lugar, todas las cooperativas de ahorro y crédito en Chile se encuentran sujetas a la condición de devolver cuotas de participación siempre que se hubiesen enterado en la Cooperativa, previamente, aportes de capital por una suma al menos equivalente al monto de las devoluciones requeridas por causa legal, reglamentaria o estatutaria, que las haga exigibles o procedentes. Dichos pagos serán exigibles y deberán efectuarse atendiendo estrictamente a la fecha en que tiene lugar la circunstancia que los causa. Esta condición, impuesta por la Ley General de Cooperativas, resulta perentoria en la aplicación del pago de sus cuotas, dado que evita poder dar una fecha cierta de pago. Dicho lo anterior, al devolverse capital con cargo a capital, los pagos se efectúan conforme el orden de las causas, cuestión que se controla a través de la llamada Lista u Orden de Prelación. Esto significa para usted que su solicitud de devolución de cuotas ingresó a la mentada Lista en la fecha correspondiente, pudiendo usted consultar su posición y efectuar su propio seguimiento a través de su clave virtual en el sitio web institucional: www.lautarorosas.cl. De todas formas, estas cuotas de participación le serán devueltas debidamente actualizadas conforme la variación experimentada por la Unidad de Fomento. &lt;/p&gt;
+                                                                                                              &lt;br&gt;
+                                                                                                              
+                                                                                                              &lt;p align="justify"&gt; Finalmente, si usted renunció a la Cooperativa, no tendrá derecho a participar del resultado del ejercicio, quedando privado de los otros beneficios que ésta otorgue a sus socios.&lt;/p&gt;
+                                                                                                              &lt;br&gt;
+
+                                                                                                              &lt;p align="justify"&gt; Sin otro particular, le saludo atentamente;  &lt;/p&gt;
+                                                                                                              
+                                                                                                              &lt;br&gt;
+                                                                                                          
+                                                                                                              &lt;br&gt;
+                                                                                                              &lt;br&gt;
+                                                                                                              
+                                                                &lt;/td&gt;
+                                                               &lt;/tr&gt;
+                                               
+
+                                         &lt;tr&gt;
+                                                         &lt;td&gt;&lt;img src="https://www.lautarorosas.cl/mailing/2017/carta_prelacion/footer2.jpg" width="913" height="286"&gt;&lt;/td&gt;
+                                         &lt;/tr&gt;
+
+                                         &lt;tr&gt;
+                                                               &lt;td&gt;
+                                                                              &lt;p&gt;Si no desea seguir recibiendo información de cooperativa lautaro rosas, agradeceremos nos escriba a &lt;a href="mailto:info@lautarorosas.cl?subject=desvincular"&gt;info@lautarorosas.cl&lt;/a&gt;&lt;/p&gt;
+                                                                              &lt;/td&gt;
+                                                                 &lt;/tr&gt;
+
+                                               &lt;/tbody&gt;
+                    
+
+                               &lt;/table&gt;
+
+  &lt;/body&gt;
+
+
+
+</value>
+  </data>
+  <data name="txtmensaje2.Text" xml:space="preserve">
+    <value>&lt;o:p&gt;&lt;/o:p&gt;&lt;/b&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;&lt;b&gt;PRESENTE&lt;o:p&gt;&lt;/o:p&gt;&lt;/b&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;De mi consideración&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;En relación a su solicitud de retiro de capital o cuotas de participación recibido vía (mail/telefónica/presencial) con fecha    </value>
+  </data>
+  <data name="txtmensaje3.Text" xml:space="preserve">
+    <value>Junto con saludarle muy cordialmente, le informo que hemos recibido su solicitud de devolución de Cuotas de Participación, por lo que resulta fundamental comunicarle el procedimiento que se sigue para hacer efectiva esta devolución &lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;consideraciones:&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt; En primer lugar, todas las cooperativas de ahorro y crédito en Chile se encuentran sujetas a la condición de devolver cuotas de participación siempre que se hubiesen enterado en la Cooperativa, previamente, aportes de capital por una suma al menos equivalente al monto de las devoluciones requeridas por causa legal, reglamentaria o estatutaria, que las haga exigibles o procedentes. Dichos pagos serán exigibles y deberán efectuarse atendiendo estrictamente a la fecha en que tiene lugar la circunstancia que los causa. Esta condición, impuesta por la Ley General de Cooperativas, resulta perentoria en la aplicación del pago de sus cuotas, dado que evita poder dar una fecha cierta de pago. Dicho lo anterior, al devolverse capital con cargo a capital, los pagos se efectúan conforme el orden de las causas, cuestión que se controla a través de la llamada Lista u Orden de Prelación. Esto significa para usted que su solicitud de devolución de cuotas ingresó a la mentada Lista en la fecha correspondiente, pudiendo usted consultar su posición y efectuar su propio seguimiento a través de su clave virtual en el sitio web institucional: www.lautarorosas.cl. De todas formas, estas cuotas de participación le serán devueltas debidamente actualizadas conforme la variación experimentada por la Unidad de Fomento. 
+&amp;quot;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt; Finalmente, si usted renunció a la Cooperativa, no tendrá derecho a participar del resultado del ejercicio, quedando privado de los otros beneficios que ésta otorgue a sus socios.
+&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt; Sin otro particular, le saludo atentamente;  o:p&gt;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;&lt;b&gt;Jaime Emilio RODENAS Pizarro&lt;o:p&gt;&lt;/o:p&gt;&lt;/b&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;&lt;b&gt;Gerente General&lt;o:p&gt;&lt;/o:p&gt;&lt;/b&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;&lt;b&gt;Cooperativa de Ahorro y Crédito Lautaro ROSAS Limitada&lt;o:p&gt;&lt;/o:p&gt;&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+
+
+</value>
+  </data>
+  <data name="Textmuestraejecutiva.Text" xml:space="preserve">
+    <value>Junto con saludarle muy cordialmente, le informo que hemos recibido su solicitud de devolución de Cuotas de Participación, por lo que resulta fundamental comunicarle el procedimiento que se sigue para hacer efectiva esta devolución.
+	En primer lugar, todas las cooperativas de ahorro y crédito en Chile se encuentran sujetas a la condición de devolver cuotas de participación siempre que se hubiesen enterado en la Cooperativa, previamente, aportes de capital por una suma al menos equivalente al monto de las devoluciones requeridas por causa legal, reglamentaria o estatutaria, que las haga exigibles o procedentes. Dichos pagos serán exigibles y deberán efectuarse atendiendo estrictamente a la fecha en que tiene lugar la circunstancia que los causa. Esta condición, impuesta por la Ley General de Cooperativas, resulta perentoria en la aplicación del pago de sus cuotas, dado que evita poder dar una fecha cierta de pago. Dicho lo anterior, al devolverse capital con cargo a capital, los pagos se efectúan conforme el orden de las causas, cuestión que se controla a través de la llamada Lista u Orden de Prelación. Esto significa para usted que su solicitud de devolución de cuotas ingresó a la mentada Lista en la fecha correspondiente, pudiendo usted consultar su posición y efectuar su propio seguimiento a través de su clave virtual en el sitio web institucional: www.lautarorosas.cl. De todas formas, estas cuotas de participación le serán devueltas debidamente actualizadas conforme la variación experimentada por la Unidad de Fomento. 
+	Finalmente, si usted renunció a la Cooperativa, no tendrá derecho a participar del resultado del ejercicio, quedando privado de los otros beneficios que ésta otorgue a sus socios.
+	Sin otro particular, le saludo atentamente;  
+
+
+
+
+Jaime Emilio RODENAS Pizarro
+Gerente General
+Cooperativa de Ahorro y Crédito Lautaro ROSAS Limitada
+
+
+
+
+
+</value>
+  </data>
+  <data name="Textencabezado.Text" xml:space="preserve">
+    <value>&lt;html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="&lt;http://schemas.microsoft.com/office/2004/12/omml&gt;" xmlns="&lt;http://www.w3.org/TR/REC-html40&gt;"&gt;&lt;head&gt;&lt;meta name=Generator content="Microsoft Word 15 (filtered medium)"&gt;&lt;style&gt;&lt;!--
+/* Font Definitions */
+@font-face
+                {font-family:"Cambria Math";
+                panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+                {font-family:Calibri;
+                panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+                {font-family:Tahoma;
+                panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+                {margin:0cm;
+                margin-bottom:.0001pt;
+                font-size:11.0pt;
+                font-family:"Calibri",sans-serif;
+                mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+                {mso-style-priority:99;
+                color:blue;
+                text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+                {mso-style-priority:99;
+                color:purple;
+                text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+                {mso-style-priority:99;
+                mso-style-link:"Texto de globo Car";
+                margin:0cm;
+                margin-bottom:.0001pt;
+                font-size:8.0pt;
+                font-family:"Tahoma",sans-serif;
+                mso-fareast-language:EN-US;}
+p.msonormal0, li.msonormal0, div.msonormal0
+                {mso-style-name:msonormal;
+                mso-margin-top-alt:auto;
+                margin-right:0cm;
+                mso-margin-bottom-alt:auto;
+                margin-left:0cm;
+                font-size:12.0pt;
+                font-family:"Times New Roman",serif;}
+span.TextodegloboCar
+                {mso-style-name:"Texto de globo Car";
+                mso-style-priority:99;
+                mso-style-link:"Texto de globo";
+                font-family:"Tahoma",sans-serif;}
+span.EstiloCorreo20
+                {mso-style-type:personal;
+                font-family:"Calibri",sans-serif;
+                color:windowtext;}
+span.EstiloCorreo21
+                {mso-style-type:personal-reply;
+                font-family:"Calibri",sans-serif;
+                color:#1F497D;}
+.MsoChpDefault
+                {mso-style-type:export-only;
+                font-size:10.0pt;}
+@page WordSection1
+                {size:612.0pt 792.0pt;
+                margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection1
+                {page:WordSection1;}
+--&gt;&lt;/style&gt;&lt;!--[if gte mso 9]&gt;&lt;xml&gt;
+&lt;o:shapedefaults v:ext="edit" spidmax="1026" /&gt;
+&lt;/xml&gt;&lt;![endif]--&gt;&lt;!--[if gte mso 9]&gt;&lt;xml&gt;
+&lt;o:shapelayout v:ext="edit"&gt;
+&lt;o:idmap v:ext="edit" data="1" /&gt;
+&lt;/o:shapelayout&gt;&lt;/xml&gt;&lt;![endif]--&gt;&lt;/head&gt;&lt;body lang=ES-CL link=blue vlink=purple&gt;&lt;div class=WordSection1&gt;&lt;p class=MsoNormal style='text-
+align:justify'&gt;&lt;b&gt;Sucursal.:&lt;/b&gt; </value>
+  </data>
+  <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>159, 17</value>
+  </metadata>
+  <data name="txtmensaje2remplaza.Text" xml:space="preserve">
+    <value>&lt;o:p&gt;&lt;/o:p&gt;&lt;/b&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;&lt;b&gt;PRESENTE&lt;o:p&gt;&lt;/o:p&gt;&lt;/b&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;De mi consideración&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal style='text-align:justify'&gt;En relación a su solicitud de retiro de capital o cuotas de participación recibido vía (mail/telefónica/presencial)    </value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
+</root>

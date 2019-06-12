@@ -1,0 +1,1129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A0D069B7-F1FC-4264-BE73-C1F747A11E27}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SistemaRiesgos.My.MyApplication</StartupObject>
+    <RootNamespace>SistemaRiesgos</RootNamespace>
+    <AssemblyName>SistemaRiesgos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>1448400333_handshake.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>Z:\ACTUALIZACIONES DE SISTEMAS\SISTEMA DE RIESGO\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\192.168.0.172\servidor\ACTUALIZACIONES DE SISTEMAS\SISTEMA DE RIESGO\</InstallUrl>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SistemaRiesgos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SistemaRiesgos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2AEACF1905EB9A18F711CE35E4B55F4FDEAC3F31</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SistemaRiesgos_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>lautaro.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.vb">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmActualizaciones.Designer.vb">
+      <DependentUpon>frmActualizaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmActualizaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActualizacionesHistorico.Designer.vb">
+      <DependentUpon>frmActualizacionesHistorico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmActualizacionesHistorico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCierreActualizacion.Designer.vb">
+      <DependentUpon>FrmCierreActualizacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCierreActualizacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarMontoGiroCapital2.Designer.vb">
+      <DependentUpon>frmEditarMontoGiroCapital2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarMontoGiroCapital2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarMontosSolicitudGiroCapital.Designer.vb">
+      <DependentUpon>frmEditarMontosSolicitudGiroCapital.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarMontosSolicitudGiroCapital.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnvioCorreoElectronicoAuditoria.Designer.vb">
+      <DependentUpon>frmEnvioCorreoElectronicoAuditoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnvioCorreoElectronicoAuditoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFichaEvaluacionGiroCapital2.Designer.vb">
+      <DependentUpon>frmFichaEvaluacionGiroCapital2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFichaEvaluacionGiroCapital2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFichaPrepago.Designer.vb">
+      <DependentUpon>FrmFichaPrepago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFichaPrepago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteCartagirocapital.Designer.vb">
+      <DependentUpon>frmReporteCartagirocapital.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteCartagirocapital.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LROSASDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LROSASDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteCartaRetiroCapitalCuotasparticipacion.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteCartaRetiroCapitalCuotasparticipacion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CConexion.vb" />
+    <Compile Include="CDatos.vb" />
+    <Compile Include="CCEstadosGeneral.vb" />
+    <Compile Include="CGENERALES.vb" />
+    <Compile Include="frmAlzamientoGarantias.Designer.vb">
+      <DependentUpon>frmAlzamientoGarantias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlzamientoGarantias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBandejaCapital6EditarNominaTransferencia.Designer.vb">
+      <DependentUpon>frmBandejaCapital6EditarNominaTransferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBandejaCapital6EditarNominaTransferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnvioCorreoElectronico.Designer.vb">
+      <DependentUpon>frmEnvioCorreoElectronico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnvioCorreoElectronico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFichaEvaluacionGiroCapitalRF.Designer.vb">
+      <DependentUpon>frmFichaEvaluacionGiroCapitalRF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFichaEvaluacionGiroCapitalRF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiroCapitalConsultaEvaluacionCredito.Designer.vb">
+      <DependentUpon>frmGiroCapitalConsultaEvaluacionCredito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiroCapitalConsultaEvaluacionCredito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRevalorizacionUFGlobal.Designer.vb">
+      <DependentUpon>frmRevalorizacionUFGlobal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRevalorizacionUFGlobal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteFichaEvaluacionGiroCapital.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteFichaEvaluacionGiroCapital.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmAprobarNominaGiroCapital.designer.vb">
+      <DependentUpon>frmAprobarNominaGiroCapital.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAprobarNominaGiroCapital.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBandejaCapital.designer.vb">
+      <DependentUpon>frmBandejaCapital.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBandejaCapital.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBandejaCapital2.designer.vb">
+      <DependentUpon>frmBandejaCapital2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBandejaCapital2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBandejaCapital3.designer.vb">
+      <DependentUpon>frmBandejaCapital3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBandejaCapital3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBandejaCapital4.Designer.vb">
+      <DependentUpon>frmBandejaCapital4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBandejaCapital4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBandejaCapital5.Designer.vb">
+      <DependentUpon>frmBandejaCapital5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBandejaCapital5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaptacionesGeneral.designer.vb">
+      <DependentUpon>frmCaptacionesGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaptacionesGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaptacionesimpresiones.designer.vb">
+      <DependentUpon>frmCaptacionesimpresiones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaptacionesimpresiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaptacionesTXT.designer.vb">
+      <DependentUpon>frmCaptacionesTXT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaptacionesTXT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisponibilidadRetiroCapital.designer.vb">
+      <DependentUpon>frmDisponibilidadRetiroCapital.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisponibilidadRetiroCapital.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstadosGiroCapital.Designer.vb">
+      <DependentUpon>frmEstadosGiroCapital.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstadosGiroCapital.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEvaluarCapital.designer.vb">
+      <DependentUpon>frmEvaluarCapital.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEvaluarCapital.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEvaluarEmpresa.Designer.vb">
+      <DependentUpon>frmEvaluarEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEvaluarEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fcertificado1.Designer.vb">
+      <DependentUpon>Fcertificado1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fcertificado1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCertificados.Designer.vb">
+      <DependentUpon>FCertificados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FCertificados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFichaAprobarGiroCapital.designer.vb">
+      <DependentUpon>frmFichaAprobarGiroCapital.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFichaAprobarGiroCapital.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFichaEvaluacionGiroCapital.Designer.vb">
+      <DependentUpon>frmFichaEvaluacionGiroCapital.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFichaEvaluacionGiroCapital.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionPerfil.Designer.vb">
+      <DependentUpon>FrmGestionPerfil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionPerfil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMuestraEvaluacionCapital.designer.vb">
+      <DependentUpon>frmMuestraEvaluacionCapital.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMuestraEvaluacionCapital.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNavegadorWeb.Designer.vb">
+      <DependentUpon>frmNavegadorWeb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNavegadorWeb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuditoriaPuntaje.Designer.vb">
+      <DependentUpon>frmAuditoriaPuntaje.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuditoriaPuntaje.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAviso.Designer.vb">
+      <DependentUpon>frmAviso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreditoImprimir.Designer.vb">
+      <DependentUpon>frmCreditoImprimir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditoImprimir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreditosHistoricos.Designer.vb">
+      <DependentUpon>FrmCreditosHistoricos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreditosHistoricos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreditosPorAprobar.Designer.vb">
+      <DependentUpon>frmCreditosPorAprobar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditosPorAprobar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreditosPropios.Designer.vb">
+      <DependentUpon>FrmCreditosPropios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreditosPropios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreditosRiesgo.Designer.vb">
+      <DependentUpon>frmCreditosRiesgo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditosRiesgo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstadisticasEjecutivos.Designer.vb">
+      <DependentUpon>frmEstadisticasEjecutivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstadisticasEjecutivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstadisticasPrestamos.Designer.vb">
+      <DependentUpon>frmEstadisticasPrestamos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstadisticasPrestamos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEvaluar.Designer.vb">
+      <DependentUpon>frmEvaluar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEvaluar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFicha.Designer.vb">
+      <DependentUpon>frmFicha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFicha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFichaAprobar.Designer.vb">
+      <DependentUpon>FrmFichaAprobar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFichaAprobar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFichaHistorico.Designer.vb">
+      <DependentUpon>frmFichaHistorico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFichaHistorico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFichaRiesgo.Designer.vb">
+      <DependentUpon>frmFichaRiesgo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFichaRiesgo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPerfil.Designer.vb">
+      <DependentUpon>frmPerfil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPerfil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrepago.Designer.vb">
+      <DependentUpon>frmPrepago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrepago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpruebas.Designer.vb">
+      <DependentUpon>frmpruebas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmpruebas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpruebas2.Designer.vb">
+      <DependentUpon>frmpruebas2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmpruebas2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRIESGO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRIESGO.Designer.vb">
+      <DependentUpon>frmRIESGO.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiroCapital.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GiroCapital.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GiroCapital.vb">
+      <DependentUpon>GiroCapital.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteFichaEvaluacionGiroCapital2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteFichaEvaluacionGiroCapital2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReporteFichaEvaluacionGiroCapitalRF.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteFichaEvaluacionGiroCapitalRF.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReporteFichaEvaluacionGiroCapital_Movimiento_Ultimos7dias.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteFichaEvaluacionGiroCapital_Movimiento_Ultimos7dias.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MensajeAlertaMovimientoSocios7Dias.Designer.vb">
+      <DependentUpon>MensajeAlertaMovimientoSocios7Dias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MensajeAlertaMovimientoSocios7Dias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MensajeDisponibilidadRetiroCapital.Designer.vb">
+      <DependentUpon>MensajeDisponibilidadRetiroCapital.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MensajeDisponibilidadRetiroCapital.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MensajeSolicitudesPendientes.Designer.vb">
+      <DependentUpon>MensajeSolicitudesPendientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MensajeSolicitudesPendientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos.vb" />
+    <Compile Include="ModulosReconsideracion.Designer.vb">
+      <DependentUpon>ModulosReconsideracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulosReconsideracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PerfilConfiguracion.Designer.vb">
+      <DependentUpon>PerfilConfiguracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilConfiguracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRentas.Designer.vb">
+      <DependentUpon>frmRentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRUEBAS2.Designer.vb">
+      <DependentUpon>PRUEBAS2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRUEBAS2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reporte.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reporte3.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reporte3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reporte4.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reporte4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reporte5.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reporte5.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reporte6.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reporte6.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReporteCaptaciones1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteCaptaciones.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReporteCaptaciones11.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteCaptaciones1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActualizaciones.resx">
+      <DependentUpon>frmActualizaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActualizacionesHistorico.resx">
+      <DependentUpon>frmActualizacionesHistorico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCierreActualizacion.resx">
+      <DependentUpon>FrmCierreActualizacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarMontoGiroCapital2.resx">
+      <DependentUpon>frmEditarMontoGiroCapital2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarMontosSolicitudGiroCapital.resx">
+      <DependentUpon>frmEditarMontosSolicitudGiroCapital.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnvioCorreoElectronicoAuditoria.resx">
+      <DependentUpon>frmEnvioCorreoElectronicoAuditoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFichaEvaluacionGiroCapital2.resx">
+      <DependentUpon>frmFichaEvaluacionGiroCapital2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFichaPrepago.resx">
+      <DependentUpon>FrmFichaPrepago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteCartagirocapital.resx">
+      <DependentUpon>frmReporteCartagirocapital.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteCartaRetiroCapitalCuotasparticipacion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteCartaRetiroCapitalCuotasparticipacion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlzamientoGarantias.resx">
+      <DependentUpon>frmAlzamientoGarantias.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBandejaCapital6EditarNominaTransferencia.resx">
+      <DependentUpon>frmBandejaCapital6EditarNominaTransferencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnvioCorreoElectronico.resx">
+      <DependentUpon>frmEnvioCorreoElectronico.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFichaEvaluacionGiroCapitalRF.resx">
+      <DependentUpon>frmFichaEvaluacionGiroCapitalRF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiroCapitalConsultaEvaluacionCredito.resx">
+      <DependentUpon>frmGiroCapitalConsultaEvaluacionCredito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRevalorizacionUFGlobal.resx">
+      <DependentUpon>frmRevalorizacionUFGlobal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteFichaEvaluacionGiroCapital.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteFichaEvaluacionGiroCapital.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAprobarNominaGiroCapital.resx">
+      <DependentUpon>frmAprobarNominaGiroCapital.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBandejaCapital.resx">
+      <DependentUpon>frmBandejaCapital.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBandejaCapital2.resx">
+      <DependentUpon>frmBandejaCapital2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBandejaCapital3.resx">
+      <DependentUpon>frmBandejaCapital3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBandejaCapital4.resx">
+      <DependentUpon>frmBandejaCapital4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBandejaCapital5.resx">
+      <DependentUpon>frmBandejaCapital5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaptacionesGeneral.resx">
+      <DependentUpon>frmCaptacionesGeneral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaptacionesimpresiones.resx">
+      <DependentUpon>frmCaptacionesimpresiones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaptacionesTXT.resx">
+      <DependentUpon>frmCaptacionesTXT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisponibilidadRetiroCapital.resx">
+      <DependentUpon>frmDisponibilidadRetiroCapital.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstadosGiroCapital.resx">
+      <DependentUpon>frmEstadosGiroCapital.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEvaluarCapital.resx">
+      <DependentUpon>frmEvaluarCapital.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEvaluarEmpresa.resx">
+      <DependentUpon>frmEvaluarEmpresa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fcertificado1.resx">
+      <DependentUpon>Fcertificado1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCertificados.resx">
+      <DependentUpon>FCertificados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFichaAprobarGiroCapital.resx">
+      <DependentUpon>frmFichaAprobarGiroCapital.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFichaEvaluacionGiroCapital.resx">
+      <DependentUpon>frmFichaEvaluacionGiroCapital.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestionPerfil.resx">
+      <DependentUpon>FrmGestionPerfil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMuestraEvaluacionCapital.resx">
+      <DependentUpon>frmMuestraEvaluacionCapital.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNavegadorWeb.resx">
+      <DependentUpon>frmNavegadorWeb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuditoriaPuntaje.resx">
+      <DependentUpon>frmAuditoriaPuntaje.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAviso.resx">
+      <DependentUpon>frmAviso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreditoImprimir.resx">
+      <DependentUpon>frmCreditoImprimir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreditosHistoricos.resx">
+      <DependentUpon>FrmCreditosHistoricos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreditosPorAprobar.resx">
+      <DependentUpon>frmCreditosPorAprobar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreditosPropios.resx">
+      <DependentUpon>FrmCreditosPropios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreditosRiesgo.resx">
+      <DependentUpon>frmCreditosRiesgo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstadisticasEjecutivos.resx">
+      <DependentUpon>frmEstadisticasEjecutivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstadisticasPrestamos.resx">
+      <DependentUpon>frmEstadisticasPrestamos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEvaluar.resx">
+      <DependentUpon>frmEvaluar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFicha.resx">
+      <DependentUpon>frmFicha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFichaAprobar.resx">
+      <DependentUpon>FrmFichaAprobar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFichaHistorico.resx">
+      <DependentUpon>frmFichaHistorico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFichaRiesgo.resx">
+      <DependentUpon>frmFichaRiesgo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPerfil.resx">
+      <DependentUpon>frmPerfil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrepago.resx">
+      <DependentUpon>frmPrepago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpruebas.resx">
+      <DependentUpon>frmpruebas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpruebas2.resx">
+      <DependentUpon>frmpruebas2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRIESGO.resx">
+      <DependentUpon>frmRIESGO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteFichaEvaluacionGiroCapital2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteFichaEvaluacionGiroCapital2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteFichaEvaluacionGiroCapitalRF.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteFichaEvaluacionGiroCapitalRF.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteFichaEvaluacionGiroCapital_Movimiento_Ultimos7dias.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteFichaEvaluacionGiroCapital_Movimiento_Ultimos7dias.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MensajeAlertaMovimientoSocios7Dias.resx">
+      <DependentUpon>MensajeAlertaMovimientoSocios7Dias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MensajeDisponibilidadRetiroCapital.resx">
+      <DependentUpon>MensajeDisponibilidadRetiroCapital.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MensajeSolicitudesPendientes.resx">
+      <DependentUpon>MensajeSolicitudesPendientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulosReconsideracion.resx">
+      <DependentUpon>ModulosReconsideracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilConfiguracion.resx">
+      <DependentUpon>PerfilConfiguracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRentas.resx">
+      <DependentUpon>frmRentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRUEBAS2.resx">
+      <DependentUpon>PRUEBAS2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reporte.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reporte3.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reporte4.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reporte5.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte6.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reporte6.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteCaptaciones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteCaptaciones1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteCaptaciones1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteCaptaciones11.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="GiroCapital.xsc">
+      <DependentUpon>GiroCapital.xsd</DependentUpon>
+    </None>
+    <None Include="GiroCapital.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GiroCapital.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="GiroCapital.xss">
+      <DependentUpon>GiroCapital.xsd</DependentUpon>
+    </None>
+    <None Include="lautaro.pfx" />
+    <None Include="LROSASDataSet.xsc">
+      <DependentUpon>LROSASDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LROSASDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LROSASDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LROSASDataSet.xss">
+      <DependentUpon>LROSASDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="SistemaRiesgos_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Informe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Informe2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aviso.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aviso2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aviso3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aviso4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aviso5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoazul3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoazul2 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aviso6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aviso61.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Informe4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Valparaíso Siglo XIX 2400.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Valparaíso Siglo XIX 24001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Valparaíso Siglo XIX 2400%282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1448400333_handshake.ico" />
+    <Content Include="Blue.ico" />
+    <Content Include="Resources\alarma3.wav" />
+    <Content Include="Resources\Firma Don Jaime Rodenas con su rut.jpg" />
+    <None Include="Resources\SD_ALERT_44.wav" />
+    <None Include="Resources\SD_ALERT_29.wav" />
+    <None Include="Resources\SD_ALERT_40.wav" />
+    <None Include="Resources\SD_ALERT_27.wav" />
+    <None Include="Resources\SD_ALERT_40.mp3" />
+    <None Include="Service References\Resources\alarma6.wav" />
+    <None Include="Service References\Resources\Valparaíso Siglo XIX 24001.jpg" />
+    <None Include="Service References\Resources\Valparaíso Siglo XIX 2400.jpg" />
+    <None Include="Service References\Resources\Valparaíso Siglo XIX 2400%282%29.jpg" />
+    <None Include="Service References\Resources\pie de página alta resolución.jpg" />
+    <None Include="Service References\Resources\Logo Alta.jpg" />
+    <None Include="Service References\Resources\Informe4.jpg" />
+    <None Include="Service References\Resources\Informe2.jpg" />
+    <None Include="Service References\Resources\Informe.jpg" />
+    <None Include="Service References\Resources\FONDOSISTriesgo.jpg" />
+    <None Include="Service References\Resources\FONDOSISTCRM.jpg" />
+    <None Include="Service References\Resources\fondoazul3.jpg" />
+    <None Include="Service References\Resources\fondoazul2 %281%29.jpg" />
+    <None Include="Service References\Resources\fondo5.jpg" />
+    <None Include="Service References\Resources\fondo4.jpg" />
+    <None Include="Service References\Resources\fondo3.jpg" />
+    <None Include="Service References\Resources\fondo2.jpg" />
+    <None Include="Service References\Resources\fondo.jpg" />
+    <None Include="Service References\Resources\Firma Don Jaime Rodenas con su rut.jpg" />
+    <None Include="Service References\Resources\cristiancampos.jpg" />
+    <None Include="Service References\Resources\Beep.wav" />
+    <None Include="Service References\Resources\aviso61.jpg" />
+    <None Include="Service References\Resources\aviso6.jpg" />
+    <None Include="Service References\Resources\aviso5.jpg" />
+    <None Include="Service References\Resources\aviso4.jpg" />
+    <None Include="Service References\Resources\aviso3.jpg" />
+    <None Include="Service References\Resources\aviso2.jpg" />
+    <None Include="Service References\Resources\aviso.jpg" />
+    <None Include="Service References\Resources\alarma5.mp3" />
+    <None Include="Service References\Resources\alarma4.mp3" />
+    <None Include="Service References\Resources\alarma2.wav" />
+    <None Include="Service References\Resources\1459376221_reboot.png" />
+    <None Include="Service References\Resources\1459376215_log_out.png" />
+    <None Include="Service References\Resources\1459376194_update.png" />
+    <None Include="Service References\Resources\1459375664_location.png" />
+    <None Include="Service References\Resources\1459375479_location.png" />
+    <None Include="Service References\Resources\1459375432_user_man.png" />
+    <None Include="Service References\Resources\alarma6.mp3" />
+    <None Include="Service References\Resources\alarma3.wav" />
+    <None Include="Resources\alarma2.wav" />
+    <None Include="Resources\Beep.wav" />
+    <None Include="Resources\cristiancampos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxSHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

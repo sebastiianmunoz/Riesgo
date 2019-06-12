@@ -1,0 +1,669 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LROSASDataSet" targetNamespace="http://tempuri.org/LROSASDataSet.xsd" xmlns:mstns="http://tempuri.org/LROSASDataSet.xsd" xmlns="http://tempuri.org/LROSASDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="LROSASConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LROSASConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SistemaRiesgos.My.MySettings.GlobalReference.Default.LROSASConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="_RIESGO_SOLICITUD_GIRO_CAPITALTableAdapter" GeneratorDataComponentClassName="_RIESGO_SOLICITUD_GIRO_CAPITALTableAdapter" Name="_RIESGO_SOLICITUD_GIRO_CAPITAL" UserDataComponentName="_RIESGO_SOLICITUD_GIRO_CAPITALTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LROSASConnectionString (MySettings)" DbObjectName="LROSAS.dbo._RIESGO_SOLICITUD_GIRO_CAPITAL" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[_RIESGO_SOLICITUD_GIRO_CAPITAL] WHERE (([ID_SOLICITUD] = @Original_ID_SOLICITUD) AND ([FECHA_SOLICITUD] = @Original_FECHA_SOLICITUD) AND ([MONTO_SOLICITUD] = @Original_MONTO_SOLICITUD) AND ([ESTADO_SOLICITUD] = @Original_ESTADO_SOLICITUD) AND ([RUT] = @Original_RUT) AND ([DVRUT] = @Original_DVRUT) AND ([NOMBRE_SOCIO] = @Original_NOMBRE_SOCIO) AND ([NROSOCIO] = @Original_NROSOCIO) AND ([TIPO_CUENTA] = @Original_TIPO_CUENTA) AND ([BANCO] = @Original_BANCO) AND ([NRO_CUENTA] = @Original_NRO_CUENTA) AND ([CORRELATIVO] = @Original_CORRELATIVO) AND ([CORREGRESO] = @Original_CORREGRESO) AND ([FORMA_PAGO] = @Original_FORMA_PAGO) AND ([USUARIO] = @Original_USUARIO) AND ([SUCURSAL] = @Original_SUCURSAL) AND ([REEVALUACION] = @Original_REEVALUACION) AND ([EN_NOMINA] = @Original_EN_NOMINA) AND ([CODBANCO] = @Original_CODBANCO) AND ([TIPO_SOLICITUD] = @Original_TIPO_SOLICITUD) AND ([Aprobacion_SubGerencia] = @Original_Aprobacion_SubGerencia) AND ([Aprobacion_Gerencia] = @Original_Aprobacion_Gerencia) AND ([FECHA_AUTORIZADO] = @Original_FECHA_AUTORIZADO) AND ([FECHA_GENERADO] = @Original_FECHA_GENERADO) AND ([NOMBRES] = @Original_NOMBRES) AND ([PATERNO] = @Original_PATERNO) AND ([MATERNO] = @Original_MATERNO) AND ([TOTALCAPITALSOCIAL] = @Original_TOTALCAPITALSOCIAL) AND ([CORRECCION_MONETARIA] = @Original_CORRECCION_MONETARIA) AND ([CUOTAS_PARTICIPACION] = @Original_CUOTAS_PARTICIPACION) AND ([TOTAL_NORETIRABLE] = @Original_TOTAL_NORETIRABLE) AND ([MONTO_DISPONIBLE] = @Original_MONTO_DISPONIBLE) AND ([MONTO_MAXIMO_RETIRABLE] = @Original_MONTO_MAXIMO_RETIRABLE) AND ([FILTRO_CAPITAL_MINIMO] = @Original_FILTRO_CAPITAL_MINIMO) AND ([FILTRO_MONTO_SOLICITADO] = @Original_FILTRO_MONTO_SOLICITADO) AND ([FILTRO_GIROS_ANUAL] = @Original_FILTRO_GIROS_ANUAL) AND ([FILTRO_GIROS_MENSUAL] = @Original_FILTRO_GIROS_MENSUAL) AND ([FILTRO_SOCIO_SINMORA] = @Original_FILTRO_SOCIO_SINMORA) AND ([FILTRO_AVAL_SINMORA] = @Original_FILTRO_AVAL_SINMORA) AND ([FILTRO_RESTRICCIONES] = @Original_FILTRO_RESTRICCIONES) AND ([FILTRO_CAPITAL_GLOBAL] = @Original_FILTRO_CAPITAL_GLOBAL) AND ([ESTADO_SOLICITUD2] = @Original_ESTADO_SOLICITUD2) AND ([ESTADO_SOLICITUD3] = @Original_ESTADO_SOLICITUD3) AND ([COMENTARIO_EVALUACION] = @Original_COMENTARIO_EVALUACION) AND ([COMENTARIO_SUBGERENTE] = @Original_COMENTARIO_SUBGERENTE) AND ([COMENTARIO_SUBGERENTE_FINANZAS] = @Original_COMENTARIO_SUBGERENTE_FINANZAS) AND ([COMENTARIO_LIBERA_CAPITAL] = @Original_COMENTARIO_LIBERA_CAPITAL) AND ([SUCURSAL2] = @Original_SUCURSAL2) AND ([FECHAHORA] = @Original_FECHAHORA) AND ([VALORUFDIAACTUAL] = @Original_VALORUFDIAACTUAL) AND ([CUOTAGASTOS] = @Original_CUOTAGASTOS) AND ([MONTOABONAPRESTAMOS] = @Original_MONTOABONAPRESTAMOS) AND ([TIPOSOLICITUD2] = @Original_TIPOSOLICITUD2) AND ([SALDOVRUFCAPITAL] = @Original_SALDOVRUFCAPITAL) AND ([AUTORIZAANULA] = @Original_AUTORIZAANULA) AND ([MONTOPAGAOTROS] = @Original_MONTOPAGAOTROS) AND ([MONTOGASTOABOGADO] = @Original_MONTOGASTOABOGADO) AND ([OTROSHABERES] = @Original_OTROSHABERES) AND ([MODIFICAMONTO] = @Original_MODIFICAMONTO) AND ([FECHAMODIFICAMONTO] = @Original_FECHAMODIFICAMONTO) AND ([CORREOENVIOCARTA] = @Original_CORREOENVIOCARTA) AND ([FECHAANULA] = @Original_FECHAANULA) AND ([FECHA_PAGO] = @Original_FECHA_PAGO) AND ([PRIORIDAD] = @Original_PRIORIDAD))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_ID_SOLICITUD" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="ID_SOLICITUD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FECHA_SOLICITUD" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FECHA_SOLICITUD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_MONTO_SOLICITUD" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTO_SOLICITUD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_ESTADO_SOLICITUD" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="ESTADO_SOLICITUD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_RUT" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="RUT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_DVRUT" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="DVRUT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOMBRE_SOCIO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOMBRE_SOCIO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_NROSOCIO" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="NROSOCIO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_TIPO_CUENTA" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="TIPO_CUENTA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_BANCO" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="BANCO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NRO_CUENTA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NRO_CUENTA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_CORRELATIVO" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="CORRELATIVO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_CORREGRESO" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="CORREGRESO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_FORMA_PAGO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FORMA_PAGO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_USUARIO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="USUARIO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SUCURSAL" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SUCURSAL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_REEVALUACION" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="REEVALUACION" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EN_NOMINA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EN_NOMINA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_CODBANCO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="CODBANCO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_TIPO_SOLICITUD" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TIPO_SOLICITUD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Aprobacion_SubGerencia" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Aprobacion_SubGerencia" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Aprobacion_Gerencia" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Aprobacion_Gerencia" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FECHA_AUTORIZADO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FECHA_AUTORIZADO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FECHA_GENERADO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FECHA_GENERADO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_NOMBRES" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="NOMBRES" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PATERNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PATERNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_MATERNO" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MATERNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_TOTALCAPITALSOCIAL" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="TOTALCAPITALSOCIAL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_CORRECCION_MONETARIA" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="CORRECCION_MONETARIA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_CUOTAS_PARTICIPACION" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="CUOTAS_PARTICIPACION" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_TOTAL_NORETIRABLE" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="TOTAL_NORETIRABLE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_MONTO_DISPONIBLE" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTO_DISPONIBLE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_MONTO_MAXIMO_RETIRABLE" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTO_MAXIMO_RETIRABLE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_FILTRO_CAPITAL_MINIMO" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_CAPITAL_MINIMO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_FILTRO_MONTO_SOLICITADO" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_MONTO_SOLICITADO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_FILTRO_GIROS_ANUAL" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_GIROS_ANUAL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_FILTRO_GIROS_MENSUAL" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_GIROS_MENSUAL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_FILTRO_SOCIO_SINMORA" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_SOCIO_SINMORA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_FILTRO_AVAL_SINMORA" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_AVAL_SINMORA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_FILTRO_RESTRICCIONES" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_RESTRICCIONES" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_FILTRO_CAPITAL_GLOBAL" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_CAPITAL_GLOBAL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ESTADO_SOLICITUD2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ESTADO_SOLICITUD2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ESTADO_SOLICITUD3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ESTADO_SOLICITUD3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_COMENTARIO_EVALUACION" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="COMENTARIO_EVALUACION" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_COMENTARIO_SUBGERENTE" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="COMENTARIO_SUBGERENTE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_COMENTARIO_SUBGERENTE_FINANZAS" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="COMENTARIO_SUBGERENTE_FINANZAS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_COMENTARIO_LIBERA_CAPITAL" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="COMENTARIO_LIBERA_CAPITAL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_SUCURSAL2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SUCURSAL2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_FECHAHORA" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FECHAHORA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_VALORUFDIAACTUAL" Precision="12" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="VALORUFDIAACTUAL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_CUOTAGASTOS" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="CUOTAGASTOS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_MONTOABONAPRESTAMOS" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTOABONAPRESTAMOS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TIPOSOLICITUD2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TIPOSOLICITUD2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_SALDOVRUFCAPITAL" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="SALDOVRUFCAPITAL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_AUTORIZAANULA" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="AUTORIZAANULA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_MONTOPAGAOTROS" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTOPAGAOTROS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_MONTOGASTOABOGADO" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTOGASTOABOGADO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_OTROSHABERES" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="OTROSHABERES" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_MODIFICAMONTO" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MODIFICAMONTO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_FECHAMODIFICAMONTO" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FECHAMODIFICAMONTO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_CORREOENVIOCARTA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CORREOENVIOCARTA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_FECHAANULA" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FECHAANULA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_FECHA_PAGO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="FECHA_PAGO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_PRIORIDAD" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="PRIORIDAD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[_RIESGO_SOLICITUD_GIRO_CAPITAL] ([ID_SOLICITUD], [FECHA_SOLICITUD], [MONTO_SOLICITUD], [ESTADO_SOLICITUD], [RUT], [DVRUT], [NOMBRE_SOCIO], [NROSOCIO], [TIPO_CUENTA], [BANCO], [NRO_CUENTA], [CORRELATIVO], [CORREGRESO], [FORMA_PAGO], [USUARIO], [SUCURSAL], [REEVALUACION], [EN_NOMINA], [CODBANCO], [TIPO_SOLICITUD], [Aprobacion_SubGerencia], [Aprobacion_Gerencia], [FECHA_AUTORIZADO], [FECHA_GENERADO], [NOMBRES], [PATERNO], [MATERNO], [TOTALCAPITALSOCIAL], [CORRECCION_MONETARIA], [CUOTAS_PARTICIPACION], [TOTAL_NORETIRABLE], [MONTO_DISPONIBLE], [MONTO_MAXIMO_RETIRABLE], [FILTRO_CAPITAL_MINIMO], [FILTRO_MONTO_SOLICITADO], [FILTRO_GIROS_ANUAL], [FILTRO_GIROS_MENSUAL], [FILTRO_SOCIO_SINMORA], [FILTRO_AVAL_SINMORA], [FILTRO_RESTRICCIONES], [FILTRO_CAPITAL_GLOBAL], [ESTADO_SOLICITUD2], [ESTADO_SOLICITUD3], [COMENTARIO_EVALUACION], [COMENTARIO_SUBGERENTE], [COMENTARIO_SUBGERENTE_FINANZAS], [COMENTARIO_LIBERA_CAPITAL], [SUCURSAL2], [FECHAHORA], [VALORUFDIAACTUAL], [CUOTAGASTOS], [MONTOABONAPRESTAMOS], [TIPOSOLICITUD2], [SALDOVRUFCAPITAL], [AUTORIZAANULA], [MONTOPAGAOTROS], [MONTOGASTOABOGADO], [OTROSHABERES], [MODIFICAMONTO], [FECHAMODIFICAMONTO], [CORREOENVIOCARTA], [FECHAANULA], [FECHA_PAGO], [PRIORIDAD]) VALUES (@ID_SOLICITUD, @FECHA_SOLICITUD, @MONTO_SOLICITUD, @ESTADO_SOLICITUD, @RUT, @DVRUT, @NOMBRE_SOCIO, @NROSOCIO, @TIPO_CUENTA, @BANCO, @NRO_CUENTA, @CORRELATIVO, @CORREGRESO, @FORMA_PAGO, @USUARIO, @SUCURSAL, @REEVALUACION, @EN_NOMINA, @CODBANCO, @TIPO_SOLICITUD, @Aprobacion_SubGerencia, @Aprobacion_Gerencia, @FECHA_AUTORIZADO, @FECHA_GENERADO, @NOMBRES, @PATERNO, @MATERNO, @TOTALCAPITALSOCIAL, @CORRECCION_MONETARIA, @CUOTAS_PARTICIPACION, @TOTAL_NORETIRABLE, @MONTO_DISPONIBLE, @MONTO_MAXIMO_RETIRABLE, @FILTRO_CAPITAL_MINIMO, @FILTRO_MONTO_SOLICITADO, @FILTRO_GIROS_ANUAL, @FILTRO_GIROS_MENSUAL, @FILTRO_SOCIO_SINMORA, @FILTRO_AVAL_SINMORA, @FILTRO_RESTRICCIONES, @FILTRO_CAPITAL_GLOBAL, @ESTADO_SOLICITUD2, @ESTADO_SOLICITUD3, @COMENTARIO_EVALUACION, @COMENTARIO_SUBGERENTE, @COMENTARIO_SUBGERENTE_FINANZAS, @COMENTARIO_LIBERA_CAPITAL, @SUCURSAL2, @FECHAHORA, @VALORUFDIAACTUAL, @CUOTAGASTOS, @MONTOABONAPRESTAMOS, @TIPOSOLICITUD2, @SALDOVRUFCAPITAL, @AUTORIZAANULA, @MONTOPAGAOTROS, @MONTOGASTOABOGADO, @OTROSHABERES, @MODIFICAMONTO, @FECHAMODIFICAMONTO, @CORREOENVIOCARTA, @FECHAANULA, @FECHA_PAGO, @PRIORIDAD);
+SELECT ID_SOLICITUD, FECHA_SOLICITUD, MONTO_SOLICITUD, ESTADO_SOLICITUD, RUT, DVRUT, NOMBRE_SOCIO, NROSOCIO, TIPO_CUENTA, BANCO, NRO_CUENTA, CORRELATIVO, CORREGRESO, FORMA_PAGO, USUARIO, SUCURSAL, REEVALUACION, EN_NOMINA, CODBANCO, TIPO_SOLICITUD, Aprobacion_SubGerencia, Aprobacion_Gerencia, FECHA_AUTORIZADO, FECHA_GENERADO, NOMBRES, PATERNO, MATERNO, TOTALCAPITALSOCIAL, CORRECCION_MONETARIA, CUOTAS_PARTICIPACION, TOTAL_NORETIRABLE, MONTO_DISPONIBLE, MONTO_MAXIMO_RETIRABLE, FILTRO_CAPITAL_MINIMO, FILTRO_MONTO_SOLICITADO, FILTRO_GIROS_ANUAL, FILTRO_GIROS_MENSUAL, FILTRO_SOCIO_SINMORA, FILTRO_AVAL_SINMORA, FILTRO_RESTRICCIONES, FILTRO_CAPITAL_GLOBAL, ESTADO_SOLICITUD2, ESTADO_SOLICITUD3, COMENTARIO_EVALUACION, COMENTARIO_SUBGERENTE, COMENTARIO_SUBGERENTE_FINANZAS, COMENTARIO_LIBERA_CAPITAL, SUCURSAL2, FECHAHORA, VALORUFDIAACTUAL, CUOTAGASTOS, MONTOABONAPRESTAMOS, TIPOSOLICITUD2, SALDOVRUFCAPITAL, AUTORIZAANULA, MONTOPAGAOTROS, MONTOGASTOABOGADO, OTROSHABERES, MODIFICAMONTO, FECHAMODIFICAMONTO, CORREOENVIOCARTA, FECHAANULA, FECHA_PAGO, PRIORIDAD FROM _RIESGO_SOLICITUD_GIRO_CAPITAL WHERE (ID_SOLICITUD = @ID_SOLICITUD)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@ID_SOLICITUD" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="ID_SOLICITUD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FECHA_SOLICITUD" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FECHA_SOLICITUD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@MONTO_SOLICITUD" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTO_SOLICITUD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@ESTADO_SOLICITUD" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="ESTADO_SOLICITUD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@RUT" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="RUT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@DVRUT" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="DVRUT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOMBRE_SOCIO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOMBRE_SOCIO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@NROSOCIO" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="NROSOCIO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@TIPO_CUENTA" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="TIPO_CUENTA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@BANCO" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="BANCO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NRO_CUENTA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NRO_CUENTA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@CORRELATIVO" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="CORRELATIVO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@CORREGRESO" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="CORREGRESO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@FORMA_PAGO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FORMA_PAGO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@USUARIO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="USUARIO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SUCURSAL" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SUCURSAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@REEVALUACION" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="REEVALUACION" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EN_NOMINA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EN_NOMINA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@CODBANCO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="CODBANCO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@TIPO_SOLICITUD" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TIPO_SOLICITUD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Aprobacion_SubGerencia" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Aprobacion_SubGerencia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Aprobacion_Gerencia" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Aprobacion_Gerencia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FECHA_AUTORIZADO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FECHA_AUTORIZADO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FECHA_GENERADO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FECHA_GENERADO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@NOMBRES" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="NOMBRES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PATERNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PATERNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@MATERNO" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MATERNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@TOTALCAPITALSOCIAL" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="TOTALCAPITALSOCIAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@CORRECCION_MONETARIA" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="CORRECCION_MONETARIA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@CUOTAS_PARTICIPACION" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="CUOTAS_PARTICIPACION" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@TOTAL_NORETIRABLE" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="TOTAL_NORETIRABLE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@MONTO_DISPONIBLE" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTO_DISPONIBLE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@MONTO_MAXIMO_RETIRABLE" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTO_MAXIMO_RETIRABLE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@FILTRO_CAPITAL_MINIMO" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_CAPITAL_MINIMO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@FILTRO_MONTO_SOLICITADO" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_MONTO_SOLICITADO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@FILTRO_GIROS_ANUAL" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_GIROS_ANUAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@FILTRO_GIROS_MENSUAL" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_GIROS_MENSUAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@FILTRO_SOCIO_SINMORA" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_SOCIO_SINMORA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@FILTRO_AVAL_SINMORA" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_AVAL_SINMORA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@FILTRO_RESTRICCIONES" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_RESTRICCIONES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@FILTRO_CAPITAL_GLOBAL" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_CAPITAL_GLOBAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ESTADO_SOLICITUD2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ESTADO_SOLICITUD2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ESTADO_SOLICITUD3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ESTADO_SOLICITUD3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@COMENTARIO_EVALUACION" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="COMENTARIO_EVALUACION" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@COMENTARIO_SUBGERENTE" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="COMENTARIO_SUBGERENTE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@COMENTARIO_SUBGERENTE_FINANZAS" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="COMENTARIO_SUBGERENTE_FINANZAS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@COMENTARIO_LIBERA_CAPITAL" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="COMENTARIO_LIBERA_CAPITAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@SUCURSAL2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SUCURSAL2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@FECHAHORA" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FECHAHORA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@VALORUFDIAACTUAL" Precision="12" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="VALORUFDIAACTUAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@CUOTAGASTOS" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="CUOTAGASTOS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@MONTOABONAPRESTAMOS" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTOABONAPRESTAMOS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TIPOSOLICITUD2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TIPOSOLICITUD2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@SALDOVRUFCAPITAL" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="SALDOVRUFCAPITAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@AUTORIZAANULA" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="AUTORIZAANULA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@MONTOPAGAOTROS" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTOPAGAOTROS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@MONTOGASTOABOGADO" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTOGASTOABOGADO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@OTROSHABERES" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="OTROSHABERES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@MODIFICAMONTO" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MODIFICAMONTO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@FECHAMODIFICAMONTO" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FECHAMODIFICAMONTO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@CORREOENVIOCARTA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CORREOENVIOCARTA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@FECHAANULA" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FECHAANULA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@FECHA_PAGO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="FECHA_PAGO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@PRIORIDAD" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="PRIORIDAD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_SOLICITUD, FECHA_SOLICITUD, MONTO_SOLICITUD, ESTADO_SOLICITUD, RUT, DVRUT, NOMBRE_SOCIO, NROSOCIO, TIPO_CUENTA, BANCO, NRO_CUENTA, CORRELATIVO, CORREGRESO, FORMA_PAGO, USUARIO, SUCURSAL, REEVALUACION, EN_NOMINA, CODBANCO, TIPO_SOLICITUD, Aprobacion_SubGerencia, Aprobacion_Gerencia, FECHA_AUTORIZADO, FECHA_GENERADO, NOMBRES, PATERNO, MATERNO, TOTALCAPITALSOCIAL, CORRECCION_MONETARIA, CUOTAS_PARTICIPACION, TOTAL_NORETIRABLE, MONTO_DISPONIBLE, MONTO_MAXIMO_RETIRABLE, FILTRO_CAPITAL_MINIMO, FILTRO_MONTO_SOLICITADO, FILTRO_GIROS_ANUAL, FILTRO_GIROS_MENSUAL, FILTRO_SOCIO_SINMORA, FILTRO_AVAL_SINMORA, FILTRO_RESTRICCIONES, FILTRO_CAPITAL_GLOBAL, ESTADO_SOLICITUD2, ESTADO_SOLICITUD3, COMENTARIO_EVALUACION, COMENTARIO_SUBGERENTE, COMENTARIO_SUBGERENTE_FINANZAS, COMENTARIO_LIBERA_CAPITAL, SUCURSAL2, FECHAHORA, VALORUFDIAACTUAL, CUOTAGASTOS, MONTOABONAPRESTAMOS, TIPOSOLICITUD2, SALDOVRUFCAPITAL, AUTORIZAANULA, MONTOPAGAOTROS, MONTOGASTOABOGADO, OTROSHABERES, MODIFICAMONTO, FECHAMODIFICAMONTO, CORREOENVIOCARTA, FECHAANULA, FECHA_PAGO, PRIORIDAD FROM dbo.[_RIESGO_SOLICITUD_GIRO_CAPITAL]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[_RIESGO_SOLICITUD_GIRO_CAPITAL] SET [ID_SOLICITUD] = @ID_SOLICITUD, [FECHA_SOLICITUD] = @FECHA_SOLICITUD, [MONTO_SOLICITUD] = @MONTO_SOLICITUD, [ESTADO_SOLICITUD] = @ESTADO_SOLICITUD, [RUT] = @RUT, [DVRUT] = @DVRUT, [NOMBRE_SOCIO] = @NOMBRE_SOCIO, [NROSOCIO] = @NROSOCIO, [TIPO_CUENTA] = @TIPO_CUENTA, [BANCO] = @BANCO, [NRO_CUENTA] = @NRO_CUENTA, [CORRELATIVO] = @CORRELATIVO, [CORREGRESO] = @CORREGRESO, [FORMA_PAGO] = @FORMA_PAGO, [USUARIO] = @USUARIO, [SUCURSAL] = @SUCURSAL, [REEVALUACION] = @REEVALUACION, [EN_NOMINA] = @EN_NOMINA, [CODBANCO] = @CODBANCO, [TIPO_SOLICITUD] = @TIPO_SOLICITUD, [Aprobacion_SubGerencia] = @Aprobacion_SubGerencia, [Aprobacion_Gerencia] = @Aprobacion_Gerencia, [FECHA_AUTORIZADO] = @FECHA_AUTORIZADO, [FECHA_GENERADO] = @FECHA_GENERADO, [NOMBRES] = @NOMBRES, [PATERNO] = @PATERNO, [MATERNO] = @MATERNO, [TOTALCAPITALSOCIAL] = @TOTALCAPITALSOCIAL, [CORRECCION_MONETARIA] = @CORRECCION_MONETARIA, [CUOTAS_PARTICIPACION] = @CUOTAS_PARTICIPACION, [TOTAL_NORETIRABLE] = @TOTAL_NORETIRABLE, [MONTO_DISPONIBLE] = @MONTO_DISPONIBLE, [MONTO_MAXIMO_RETIRABLE] = @MONTO_MAXIMO_RETIRABLE, [FILTRO_CAPITAL_MINIMO] = @FILTRO_CAPITAL_MINIMO, [FILTRO_MONTO_SOLICITADO] = @FILTRO_MONTO_SOLICITADO, [FILTRO_GIROS_ANUAL] = @FILTRO_GIROS_ANUAL, [FILTRO_GIROS_MENSUAL] = @FILTRO_GIROS_MENSUAL, [FILTRO_SOCIO_SINMORA] = @FILTRO_SOCIO_SINMORA, [FILTRO_AVAL_SINMORA] = @FILTRO_AVAL_SINMORA, [FILTRO_RESTRICCIONES] = @FILTRO_RESTRICCIONES, [FILTRO_CAPITAL_GLOBAL] = @FILTRO_CAPITAL_GLOBAL, [ESTADO_SOLICITUD2] = @ESTADO_SOLICITUD2, [ESTADO_SOLICITUD3] = @ESTADO_SOLICITUD3, [COMENTARIO_EVALUACION] = @COMENTARIO_EVALUACION, [COMENTARIO_SUBGERENTE] = @COMENTARIO_SUBGERENTE, [COMENTARIO_SUBGERENTE_FINANZAS] = @COMENTARIO_SUBGERENTE_FINANZAS, [COMENTARIO_LIBERA_CAPITAL] = @COMENTARIO_LIBERA_CAPITAL, [SUCURSAL2] = @SUCURSAL2, [FECHAHORA] = @FECHAHORA, [VALORUFDIAACTUAL] = @VALORUFDIAACTUAL, [CUOTAGASTOS] = @CUOTAGASTOS, [MONTOABONAPRESTAMOS] = @MONTOABONAPRESTAMOS, [TIPOSOLICITUD2] = @TIPOSOLICITUD2, [SALDOVRUFCAPITAL] = @SALDOVRUFCAPITAL, [AUTORIZAANULA] = @AUTORIZAANULA, [MONTOPAGAOTROS] = @MONTOPAGAOTROS, [MONTOGASTOABOGADO] = @MONTOGASTOABOGADO, [OTROSHABERES] = @OTROSHABERES, [MODIFICAMONTO] = @MODIFICAMONTO, [FECHAMODIFICAMONTO] = @FECHAMODIFICAMONTO, [CORREOENVIOCARTA] = @CORREOENVIOCARTA, [FECHAANULA] = @FECHAANULA, [FECHA_PAGO] = @FECHA_PAGO, [PRIORIDAD] = @PRIORIDAD WHERE (([ID_SOLICITUD] = @Original_ID_SOLICITUD) AND ([FECHA_SOLICITUD] = @Original_FECHA_SOLICITUD) AND ([MONTO_SOLICITUD] = @Original_MONTO_SOLICITUD) AND ([ESTADO_SOLICITUD] = @Original_ESTADO_SOLICITUD) AND ([RUT] = @Original_RUT) AND ([DVRUT] = @Original_DVRUT) AND ([NOMBRE_SOCIO] = @Original_NOMBRE_SOCIO) AND ([NROSOCIO] = @Original_NROSOCIO) AND ([TIPO_CUENTA] = @Original_TIPO_CUENTA) AND ([BANCO] = @Original_BANCO) AND ([NRO_CUENTA] = @Original_NRO_CUENTA) AND ([CORRELATIVO] = @Original_CORRELATIVO) AND ([CORREGRESO] = @Original_CORREGRESO) AND ([FORMA_PAGO] = @Original_FORMA_PAGO) AND ([USUARIO] = @Original_USUARIO) AND ([SUCURSAL] = @Original_SUCURSAL) AND ([REEVALUACION] = @Original_REEVALUACION) AND ([EN_NOMINA] = @Original_EN_NOMINA) AND ([CODBANCO] = @Original_CODBANCO) AND ([TIPO_SOLICITUD] = @Original_TIPO_SOLICITUD) AND ([Aprobacion_SubGerencia] = @Original_Aprobacion_SubGerencia) AND ([Aprobacion_Gerencia] = @Original_Aprobacion_Gerencia) AND ([FECHA_AUTORIZADO] = @Original_FECHA_AUTORIZADO) AND ([FECHA_GENERADO] = @Original_FECHA_GENERADO) AND ([NOMBRES] = @Original_NOMBRES) AND ([PATERNO] = @Original_PATERNO) AND ([MATERNO] = @Original_MATERNO) AND ([TOTALCAPITALSOCIAL] = @Original_TOTALCAPITALSOCIAL) AND ([CORRECCION_MONETARIA] = @Original_CORRECCION_MONETARIA) AND ([CUOTAS_PARTICIPACION] = @Original_CUOTAS_PARTICIPACION) AND ([TOTAL_NORETIRABLE] = @Original_TOTAL_NORETIRABLE) AND ([MONTO_DISPONIBLE] = @Original_MONTO_DISPONIBLE) AND ([MONTO_MAXIMO_RETIRABLE] = @Original_MONTO_MAXIMO_RETIRABLE) AND ([FILTRO_CAPITAL_MINIMO] = @Original_FILTRO_CAPITAL_MINIMO) AND ([FILTRO_MONTO_SOLICITADO] = @Original_FILTRO_MONTO_SOLICITADO) AND ([FILTRO_GIROS_ANUAL] = @Original_FILTRO_GIROS_ANUAL) AND ([FILTRO_GIROS_MENSUAL] = @Original_FILTRO_GIROS_MENSUAL) AND ([FILTRO_SOCIO_SINMORA] = @Original_FILTRO_SOCIO_SINMORA) AND ([FILTRO_AVAL_SINMORA] = @Original_FILTRO_AVAL_SINMORA) AND ([FILTRO_RESTRICCIONES] = @Original_FILTRO_RESTRICCIONES) AND ([FILTRO_CAPITAL_GLOBAL] = @Original_FILTRO_CAPITAL_GLOBAL) AND ([ESTADO_SOLICITUD2] = @Original_ESTADO_SOLICITUD2) AND ([ESTADO_SOLICITUD3] = @Original_ESTADO_SOLICITUD3) AND ([COMENTARIO_EVALUACION] = @Original_COMENTARIO_EVALUACION) AND ([COMENTARIO_SUBGERENTE] = @Original_COMENTARIO_SUBGERENTE) AND ([COMENTARIO_SUBGERENTE_FINANZAS] = @Original_COMENTARIO_SUBGERENTE_FINANZAS) AND ([COMENTARIO_LIBERA_CAPITAL] = @Original_COMENTARIO_LIBERA_CAPITAL) AND ([SUCURSAL2] = @Original_SUCURSAL2) AND ([FECHAHORA] = @Original_FECHAHORA) AND ([VALORUFDIAACTUAL] = @Original_VALORUFDIAACTUAL) AND ([CUOTAGASTOS] = @Original_CUOTAGASTOS) AND ([MONTOABONAPRESTAMOS] = @Original_MONTOABONAPRESTAMOS) AND ([TIPOSOLICITUD2] = @Original_TIPOSOLICITUD2) AND ([SALDOVRUFCAPITAL] = @Original_SALDOVRUFCAPITAL) AND ([AUTORIZAANULA] = @Original_AUTORIZAANULA) AND ([MONTOPAGAOTROS] = @Original_MONTOPAGAOTROS) AND ([MONTOGASTOABOGADO] = @Original_MONTOGASTOABOGADO) AND ([OTROSHABERES] = @Original_OTROSHABERES) AND ([MODIFICAMONTO] = @Original_MODIFICAMONTO) AND ([FECHAMODIFICAMONTO] = @Original_FECHAMODIFICAMONTO) AND ([CORREOENVIOCARTA] = @Original_CORREOENVIOCARTA) AND ([FECHAANULA] = @Original_FECHAANULA) AND ([FECHA_PAGO] = @Original_FECHA_PAGO) AND ([PRIORIDAD] = @Original_PRIORIDAD));
+SELECT ID_SOLICITUD, FECHA_SOLICITUD, MONTO_SOLICITUD, ESTADO_SOLICITUD, RUT, DVRUT, NOMBRE_SOCIO, NROSOCIO, TIPO_CUENTA, BANCO, NRO_CUENTA, CORRELATIVO, CORREGRESO, FORMA_PAGO, USUARIO, SUCURSAL, REEVALUACION, EN_NOMINA, CODBANCO, TIPO_SOLICITUD, Aprobacion_SubGerencia, Aprobacion_Gerencia, FECHA_AUTORIZADO, FECHA_GENERADO, NOMBRES, PATERNO, MATERNO, TOTALCAPITALSOCIAL, CORRECCION_MONETARIA, CUOTAS_PARTICIPACION, TOTAL_NORETIRABLE, MONTO_DISPONIBLE, MONTO_MAXIMO_RETIRABLE, FILTRO_CAPITAL_MINIMO, FILTRO_MONTO_SOLICITADO, FILTRO_GIROS_ANUAL, FILTRO_GIROS_MENSUAL, FILTRO_SOCIO_SINMORA, FILTRO_AVAL_SINMORA, FILTRO_RESTRICCIONES, FILTRO_CAPITAL_GLOBAL, ESTADO_SOLICITUD2, ESTADO_SOLICITUD3, COMENTARIO_EVALUACION, COMENTARIO_SUBGERENTE, COMENTARIO_SUBGERENTE_FINANZAS, COMENTARIO_LIBERA_CAPITAL, SUCURSAL2, FECHAHORA, VALORUFDIAACTUAL, CUOTAGASTOS, MONTOABONAPRESTAMOS, TIPOSOLICITUD2, SALDOVRUFCAPITAL, AUTORIZAANULA, MONTOPAGAOTROS, MONTOGASTOABOGADO, OTROSHABERES, MODIFICAMONTO, FECHAMODIFICAMONTO, CORREOENVIOCARTA, FECHAANULA, FECHA_PAGO, PRIORIDAD FROM _RIESGO_SOLICITUD_GIRO_CAPITAL WHERE (ID_SOLICITUD = @ID_SOLICITUD)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@ID_SOLICITUD" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="ID_SOLICITUD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FECHA_SOLICITUD" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FECHA_SOLICITUD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@MONTO_SOLICITUD" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTO_SOLICITUD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@ESTADO_SOLICITUD" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="ESTADO_SOLICITUD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@RUT" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="RUT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@DVRUT" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="DVRUT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOMBRE_SOCIO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOMBRE_SOCIO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@NROSOCIO" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="NROSOCIO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@TIPO_CUENTA" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="TIPO_CUENTA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@BANCO" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="BANCO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NRO_CUENTA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NRO_CUENTA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@CORRELATIVO" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="CORRELATIVO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@CORREGRESO" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="CORREGRESO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@FORMA_PAGO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FORMA_PAGO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@USUARIO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="USUARIO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SUCURSAL" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SUCURSAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@REEVALUACION" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="REEVALUACION" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EN_NOMINA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EN_NOMINA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@CODBANCO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="CODBANCO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@TIPO_SOLICITUD" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TIPO_SOLICITUD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Aprobacion_SubGerencia" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Aprobacion_SubGerencia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Aprobacion_Gerencia" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Aprobacion_Gerencia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FECHA_AUTORIZADO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FECHA_AUTORIZADO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FECHA_GENERADO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FECHA_GENERADO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@NOMBRES" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="NOMBRES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PATERNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PATERNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@MATERNO" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MATERNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@TOTALCAPITALSOCIAL" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="TOTALCAPITALSOCIAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@CORRECCION_MONETARIA" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="CORRECCION_MONETARIA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@CUOTAS_PARTICIPACION" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="CUOTAS_PARTICIPACION" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@TOTAL_NORETIRABLE" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="TOTAL_NORETIRABLE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@MONTO_DISPONIBLE" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTO_DISPONIBLE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@MONTO_MAXIMO_RETIRABLE" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTO_MAXIMO_RETIRABLE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@FILTRO_CAPITAL_MINIMO" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_CAPITAL_MINIMO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@FILTRO_MONTO_SOLICITADO" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_MONTO_SOLICITADO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@FILTRO_GIROS_ANUAL" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_GIROS_ANUAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@FILTRO_GIROS_MENSUAL" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_GIROS_MENSUAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@FILTRO_SOCIO_SINMORA" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_SOCIO_SINMORA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@FILTRO_AVAL_SINMORA" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_AVAL_SINMORA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@FILTRO_RESTRICCIONES" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_RESTRICCIONES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@FILTRO_CAPITAL_GLOBAL" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_CAPITAL_GLOBAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ESTADO_SOLICITUD2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ESTADO_SOLICITUD2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ESTADO_SOLICITUD3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ESTADO_SOLICITUD3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@COMENTARIO_EVALUACION" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="COMENTARIO_EVALUACION" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@COMENTARIO_SUBGERENTE" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="COMENTARIO_SUBGERENTE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@COMENTARIO_SUBGERENTE_FINANZAS" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="COMENTARIO_SUBGERENTE_FINANZAS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@COMENTARIO_LIBERA_CAPITAL" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="COMENTARIO_LIBERA_CAPITAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@SUCURSAL2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SUCURSAL2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@FECHAHORA" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FECHAHORA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@VALORUFDIAACTUAL" Precision="12" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="VALORUFDIAACTUAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@CUOTAGASTOS" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="CUOTAGASTOS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@MONTOABONAPRESTAMOS" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTOABONAPRESTAMOS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TIPOSOLICITUD2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TIPOSOLICITUD2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@SALDOVRUFCAPITAL" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="SALDOVRUFCAPITAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@AUTORIZAANULA" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="AUTORIZAANULA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@MONTOPAGAOTROS" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTOPAGAOTROS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@MONTOGASTOABOGADO" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTOGASTOABOGADO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@OTROSHABERES" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="OTROSHABERES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@MODIFICAMONTO" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MODIFICAMONTO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@FECHAMODIFICAMONTO" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FECHAMODIFICAMONTO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@CORREOENVIOCARTA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CORREOENVIOCARTA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@FECHAANULA" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FECHAANULA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@FECHA_PAGO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="FECHA_PAGO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@PRIORIDAD" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="PRIORIDAD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_ID_SOLICITUD" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="ID_SOLICITUD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FECHA_SOLICITUD" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FECHA_SOLICITUD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_MONTO_SOLICITUD" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTO_SOLICITUD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_ESTADO_SOLICITUD" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="ESTADO_SOLICITUD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_RUT" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="RUT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_DVRUT" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="DVRUT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOMBRE_SOCIO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOMBRE_SOCIO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_NROSOCIO" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="NROSOCIO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_TIPO_CUENTA" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="TIPO_CUENTA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_BANCO" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="BANCO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NRO_CUENTA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NRO_CUENTA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_CORRELATIVO" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="CORRELATIVO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_CORREGRESO" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="CORREGRESO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_FORMA_PAGO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FORMA_PAGO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_USUARIO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="USUARIO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SUCURSAL" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SUCURSAL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_REEVALUACION" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="REEVALUACION" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EN_NOMINA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EN_NOMINA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_CODBANCO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="CODBANCO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_TIPO_SOLICITUD" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TIPO_SOLICITUD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Aprobacion_SubGerencia" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Aprobacion_SubGerencia" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_Aprobacion_Gerencia" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Aprobacion_Gerencia" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FECHA_AUTORIZADO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FECHA_AUTORIZADO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FECHA_GENERADO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FECHA_GENERADO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_NOMBRES" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="NOMBRES" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PATERNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PATERNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_MATERNO" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MATERNO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_TOTALCAPITALSOCIAL" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="TOTALCAPITALSOCIAL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_CORRECCION_MONETARIA" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="CORRECCION_MONETARIA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_CUOTAS_PARTICIPACION" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="CUOTAS_PARTICIPACION" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_TOTAL_NORETIRABLE" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="TOTAL_NORETIRABLE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_MONTO_DISPONIBLE" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTO_DISPONIBLE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_MONTO_MAXIMO_RETIRABLE" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTO_MAXIMO_RETIRABLE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_FILTRO_CAPITAL_MINIMO" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_CAPITAL_MINIMO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_FILTRO_MONTO_SOLICITADO" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_MONTO_SOLICITADO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_FILTRO_GIROS_ANUAL" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_GIROS_ANUAL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_FILTRO_GIROS_MENSUAL" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_GIROS_MENSUAL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_FILTRO_SOCIO_SINMORA" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_SOCIO_SINMORA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_FILTRO_AVAL_SINMORA" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_AVAL_SINMORA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_FILTRO_RESTRICCIONES" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_RESTRICCIONES" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_FILTRO_CAPITAL_GLOBAL" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FILTRO_CAPITAL_GLOBAL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ESTADO_SOLICITUD2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ESTADO_SOLICITUD2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ESTADO_SOLICITUD3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ESTADO_SOLICITUD3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_COMENTARIO_EVALUACION" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="COMENTARIO_EVALUACION" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_COMENTARIO_SUBGERENTE" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="COMENTARIO_SUBGERENTE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_COMENTARIO_SUBGERENTE_FINANZAS" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="COMENTARIO_SUBGERENTE_FINANZAS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_COMENTARIO_LIBERA_CAPITAL" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="COMENTARIO_LIBERA_CAPITAL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_SUCURSAL2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SUCURSAL2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_FECHAHORA" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FECHAHORA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_VALORUFDIAACTUAL" Precision="12" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="VALORUFDIAACTUAL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_CUOTAGASTOS" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="CUOTAGASTOS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_MONTOABONAPRESTAMOS" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTOABONAPRESTAMOS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TIPOSOLICITUD2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TIPOSOLICITUD2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_SALDOVRUFCAPITAL" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="SALDOVRUFCAPITAL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_AUTORIZAANULA" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="AUTORIZAANULA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_MONTOPAGAOTROS" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTOPAGAOTROS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_MONTOGASTOABOGADO" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="MONTOGASTOABOGADO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_OTROSHABERES" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="OTROSHABERES" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_MODIFICAMONTO" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MODIFICAMONTO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_FECHAMODIFICAMONTO" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FECHAMODIFICAMONTO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_CORREOENVIOCARTA" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CORREOENVIOCARTA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_FECHAANULA" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FECHAANULA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_FECHA_PAGO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="FECHA_PAGO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_PRIORIDAD" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="PRIORIDAD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_SOLICITUD" DataSetColumn="ID_SOLICITUD" />
+              <Mapping SourceColumn="FECHA_SOLICITUD" DataSetColumn="FECHA_SOLICITUD" />
+              <Mapping SourceColumn="MONTO_SOLICITUD" DataSetColumn="MONTO_SOLICITUD" />
+              <Mapping SourceColumn="ESTADO_SOLICITUD" DataSetColumn="ESTADO_SOLICITUD" />
+              <Mapping SourceColumn="RUT" DataSetColumn="RUT" />
+              <Mapping SourceColumn="DVRUT" DataSetColumn="DVRUT" />
+              <Mapping SourceColumn="NOMBRE_SOCIO" DataSetColumn="NOMBRE_SOCIO" />
+              <Mapping SourceColumn="NROSOCIO" DataSetColumn="NROSOCIO" />
+              <Mapping SourceColumn="TIPO_CUENTA" DataSetColumn="TIPO_CUENTA" />
+              <Mapping SourceColumn="BANCO" DataSetColumn="BANCO" />
+              <Mapping SourceColumn="NRO_CUENTA" DataSetColumn="NRO_CUENTA" />
+              <Mapping SourceColumn="CORRELATIVO" DataSetColumn="CORRELATIVO" />
+              <Mapping SourceColumn="CORREGRESO" DataSetColumn="CORREGRESO" />
+              <Mapping SourceColumn="FORMA_PAGO" DataSetColumn="FORMA_PAGO" />
+              <Mapping SourceColumn="USUARIO" DataSetColumn="USUARIO" />
+              <Mapping SourceColumn="SUCURSAL" DataSetColumn="SUCURSAL" />
+              <Mapping SourceColumn="REEVALUACION" DataSetColumn="REEVALUACION" />
+              <Mapping SourceColumn="EN_NOMINA" DataSetColumn="EN_NOMINA" />
+              <Mapping SourceColumn="CODBANCO" DataSetColumn="CODBANCO" />
+              <Mapping SourceColumn="TIPO_SOLICITUD" DataSetColumn="TIPO_SOLICITUD" />
+              <Mapping SourceColumn="Aprobacion_SubGerencia" DataSetColumn="Aprobacion_SubGerencia" />
+              <Mapping SourceColumn="Aprobacion_Gerencia" DataSetColumn="Aprobacion_Gerencia" />
+              <Mapping SourceColumn="FECHA_AUTORIZADO" DataSetColumn="FECHA_AUTORIZADO" />
+              <Mapping SourceColumn="FECHA_GENERADO" DataSetColumn="FECHA_GENERADO" />
+              <Mapping SourceColumn="NOMBRES" DataSetColumn="NOMBRES" />
+              <Mapping SourceColumn="PATERNO" DataSetColumn="PATERNO" />
+              <Mapping SourceColumn="MATERNO" DataSetColumn="MATERNO" />
+              <Mapping SourceColumn="TOTALCAPITALSOCIAL" DataSetColumn="TOTALCAPITALSOCIAL" />
+              <Mapping SourceColumn="CORRECCION_MONETARIA" DataSetColumn="CORRECCION_MONETARIA" />
+              <Mapping SourceColumn="CUOTAS_PARTICIPACION" DataSetColumn="CUOTAS_PARTICIPACION" />
+              <Mapping SourceColumn="TOTAL_NORETIRABLE" DataSetColumn="TOTAL_NORETIRABLE" />
+              <Mapping SourceColumn="MONTO_DISPONIBLE" DataSetColumn="MONTO_DISPONIBLE" />
+              <Mapping SourceColumn="MONTO_MAXIMO_RETIRABLE" DataSetColumn="MONTO_MAXIMO_RETIRABLE" />
+              <Mapping SourceColumn="FILTRO_CAPITAL_MINIMO" DataSetColumn="FILTRO_CAPITAL_MINIMO" />
+              <Mapping SourceColumn="FILTRO_MONTO_SOLICITADO" DataSetColumn="FILTRO_MONTO_SOLICITADO" />
+              <Mapping SourceColumn="FILTRO_GIROS_ANUAL" DataSetColumn="FILTRO_GIROS_ANUAL" />
+              <Mapping SourceColumn="FILTRO_GIROS_MENSUAL" DataSetColumn="FILTRO_GIROS_MENSUAL" />
+              <Mapping SourceColumn="FILTRO_SOCIO_SINMORA" DataSetColumn="FILTRO_SOCIO_SINMORA" />
+              <Mapping SourceColumn="FILTRO_AVAL_SINMORA" DataSetColumn="FILTRO_AVAL_SINMORA" />
+              <Mapping SourceColumn="FILTRO_RESTRICCIONES" DataSetColumn="FILTRO_RESTRICCIONES" />
+              <Mapping SourceColumn="FILTRO_CAPITAL_GLOBAL" DataSetColumn="FILTRO_CAPITAL_GLOBAL" />
+              <Mapping SourceColumn="ESTADO_SOLICITUD2" DataSetColumn="ESTADO_SOLICITUD2" />
+              <Mapping SourceColumn="ESTADO_SOLICITUD3" DataSetColumn="ESTADO_SOLICITUD3" />
+              <Mapping SourceColumn="COMENTARIO_EVALUACION" DataSetColumn="COMENTARIO_EVALUACION" />
+              <Mapping SourceColumn="COMENTARIO_SUBGERENTE" DataSetColumn="COMENTARIO_SUBGERENTE" />
+              <Mapping SourceColumn="COMENTARIO_SUBGERENTE_FINANZAS" DataSetColumn="COMENTARIO_SUBGERENTE_FINANZAS" />
+              <Mapping SourceColumn="COMENTARIO_LIBERA_CAPITAL" DataSetColumn="COMENTARIO_LIBERA_CAPITAL" />
+              <Mapping SourceColumn="SUCURSAL2" DataSetColumn="SUCURSAL2" />
+              <Mapping SourceColumn="FECHAHORA" DataSetColumn="FECHAHORA" />
+              <Mapping SourceColumn="VALORUFDIAACTUAL" DataSetColumn="VALORUFDIAACTUAL" />
+              <Mapping SourceColumn="CUOTAGASTOS" DataSetColumn="CUOTAGASTOS" />
+              <Mapping SourceColumn="MONTOABONAPRESTAMOS" DataSetColumn="MONTOABONAPRESTAMOS" />
+              <Mapping SourceColumn="TIPOSOLICITUD2" DataSetColumn="TIPOSOLICITUD2" />
+              <Mapping SourceColumn="SALDOVRUFCAPITAL" DataSetColumn="SALDOVRUFCAPITAL" />
+              <Mapping SourceColumn="AUTORIZAANULA" DataSetColumn="AUTORIZAANULA" />
+              <Mapping SourceColumn="MONTOPAGAOTROS" DataSetColumn="MONTOPAGAOTROS" />
+              <Mapping SourceColumn="MONTOGASTOABOGADO" DataSetColumn="MONTOGASTOABOGADO" />
+              <Mapping SourceColumn="OTROSHABERES" DataSetColumn="OTROSHABERES" />
+              <Mapping SourceColumn="MODIFICAMONTO" DataSetColumn="MODIFICAMONTO" />
+              <Mapping SourceColumn="FECHAMODIFICAMONTO" DataSetColumn="FECHAMODIFICAMONTO" />
+              <Mapping SourceColumn="CORREOENVIOCARTA" DataSetColumn="CORREOENVIOCARTA" />
+              <Mapping SourceColumn="FECHAANULA" DataSetColumn="FECHAANULA" />
+              <Mapping SourceColumn="FECHA_PAGO" DataSetColumn="FECHA_PAGO" />
+              <Mapping SourceColumn="PRIORIDAD" DataSetColumn="PRIORIDAD" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LROSASDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="LROSASDataSet" msprop:Generator_UserDSName="LROSASDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="_RIESGO_SOLICITUD_GIRO_CAPITAL" msprop:Generator_TableClassName="_RIESGO_SOLICITUD_GIRO_CAPITALDataTable" msprop:Generator_TableVarName="table_RIESGO_SOLICITUD_GIRO_CAPITAL" msprop:Generator_TablePropName="_RIESGO_SOLICITUD_GIRO_CAPITAL" msprop:Generator_RowDeletingName="_RIESGO_SOLICITUD_GIRO_CAPITALRowDeleting" msprop:Generator_RowChangingName="_RIESGO_SOLICITUD_GIRO_CAPITALRowChanging" msprop:Generator_RowEvHandlerName="_RIESGO_SOLICITUD_GIRO_CAPITALRowChangeEventHandler" msprop:Generator_RowDeletedName="_RIESGO_SOLICITUD_GIRO_CAPITALRowDeleted" msprop:Generator_UserTableName="_RIESGO_SOLICITUD_GIRO_CAPITAL" msprop:Generator_RowChangedName="_RIESGO_SOLICITUD_GIRO_CAPITALRowChanged" msprop:Generator_RowEvArgName="_RIESGO_SOLICITUD_GIRO_CAPITALRowChangeEvent" msprop:Generator_RowClassName="_RIESGO_SOLICITUD_GIRO_CAPITALRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_SOLICITUD" msprop:Generator_ColumnVarNameInTable="columnID_SOLICITUD" msprop:Generator_ColumnPropNameInRow="ID_SOLICITUD" msprop:Generator_ColumnPropNameInTable="ID_SOLICITUDColumn" msprop:Generator_UserColumnName="ID_SOLICITUD" type="xs:long" />
+              <xs:element name="FECHA_SOLICITUD" msprop:Generator_ColumnVarNameInTable="columnFECHA_SOLICITUD" msprop:Generator_ColumnPropNameInRow="FECHA_SOLICITUD" msprop:Generator_ColumnPropNameInTable="FECHA_SOLICITUDColumn" msprop:Generator_UserColumnName="FECHA_SOLICITUD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MONTO_SOLICITUD" msprop:Generator_ColumnVarNameInTable="columnMONTO_SOLICITUD" msprop:Generator_ColumnPropNameInRow="MONTO_SOLICITUD" msprop:Generator_ColumnPropNameInTable="MONTO_SOLICITUDColumn" msprop:Generator_UserColumnName="MONTO_SOLICITUD" type="xs:long" />
+              <xs:element name="ESTADO_SOLICITUD" msprop:Generator_ColumnVarNameInTable="columnESTADO_SOLICITUD" msprop:Generator_ColumnPropNameInRow="ESTADO_SOLICITUD" msprop:Generator_ColumnPropNameInTable="ESTADO_SOLICITUDColumn" msprop:Generator_UserColumnName="ESTADO_SOLICITUD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RUT" msprop:Generator_ColumnVarNameInTable="columnRUT" msprop:Generator_ColumnPropNameInRow="RUT" msprop:Generator_ColumnPropNameInTable="RUTColumn" msprop:Generator_UserColumnName="RUT" type="xs:long" />
+              <xs:element name="DVRUT" msprop:Generator_ColumnVarNameInTable="columnDVRUT" msprop:Generator_ColumnPropNameInRow="DVRUT" msprop:Generator_ColumnPropNameInTable="DVRUTColumn" msprop:Generator_UserColumnName="DVRUT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOMBRE_SOCIO" msprop:Generator_ColumnVarNameInTable="columnNOMBRE_SOCIO" msprop:Generator_ColumnPropNameInRow="NOMBRE_SOCIO" msprop:Generator_ColumnPropNameInTable="NOMBRE_SOCIOColumn" msprop:Generator_UserColumnName="NOMBRE_SOCIO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NROSOCIO" msprop:Generator_ColumnVarNameInTable="columnNROSOCIO" msprop:Generator_ColumnPropNameInRow="NROSOCIO" msprop:Generator_ColumnPropNameInTable="NROSOCIOColumn" msprop:Generator_UserColumnName="NROSOCIO" type="xs:long" />
+              <xs:element name="TIPO_CUENTA" msprop:Generator_ColumnVarNameInTable="columnTIPO_CUENTA" msprop:Generator_ColumnPropNameInRow="TIPO_CUENTA" msprop:Generator_ColumnPropNameInTable="TIPO_CUENTAColumn" msprop:Generator_UserColumnName="TIPO_CUENTA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BANCO" msprop:Generator_ColumnVarNameInTable="columnBANCO" msprop:Generator_ColumnPropNameInRow="BANCO" msprop:Generator_ColumnPropNameInTable="BANCOColumn" msprop:Generator_UserColumnName="BANCO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NRO_CUENTA" msprop:Generator_ColumnVarNameInTable="columnNRO_CUENTA" msprop:Generator_ColumnPropNameInRow="NRO_CUENTA" msprop:Generator_ColumnPropNameInTable="NRO_CUENTAColumn" msprop:Generator_UserColumnName="NRO_CUENTA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CORRELATIVO" msprop:Generator_ColumnVarNameInTable="columnCORRELATIVO" msprop:Generator_ColumnPropNameInRow="CORRELATIVO" msprop:Generator_ColumnPropNameInTable="CORRELATIVOColumn" msprop:Generator_UserColumnName="CORRELATIVO" type="xs:long" />
+              <xs:element name="CORREGRESO" msprop:Generator_ColumnVarNameInTable="columnCORREGRESO" msprop:Generator_ColumnPropNameInRow="CORREGRESO" msprop:Generator_ColumnPropNameInTable="CORREGRESOColumn" msprop:Generator_UserColumnName="CORREGRESO" type="xs:long" />
+              <xs:element name="FORMA_PAGO" msprop:Generator_ColumnVarNameInTable="columnFORMA_PAGO" msprop:Generator_ColumnPropNameInRow="FORMA_PAGO" msprop:Generator_ColumnPropNameInTable="FORMA_PAGOColumn" msprop:Generator_UserColumnName="FORMA_PAGO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USUARIO" msprop:Generator_ColumnVarNameInTable="columnUSUARIO" msprop:Generator_ColumnPropNameInRow="USUARIO" msprop:Generator_ColumnPropNameInTable="USUARIOColumn" msprop:Generator_UserColumnName="USUARIO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUCURSAL" msprop:Generator_ColumnVarNameInTable="columnSUCURSAL" msprop:Generator_ColumnPropNameInRow="SUCURSAL" msprop:Generator_ColumnPropNameInTable="SUCURSALColumn" msprop:Generator_UserColumnName="SUCURSAL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REEVALUACION" msprop:Generator_ColumnVarNameInTable="columnREEVALUACION" msprop:Generator_ColumnPropNameInRow="REEVALUACION" msprop:Generator_ColumnPropNameInTable="REEVALUACIONColumn" msprop:Generator_UserColumnName="REEVALUACION">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EN_NOMINA" msprop:Generator_ColumnVarNameInTable="columnEN_NOMINA" msprop:Generator_ColumnPropNameInRow="EN_NOMINA" msprop:Generator_ColumnPropNameInTable="EN_NOMINAColumn" msprop:Generator_UserColumnName="EN_NOMINA" type="xs:int" />
+              <xs:element name="CODBANCO" msprop:Generator_ColumnVarNameInTable="columnCODBANCO" msprop:Generator_ColumnPropNameInRow="CODBANCO" msprop:Generator_ColumnPropNameInTable="CODBANCOColumn" msprop:Generator_UserColumnName="CODBANCO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TIPO_SOLICITUD" msprop:Generator_ColumnVarNameInTable="columnTIPO_SOLICITUD" msprop:Generator_ColumnPropNameInRow="TIPO_SOLICITUD" msprop:Generator_ColumnPropNameInTable="TIPO_SOLICITUDColumn" msprop:Generator_UserColumnName="TIPO_SOLICITUD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Aprobacion_SubGerencia" msprop:Generator_ColumnVarNameInTable="columnAprobacion_SubGerencia" msprop:Generator_ColumnPropNameInRow="Aprobacion_SubGerencia" msprop:Generator_ColumnPropNameInTable="Aprobacion_SubGerenciaColumn" msprop:Generator_UserColumnName="Aprobacion_SubGerencia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Aprobacion_Gerencia" msprop:Generator_ColumnVarNameInTable="columnAprobacion_Gerencia" msprop:Generator_ColumnPropNameInRow="Aprobacion_Gerencia" msprop:Generator_ColumnPropNameInTable="Aprobacion_GerenciaColumn" msprop:Generator_UserColumnName="Aprobacion_Gerencia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FECHA_AUTORIZADO" msprop:Generator_ColumnVarNameInTable="columnFECHA_AUTORIZADO" msprop:Generator_ColumnPropNameInRow="FECHA_AUTORIZADO" msprop:Generator_ColumnPropNameInTable="FECHA_AUTORIZADOColumn" msprop:Generator_UserColumnName="FECHA_AUTORIZADO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FECHA_GENERADO" msprop:Generator_ColumnVarNameInTable="columnFECHA_GENERADO" msprop:Generator_ColumnPropNameInRow="FECHA_GENERADO" msprop:Generator_ColumnPropNameInTable="FECHA_GENERADOColumn" msprop:Generator_UserColumnName="FECHA_GENERADO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOMBRES" msprop:Generator_ColumnVarNameInTable="columnNOMBRES" msprop:Generator_ColumnPropNameInRow="NOMBRES" msprop:Generator_ColumnPropNameInTable="NOMBRESColumn" msprop:Generator_UserColumnName="NOMBRES">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PATERNO" msprop:Generator_ColumnVarNameInTable="columnPATERNO" msprop:Generator_ColumnPropNameInRow="PATERNO" msprop:Generator_ColumnPropNameInTable="PATERNOColumn" msprop:Generator_UserColumnName="PATERNO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MATERNO" msprop:Generator_ColumnVarNameInTable="columnMATERNO" msprop:Generator_ColumnPropNameInRow="MATERNO" msprop:Generator_ColumnPropNameInTable="MATERNOColumn" msprop:Generator_UserColumnName="MATERNO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TOTALCAPITALSOCIAL" msprop:Generator_ColumnVarNameInTable="columnTOTALCAPITALSOCIAL" msprop:Generator_ColumnPropNameInRow="TOTALCAPITALSOCIAL" msprop:Generator_ColumnPropNameInTable="TOTALCAPITALSOCIALColumn" msprop:Generator_UserColumnName="TOTALCAPITALSOCIAL" type="xs:long" />
+              <xs:element name="CORRECCION_MONETARIA" msprop:Generator_ColumnVarNameInTable="columnCORRECCION_MONETARIA" msprop:Generator_ColumnPropNameInRow="CORRECCION_MONETARIA" msprop:Generator_ColumnPropNameInTable="CORRECCION_MONETARIAColumn" msprop:Generator_UserColumnName="CORRECCION_MONETARIA" type="xs:long" />
+              <xs:element name="CUOTAS_PARTICIPACION" msprop:Generator_ColumnVarNameInTable="columnCUOTAS_PARTICIPACION" msprop:Generator_ColumnPropNameInRow="CUOTAS_PARTICIPACION" msprop:Generator_ColumnPropNameInTable="CUOTAS_PARTICIPACIONColumn" msprop:Generator_UserColumnName="CUOTAS_PARTICIPACION" type="xs:long" />
+              <xs:element name="TOTAL_NORETIRABLE" msprop:Generator_ColumnVarNameInTable="columnTOTAL_NORETIRABLE" msprop:Generator_ColumnPropNameInRow="TOTAL_NORETIRABLE" msprop:Generator_ColumnPropNameInTable="TOTAL_NORETIRABLEColumn" msprop:Generator_UserColumnName="TOTAL_NORETIRABLE" type="xs:long" />
+              <xs:element name="MONTO_DISPONIBLE" msprop:Generator_ColumnVarNameInTable="columnMONTO_DISPONIBLE" msprop:Generator_ColumnPropNameInRow="MONTO_DISPONIBLE" msprop:Generator_ColumnPropNameInTable="MONTO_DISPONIBLEColumn" msprop:Generator_UserColumnName="MONTO_DISPONIBLE" type="xs:long" />
+              <xs:element name="MONTO_MAXIMO_RETIRABLE" msprop:Generator_ColumnVarNameInTable="columnMONTO_MAXIMO_RETIRABLE" msprop:Generator_ColumnPropNameInRow="MONTO_MAXIMO_RETIRABLE" msprop:Generator_ColumnPropNameInTable="MONTO_MAXIMO_RETIRABLEColumn" msprop:Generator_UserColumnName="MONTO_MAXIMO_RETIRABLE" type="xs:long" />
+              <xs:element name="FILTRO_CAPITAL_MINIMO" msprop:Generator_ColumnVarNameInTable="columnFILTRO_CAPITAL_MINIMO" msprop:Generator_ColumnPropNameInRow="FILTRO_CAPITAL_MINIMO" msprop:Generator_ColumnPropNameInTable="FILTRO_CAPITAL_MINIMOColumn" msprop:Generator_UserColumnName="FILTRO_CAPITAL_MINIMO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FILTRO_MONTO_SOLICITADO" msprop:Generator_ColumnVarNameInTable="columnFILTRO_MONTO_SOLICITADO" msprop:Generator_ColumnPropNameInRow="FILTRO_MONTO_SOLICITADO" msprop:Generator_ColumnPropNameInTable="FILTRO_MONTO_SOLICITADOColumn" msprop:Generator_UserColumnName="FILTRO_MONTO_SOLICITADO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FILTRO_GIROS_ANUAL" msprop:Generator_ColumnVarNameInTable="columnFILTRO_GIROS_ANUAL" msprop:Generator_ColumnPropNameInRow="FILTRO_GIROS_ANUAL" msprop:Generator_ColumnPropNameInTable="FILTRO_GIROS_ANUALColumn" msprop:Generator_UserColumnName="FILTRO_GIROS_ANUAL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FILTRO_GIROS_MENSUAL" msprop:Generator_ColumnVarNameInTable="columnFILTRO_GIROS_MENSUAL" msprop:Generator_ColumnPropNameInRow="FILTRO_GIROS_MENSUAL" msprop:Generator_ColumnPropNameInTable="FILTRO_GIROS_MENSUALColumn" msprop:Generator_UserColumnName="FILTRO_GIROS_MENSUAL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FILTRO_SOCIO_SINMORA" msprop:Generator_ColumnVarNameInTable="columnFILTRO_SOCIO_SINMORA" msprop:Generator_ColumnPropNameInRow="FILTRO_SOCIO_SINMORA" msprop:Generator_ColumnPropNameInTable="FILTRO_SOCIO_SINMORAColumn" msprop:Generator_UserColumnName="FILTRO_SOCIO_SINMORA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FILTRO_AVAL_SINMORA" msprop:Generator_ColumnVarNameInTable="columnFILTRO_AVAL_SINMORA" msprop:Generator_ColumnPropNameInRow="FILTRO_AVAL_SINMORA" msprop:Generator_ColumnPropNameInTable="FILTRO_AVAL_SINMORAColumn" msprop:Generator_UserColumnName="FILTRO_AVAL_SINMORA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FILTRO_RESTRICCIONES" msprop:Generator_ColumnVarNameInTable="columnFILTRO_RESTRICCIONES" msprop:Generator_ColumnPropNameInRow="FILTRO_RESTRICCIONES" msprop:Generator_ColumnPropNameInTable="FILTRO_RESTRICCIONESColumn" msprop:Generator_UserColumnName="FILTRO_RESTRICCIONES">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FILTRO_CAPITAL_GLOBAL" msprop:Generator_ColumnVarNameInTable="columnFILTRO_CAPITAL_GLOBAL" msprop:Generator_ColumnPropNameInRow="FILTRO_CAPITAL_GLOBAL" msprop:Generator_ColumnPropNameInTable="FILTRO_CAPITAL_GLOBALColumn" msprop:Generator_UserColumnName="FILTRO_CAPITAL_GLOBAL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ESTADO_SOLICITUD2" msprop:Generator_ColumnVarNameInTable="columnESTADO_SOLICITUD2" msprop:Generator_ColumnPropNameInRow="ESTADO_SOLICITUD2" msprop:Generator_ColumnPropNameInTable="ESTADO_SOLICITUD2Column" msprop:Generator_UserColumnName="ESTADO_SOLICITUD2" type="xs:int" />
+              <xs:element name="ESTADO_SOLICITUD3" msprop:Generator_ColumnVarNameInTable="columnESTADO_SOLICITUD3" msprop:Generator_ColumnPropNameInRow="ESTADO_SOLICITUD3" msprop:Generator_ColumnPropNameInTable="ESTADO_SOLICITUD3Column" msprop:Generator_UserColumnName="ESTADO_SOLICITUD3" type="xs:int" />
+              <xs:element name="COMENTARIO_EVALUACION" msprop:Generator_ColumnVarNameInTable="columnCOMENTARIO_EVALUACION" msprop:Generator_ColumnPropNameInRow="COMENTARIO_EVALUACION" msprop:Generator_ColumnPropNameInTable="COMENTARIO_EVALUACIONColumn" msprop:Generator_UserColumnName="COMENTARIO_EVALUACION">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMENTARIO_SUBGERENTE" msprop:Generator_ColumnVarNameInTable="columnCOMENTARIO_SUBGERENTE" msprop:Generator_ColumnPropNameInRow="COMENTARIO_SUBGERENTE" msprop:Generator_ColumnPropNameInTable="COMENTARIO_SUBGERENTEColumn" msprop:Generator_UserColumnName="COMENTARIO_SUBGERENTE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMENTARIO_SUBGERENTE_FINANZAS" msprop:Generator_ColumnVarNameInTable="columnCOMENTARIO_SUBGERENTE_FINANZAS" msprop:Generator_ColumnPropNameInRow="COMENTARIO_SUBGERENTE_FINANZAS" msprop:Generator_ColumnPropNameInTable="COMENTARIO_SUBGERENTE_FINANZASColumn" msprop:Generator_UserColumnName="COMENTARIO_SUBGERENTE_FINANZAS">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMENTARIO_LIBERA_CAPITAL" msprop:Generator_ColumnVarNameInTable="columnCOMENTARIO_LIBERA_CAPITAL" msprop:Generator_ColumnPropNameInRow="COMENTARIO_LIBERA_CAPITAL" msprop:Generator_ColumnPropNameInTable="COMENTARIO_LIBERA_CAPITALColumn" msprop:Generator_UserColumnName="COMENTARIO_LIBERA_CAPITAL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUCURSAL2" msprop:Generator_ColumnVarNameInTable="columnSUCURSAL2" msprop:Generator_ColumnPropNameInRow="SUCURSAL2" msprop:Generator_ColumnPropNameInTable="SUCURSAL2Column" msprop:Generator_UserColumnName="SUCURSAL2" type="xs:int" />
+              <xs:element name="FECHAHORA" msprop:Generator_ColumnVarNameInTable="columnFECHAHORA" msprop:Generator_ColumnPropNameInRow="FECHAHORA" msprop:Generator_ColumnPropNameInTable="FECHAHORAColumn" msprop:Generator_UserColumnName="FECHAHORA" type="xs:dateTime" />
+              <xs:element name="VALORUFDIAACTUAL" msprop:Generator_ColumnVarNameInTable="columnVALORUFDIAACTUAL" msprop:Generator_ColumnPropNameInRow="VALORUFDIAACTUAL" msprop:Generator_ColumnPropNameInTable="VALORUFDIAACTUALColumn" msprop:Generator_UserColumnName="VALORUFDIAACTUAL" type="xs:decimal" />
+              <xs:element name="CUOTAGASTOS" msprop:Generator_ColumnVarNameInTable="columnCUOTAGASTOS" msprop:Generator_ColumnPropNameInRow="CUOTAGASTOS" msprop:Generator_ColumnPropNameInTable="CUOTAGASTOSColumn" msprop:Generator_UserColumnName="CUOTAGASTOS" type="xs:long" />
+              <xs:element name="MONTOABONAPRESTAMOS" msprop:Generator_ColumnVarNameInTable="columnMONTOABONAPRESTAMOS" msprop:Generator_ColumnPropNameInRow="MONTOABONAPRESTAMOS" msprop:Generator_ColumnPropNameInTable="MONTOABONAPRESTAMOSColumn" msprop:Generator_UserColumnName="MONTOABONAPRESTAMOS" type="xs:long" />
+              <xs:element name="TIPOSOLICITUD2" msprop:Generator_ColumnVarNameInTable="columnTIPOSOLICITUD2" msprop:Generator_ColumnPropNameInRow="TIPOSOLICITUD2" msprop:Generator_ColumnPropNameInTable="TIPOSOLICITUD2Column" msprop:Generator_UserColumnName="TIPOSOLICITUD2">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SALDOVRUFCAPITAL" msprop:Generator_ColumnVarNameInTable="columnSALDOVRUFCAPITAL" msprop:Generator_ColumnPropNameInRow="SALDOVRUFCAPITAL" msprop:Generator_ColumnPropNameInTable="SALDOVRUFCAPITALColumn" msprop:Generator_UserColumnName="SALDOVRUFCAPITAL" type="xs:long" />
+              <xs:element name="AUTORIZAANULA" msprop:Generator_ColumnVarNameInTable="columnAUTORIZAANULA" msprop:Generator_ColumnPropNameInRow="AUTORIZAANULA" msprop:Generator_ColumnPropNameInTable="AUTORIZAANULAColumn" msprop:Generator_UserColumnName="AUTORIZAANULA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MONTOPAGAOTROS" msprop:Generator_ColumnVarNameInTable="columnMONTOPAGAOTROS" msprop:Generator_ColumnPropNameInRow="MONTOPAGAOTROS" msprop:Generator_ColumnPropNameInTable="MONTOPAGAOTROSColumn" msprop:Generator_UserColumnName="MONTOPAGAOTROS" type="xs:long" />
+              <xs:element name="MONTOGASTOABOGADO" msprop:Generator_ColumnVarNameInTable="columnMONTOGASTOABOGADO" msprop:Generator_ColumnPropNameInRow="MONTOGASTOABOGADO" msprop:Generator_ColumnPropNameInTable="MONTOGASTOABOGADOColumn" msprop:Generator_UserColumnName="MONTOGASTOABOGADO" type="xs:long" />
+              <xs:element name="OTROSHABERES" msprop:Generator_ColumnVarNameInTable="columnOTROSHABERES" msprop:Generator_ColumnPropNameInRow="OTROSHABERES" msprop:Generator_ColumnPropNameInTable="OTROSHABERESColumn" msprop:Generator_UserColumnName="OTROSHABERES" type="xs:long" />
+              <xs:element name="MODIFICAMONTO" msprop:Generator_ColumnVarNameInTable="columnMODIFICAMONTO" msprop:Generator_ColumnPropNameInRow="MODIFICAMONTO" msprop:Generator_ColumnPropNameInTable="MODIFICAMONTOColumn" msprop:Generator_UserColumnName="MODIFICAMONTO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FECHAMODIFICAMONTO" msprop:Generator_ColumnVarNameInTable="columnFECHAMODIFICAMONTO" msprop:Generator_ColumnPropNameInRow="FECHAMODIFICAMONTO" msprop:Generator_ColumnPropNameInTable="FECHAMODIFICAMONTOColumn" msprop:Generator_UserColumnName="FECHAMODIFICAMONTO" type="xs:dateTime" />
+              <xs:element name="CORREOENVIOCARTA" msprop:Generator_ColumnVarNameInTable="columnCORREOENVIOCARTA" msprop:Generator_ColumnPropNameInRow="CORREOENVIOCARTA" msprop:Generator_ColumnPropNameInTable="CORREOENVIOCARTAColumn" msprop:Generator_UserColumnName="CORREOENVIOCARTA" type="xs:int" />
+              <xs:element name="FECHAANULA" msprop:Generator_ColumnVarNameInTable="columnFECHAANULA" msprop:Generator_ColumnPropNameInRow="FECHAANULA" msprop:Generator_ColumnPropNameInTable="FECHAANULAColumn" msprop:Generator_UserColumnName="FECHAANULA" type="xs:dateTime" />
+              <xs:element name="FECHA_PAGO" msprop:Generator_ColumnVarNameInTable="columnFECHA_PAGO" msprop:Generator_ColumnPropNameInRow="FECHA_PAGO" msprop:Generator_ColumnPropNameInTable="FECHA_PAGOColumn" msprop:Generator_UserColumnName="FECHA_PAGO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRIORIDAD" msprop:Generator_ColumnVarNameInTable="columnPRIORIDAD" msprop:Generator_ColumnPropNameInRow="PRIORIDAD" msprop:Generator_ColumnPropNameInTable="PRIORIDADColumn" msprop:Generator_UserColumnName="PRIORIDAD" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:_RIESGO_SOLICITUD_GIRO_CAPITAL" />
+      <xs:field xpath="mstns:ID_SOLICITUD" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
