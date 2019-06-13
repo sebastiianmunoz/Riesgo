@@ -432,4 +432,8 @@ Public Class frmPerfil
     Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
 
     End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles modificado.CheckedChanged
+
+    End Sub
 End Class

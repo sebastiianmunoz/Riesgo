@@ -32,7 +32,7 @@ Partial Class frmPerfil
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.modificado = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'LblVesion
@@ -119,15 +119,15 @@ Partial Class frmPerfil
         Me.Label5.TabIndex = 48
         Me.Label5.Text = "Sistema Riesgo V."
         '
-        'CheckBox1
+        'modificado
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(260, 184)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(81, 17)
-        Me.CheckBox1.TabIndex = 49
-        Me.CheckBox1.Text = "CheckBox1"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.modificado.AutoSize = True
+        Me.modificado.Location = New System.Drawing.Point(260, 184)
+        Me.modificado.Name = "modificado"
+        Me.modificado.Size = New System.Drawing.Size(77, 17)
+        Me.modificado.TabIndex = 49
+        Me.modificado.Text = "modificado"
+        Me.modificado.UseVisualStyleBackColor = True
         '
         'frmPerfil
         '
@@ -138,7 +138,7 @@ Partial Class frmPerfil
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(396, 267)
         Me.ControlBox = False
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.modificado)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
@@ -166,5 +166,5 @@ Partial Class frmPerfil
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents modificado As CheckBox
 End Class
