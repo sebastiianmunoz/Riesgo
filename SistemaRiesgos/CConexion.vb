@@ -8,8 +8,8 @@ Public Class CConexion
     Public _conexion2 As SqlConnection
     Dim Datos As New CDatos
     Public Sub conexion()
-        _Cadena = "Data Source=192.168.0.173; Initial Catalog=LROSAS; User ID=sa;Password=universo"
-        '_Cadena = "Data Source=192.168.0.174; Initial Catalog=LROSAS; User ID=sa;Password=universo"
+        '_Cadena = "Data Source=192.168.0.173; Initial Catalog=LROSAS; User ID=sa;Password=universo"
+        _Cadena = "Data Source=192.168.0.174; Initial Catalog=LROSAS; User ID=sa;Password=universo"
         '_Cadena = "Data Source=192.168.0.167;Initial Catalog=LROSAS_R;User ID=sa;Password=universo"
         '_Cadena = "Data Source=192.168.0.167\MSSQLSERVER_LR;Initial Catalog=LROSAS_R2;User ID=sa;Password=universo" 'version 16
         '_Cadena = "Data Source=(local);Initial Catalog=LROSAS;Integrated Security = True"

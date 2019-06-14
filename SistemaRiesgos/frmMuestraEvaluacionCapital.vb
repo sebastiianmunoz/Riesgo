@@ -65,6 +65,14 @@ Public Class frmMuestraEvaluacionCapital
         'Pic6B.Visible = False
         'Pic6A.Visible = False
         'ACTUALIZASUCURSAL()
+
+
+
+
+
+
+
+
     End Sub
 
    Sub AUTORIZA() ' sucursal 2 lista para autorizar 
@@ -174,20 +182,18 @@ Public Class frmMuestraEvaluacionCapital
 
 
             If Trim(formapago) = "TRANSFERENCIA" Then
-
                 Tipocuentabanco = frmEvaluarCapital.Textcodtipocuenta.Text
                 banco = frmEvaluarCapital.Textnombrebanco.Text
                 nrocuentabanco = frmEvaluarCapital.Textnrocuentabanco.Text
-                ' MsgBox(Tipocuentabanco)
+                'MsgBox(Tipocuentabanco)
                 'MsgBox(banco)
-                ' MsgBox(nrocuentabanco)
+                'MsgBox(nrocuentabanco)
                 'Estado_Solicitud = "PREAPROBADO"
             Else
                 Tipocuentabanco = ""
                 banco = ""
                 nrocuentabanco = ""
                 codigobanco = ""
-
             End If
 
             Usuario = frmPerfil.CbmUsuario.SelectedItem.ToString
@@ -241,7 +247,6 @@ Public Class frmMuestraEvaluacionCapital
 
 
             If Pic2A.Visible = True Then
-
                 cumplemontosolicitado = "SI"
             Else
                 cumplemontosolicitado = "NO"
@@ -316,15 +321,118 @@ Public Class frmMuestraEvaluacionCapital
                 'Estado_Solicitud = "PENDIENTE"
             End If
 
-            Dim conexiones4 As New CConexion
-            conexiones4.conexion()
-            _adaptador.InsertCommand = New SqlCommand(" BEGIN TRAN  INSERT INTO _RIESGO_SOLICITUD_GIRO_CAPITAL([ID_SOLICITUD],[FECHA_SOLICITUD],[MONTO_SOLICITUD],[ESTADO_SOLICITUD],[RUT],[DVRUT],[NOMBRE_SOCIO],[NROSOCIO],[TIPO_CUENTA],[BANCO],[NRO_CUENTA] ,[CORRELATIVO],[FORMA_PAGO],[USUARIO],[SUCURSAL],[REEVALUACION],[EN_NOMINA],[CODBANCO],[TIPO_SOLICITUD],NOMBRES,PATERNO,MATERNO,TOTALCAPITALSOCIAL,CORRECCION_MONETARIA,CUOTAS_PARTICIPACION,TOTAL_NORETIRABLE,MONTO_DISPONIBLE,MONTO_MAXIMO_RETIRABLE,[FILTRO_CAPITAL_MINIMO],[FILTRO_MONTO_SOLICITADO],[FILTRO_GIROS_ANUAL],[FILTRO_GIROS_MENSUAL],[FILTRO_SOCIO_SINMORA],[FILTRO_AVAL_SINMORA],[FILTRO_RESTRICCIONES],[FILTRO_CAPITAL_GLOBAL],[Aprobacion_SubGerencia],[Estado_Solicitud2] ,[COMENTARIO_EVALUACION] ,[SUCURSAL2])VALUES((SELECT  max([ID_SOLICITUD]) + 1  FROM [_RIESGO_SOLICITUD_GIRO_CAPITAL]), (CONVERT(VARCHAR(8), GETDATE(), 112) )," + Trim(Montosolicitado) + ",'" + Trim(Estado_Solicitud) + "','" + Trim(tomarut.ToString) + "','" + Trim(tomadigito.ToString) + "','" + Nombresocio.ToString + "','" + nrosocio.ToString + "','" + Tipocuentabanco.ToString + "','" + banco.ToString.ToString + "','" + nrocuentabanco.ToString + "','" + Tomacorrelativo.ToString + "','" + formapago.ToString + "','" + Usuario.ToString + "','" + Sucursal.ToString + "', 'NO' , '0' ,'" + codigobanco.ToString + "','" + tiporequerimiento.ToString + "','" + Trim(frmEvaluarCapital.textnombres2.Text) + "','" + Trim(frmEvaluarCapital.textpaterno.Text) + "','" + Trim(frmEvaluarCapital.Textmaterno.Text) + "'," + Trim(montototal) + "," + Trim(correcionmonetaria) + "," + Trim(cuotasparticipacion) + "," + Trim(totalnoretirable) + "," + Trim(montodisponible) + "," + Trim(montomaximoretirabel) + ",'" + Trim(cumplecapitalminimo.ToString) + "','" + Trim(cumplemontosolicitado.ToString) + "','" + Trim(cumplenroretirosanuales.ToString) + "','" + Trim(cumplenroretirosmensuales.ToString) + "','" + Trim(cumplesociosinmora.ToString) + "','" + Trim(cumpleavalsinmora.ToString) + "','" + Trim(cumplerestriccion.ToString) + "','" + Trim(cumplecapitalglobal.ToString) + "','Por Analizar','" + Estado_Solicitud2.ToString + "','" + txtComentarioGirocapital.Text + "' ,'" + sucursal2.ToString + "') COMMIT TRAN ", conexiones4._conexion)
-            conexiones4.abrir()
-            _adaptador.InsertCommand.Connection = conexiones4._conexion
+
+            Dim xSql As String
+            xSql = ""
+            'xSql = xSql + "INSERT INTO  [_SISTEMA_PREVENCIONDELITOS_DESCRIPCION_PREPAGO] "
+            'xSql = xSql + "  ([NROSOCIO] ,[DESCRIPCION],[TIPO],[FECHA_CONTROL],[id_solicitud],[TIPOLOGIA],[TIPO1] ,[TIPO2])VALUES("
+            'xSql = xSql + "'" + nrosocio.ToString + "'"
+            'xSql = xSql + " ,'" + textdescripcion.Text.ToString + "'"
+            'xSql = xSql + " ,'" + NRORIESGO.ToString + "'"
+            'xSql = xSql + " , (SELECT CONVERT(VARCHAR(10), GETDATE(), 112))"
+            'xSql = xSql + " ,'" + ID_SOLICITUD.ToString + "'"
+            'xSql = xSql + ",'" + CODTIPOLOGIA.ToString + "','" + tipo2.ToString + "','" + tipo3.ToString + "' )"
+
+            xSql = xSql + "     BEGIN TRAN  "
+            xSql = xSql + "  INSERT INTO _RIESGO_SOLICITUD_GIRO_CAPITAL"
+            xSql = xSql + " ([ID_SOLICITUD]"
+            xSql = xSql + " ,[FECHA_SOLICITUD]"
+            xSql = xSql + " ,[MONTO_SOLICITUD]"
+            xSql = xSql + " ,[ESTADO_SOLICITUD]"
+            ' ,[RUT]
+            ' ,[DVRUT]
+            ',[NOMBRE_SOCIO]
+            xSql = xSql + " ,[NROSOCIO]"
+            ',[TIPO_CUENTA]
+            ' ,[BANCO]
+            xSql = xSql + "  ,[NRO_CUENTA] "
+            xSql = xSql + " ,[CORRELATIVO]"
+            xSql = xSql + "  ,[FORMA_PAGO]"
+            xSql = xSql + ",[USUARIO]"
+            ' ,[SUCURSAL]
+            xSql = xSql + " ,[REEVALUACION]"
+            xSql = xSql + ",[EN_NOMINA]"
+            ' ,[CODBANCO]
+            xSql = xSql + ",[TIPO_SOLICITUD]"
+            ' ,NOMBRES
+            ' ,PATERNO
+            ' ,MATERNO
+            ' ,TOTALCAPITALSOCIAL
+            '  ,CORRECCION_MONETARIA
+            '  ,CUOTAS_PARTICIPACION
+            '  ,TOTAL_NORETIRABLE
+            ' ,MONTO_DISPONIBLE
+            '  ,MONTO_MAXIMO_RETIRABLE
+            xSql = xSql + "  ,[FILTRO_CAPITAL_MINIMO]"
+            xSql = xSql + " ,[FILTRO_MONTO_SOLICITADO]"
+            xSql = xSql + ",[FILTRO_GIROS_ANUAL]"
+            xSql = xSql + " ,[FILTRO_GIROS_MENSUAL]"
+            xSql = xSql + " ,[FILTRO_SOCIO_SINMORA]"
+            xSql = xSql + ",[FILTRO_AVAL_SINMORA]"
+            xSql = xSql + ",[FILTRO_RESTRICCIONES]"
+            xSql = xSql + " ,[FILTRO_CAPITAL_GLOBAL]"
+            xSql = xSql + ",[Aprobacion_SubGerencia]"
+            xSql = xSql + ",[Estado_Solicitud2] "
+            xSql = xSql + ",[COMENTARIO_EVALUACION]"
+            xSql = xSql + " ,[SUCURSAL2])VALUES"
+            xSql = xSql + "((SELECT  max([ID_SOLICITUD]) + 1  FROM [_RIESGO_SOLICITUD_GIRO_CAPITAL])"
+            xSql = xSql + ", (CONVERT(VARCHAR(8), GETDATE(), 112) )"
+            xSql = xSql + "," + Trim(Montosolicitado) + ""
+            xSql = xSql + ",'" + Trim(Estado_Solicitud) + "'"
+            ','" + Trim(tomarut.ToString) + "'
+            ','" + Trim(tomadigito.ToString) + "'
+            ','" + Nombresocio.ToString + "'
+            xSql = xSql + ",'" + nrosocio.ToString + "'"
+            ','" + Tipocuentabanco.ToString + "'
+            ','" + banco.ToString.ToString + "'
+            xSql = xSql + ",'" + nrocuentabanco.ToString + "'"
+            xSql = xSql + ",'" + Tomacorrelativo.ToString + "'"
+            xSql = xSql + ",'" + formapago.ToString + "'"
+            xSql = xSql + ",'" + Usuario.ToString + "'"
+            ','" + Sucursal.ToString + "'
+            xSql = xSql + ", 'NO' "
+            xSql = xSql + ", '0' "
+            ','" + codigobanco.ToString + "'
+            xSql = xSql + ",'" + tiporequerimiento.ToString + "'"
+            ','" + Trim(frmEvaluarCapital.textnombres2.Text) + "'
+            ','" + Trim(frmEvaluarCapital.textpaterno.Text) + "'
+            ','" + Trim(frmEvaluarCapital.Textmaterno.Text) + "'
+            '," + Trim(montototal) + "
+            '," + Trim(correcionmonetaria) + "
+            '," + Trim(cuotasparticipacion) + "
+            '," + Trim(totalnoretirable) + "
+            '," + Trim(montodisponible) + "
+            '," + Trim(montomaximoretirabel) + "
+            xSql = xSql + ",'" + Trim(cumplecapitalminimo.ToString) + "'"
+            xSql = xSql + ",'" + Trim(cumplemontosolicitado.ToString) + "'"
+            xSql = xSql + ",'" + Trim(cumplenroretirosanuales.ToString) + "'"
+            xSql = xSql + ",'" + Trim(cumplenroretirosmensuales.ToString) + "'"
+            xSql = xSql + ",'" + Trim(cumplesociosinmora.ToString) + "'"
+            xSql = xSql + ",'" + Trim(cumpleavalsinmora.ToString) + "'"
+            xSql = xSql + ",'" + Trim(cumplerestriccion.ToString) + "'"
+            xSql = xSql + ",'" + Trim(cumplecapitalglobal.ToString) + "'"
+            xSql = xSql + ",'Por Analizar'"
+            xSql = xSql + ",'" + Estado_Solicitud2.ToString + "'"
+            xSql = xSql + ",'" + txtComentarioGirocapital.Text + "'"
+            xSql = xSql + " ,'" + sucursal2.ToString + "') COMMIT TRAN"
+            Dim conexiones60 As New CConexion
+            conexiones60.conexion()
+            _adaptador.InsertCommand = New SqlCommand(xSql, conexiones60._conexion)
+            conexiones60.abrir()
+            _adaptador.InsertCommand.Connection = conexiones60._conexion
             _adaptador.InsertCommand.ExecuteNonQuery()
+            conexiones60.cerrar()
+
+            'Dim conexiones4 As New CConexion
+            'conexiones4.conexion()
+            '_adaptador.InsertCommand = New SqlCommand(" BEGIN TRAN  INSERT INTO _RIESGO_SOLICITUD_GIRO_CAPITAL([ID_SOLICITUD],[FECHA_SOLICITUD],[MONTO_SOLICITUD],[ESTADO_SOLICITUD],[RUT],[DVRUT],[NOMBRE_SOCIO],[NROSOCIO],[TIPO_CUENTA],[BANCO],[NRO_CUENTA] ,[CORRELATIVO],[FORMA_PAGO],[USUARIO],[SUCURSAL],[REEVALUACION],[EN_NOMINA],[CODBANCO],[TIPO_SOLICITUD],NOMBRES,PATERNO,MATERNO,TOTALCAPITALSOCIAL,CORRECCION_MONETARIA,CUOTAS_PARTICIPACION,TOTAL_NORETIRABLE,MONTO_DISPONIBLE,MONTO_MAXIMO_RETIRABLE,[FILTRO_CAPITAL_MINIMO],[FILTRO_MONTO_SOLICITADO],[FILTRO_GIROS_ANUAL],[FILTRO_GIROS_MENSUAL],[FILTRO_SOCIO_SINMORA],[FILTRO_AVAL_SINMORA],[FILTRO_RESTRICCIONES],[FILTRO_CAPITAL_GLOBAL],[Aprobacion_SubGerencia],[Estado_Solicitud2] ,[COMENTARIO_EVALUACION] ,[SUCURSAL2])VALUES((Select  max([ID_SOLICITUD]) + 1  FROM [_RIESGO_SOLICITUD_GIRO_CAPITAL]), (CONVERT(VARCHAR(8), GETDATE(), 112) )," + Trim(Montosolicitado) + ",'" + Trim(Estado_Solicitud) + "','" + Trim(tomarut.ToString) + "','" + Trim(tomadigito.ToString) + "','" + Nombresocio.ToString + "','" + nrosocio.ToString + "','" + Tipocuentabanco.ToString + "','" + banco.ToString.ToString + "','" + nrocuentabanco.ToString + "','" + Tomacorrelativo.ToString + "','" + formapago.ToString + "','" + Usuario.ToString + "','" + Sucursal.ToString + "', 'NO' , '0' ,'" + codigobanco.ToString + "','" + tiporequerimiento.ToString + "','" + Trim(frmEvaluarCapital.textnombres2.Text) + "','" + Trim(frmEvaluarCapital.textpaterno.Text) + "','" + Trim(frmEvaluarCapital.Textmaterno.Text) + "'," + Trim(montototal) + "," + Trim(correcionmonetaria) + "," + Trim(cuotasparticipacion) + "," + Trim(totalnoretirable) + "," + Trim(montodisponible) + "," + Trim(montomaximoretirabel) + ",'" + Trim(cumplecapitalminimo.ToString) + "','" + Trim(cumplemontosolicitado.ToString) + "','" + Trim(cumplenroretirosanuales.ToString) + "','" + Trim(cumplenroretirosmensuales.ToString) + "','" + Trim(cumplesociosinmora.ToString) + "','" + Trim(cumpleavalsinmora.ToString) + "','" + Trim(cumplerestriccion.ToString) + "','" + Trim(cumplecapitalglobal.ToString) + "','Por Analizar','" + Estado_Solicitud2.ToString + "','" + txtComentarioGirocapital.Text + "' ,'" + sucursal2.ToString + "') COMMIT TRAN ", conexiones4._conexion)
+            'conexiones4.abrir()
+            '_adaptador.InsertCommand.Connection = conexiones4._conexion
+            '_adaptador.InsertCommand.ExecuteNonQuery()
             MsgBox("SOLICITUD DE GIRO DE CAPITAL INGRESADA")
 
             frmEvaluarCapital.Close()
+
             Me.Close()
         ElseIf txtComentarioGirocapital.Text.Length > 250 Then
             MsgBox("El comentario sobrepasa los 250 caracteres")
@@ -1048,15 +1156,123 @@ Public Class frmMuestraEvaluacionCapital
             '_adaptador.UpdateCommand.Connection = conexiones60._conexion
             '_adaptador.UpdateCommand.ExecuteNonQuery()
             'conexiones60.cerrar()
+            Dim xSql As String
+            xSql = ""
+            xSql = xSql + " BEGIN TRAN  INSERT "
+            xSql = xSql + "   INTO _RIESGO_SOLICITUD_GIRO_CAPITAL"
+            xSql = xSql + " ([ID_SOLICITUD]"
+            xSql = xSql + " ,[FECHA_SOLICITUD]"
+            xSql = xSql + "  ,[MONTO_SOLICITUD]"
+            xSql = xSql + "  ,[ESTADO_SOLICITUD]"
+            '  ,[RUT]
+            '  ,[DVRUT]
+            '  ,[NOMBRE_SOCIO]
+            xSql = xSql + " ,[NROSOCIO]"
+            '  ,[TIPO_CUENTA]
+            '  ,[BANCO]
+            xSql = xSql + "  ,[NRO_CUENTA] "
+            xSql = xSql + " ,[CORRELATIVO]"
+            xSql = xSql + "   ,[FORMA_PAGO]"
+            xSql = xSql + " ,[USUARIO]"
+            '  ,[SUCURSAL]
+            xSql = xSql + " ,[REEVALUACION]"
+            xSql = xSql + " ,[EN_NOMINA]"
+            '  ,[CODBANCO]
+            xSql = xSql + " ,[TIPO_SOLICITUD]"
+            '  ,NOMBRES
+            '  ,PATERNO
+            '   ,MATERNO
+            '  ,TOTALCAPITALSOCIAL
+            '  ,CORRECCION_MONETARIA
+            '   ,CUOTAS_PARTICIPACION
+            '  ,TOTAL_NORETIRABLE
+            '   ,MONTO_DISPONIBLE
+            '--   ,MONTO_MAXIMO_RETIRABLE
+            xSql = xSql + "   ,[FILTRO_CAPITAL_MINIMO]"
+            xSql = xSql + "   ,[FILTRO_MONTO_SOLICITADO]"
+            xSql = xSql + "   ,[FILTRO_GIROS_ANUAL]"
+            xSql = xSql + ",[FILTRO_GIROS_MENSUAL]"
+            xSql = xSql + " ,[FILTRO_SOCIO_SINMORA]"
+            xSql = xSql + " ,[FILTRO_AVAL_SINMORA]"
+            xSql = xSql + ",[FILTRO_RESTRICCIONES]"
+            xSql = xSql + " ,[FILTRO_CAPITAL_GLOBAL]"
+            xSql = xSql + " ,[Aprobacion_SubGerencia]"
+            xSql = xSql + ",[Estado_Solicitud2]"
+            xSql = xSql + " ,[COMENTARIO_EVALUACION]"
+            xSql = xSql + ",[SUCURSAL2])"
+            xSql = xSql + " VALUES((SELECT  max([ID_SOLICITUD]) + 1  "
+            xSql = xSql + "From [_RIESGO_SOLICITUD_GIRO_CAPITAL])"
+            xSql = xSql + " ,(CONVERT(VARCHAR(8), GETDATE(), 112)  )"
+            xSql = xSql + "," + Trim(Montosolicitado) + ""
+            xSql = xSql + " ,'" + Trim(Estado_Solicitud) + "'"
+            ' ,'" + Trim(tomarut.ToString) + "'
+            '  ,'" + Trim(tomadigito.ToString) + "'
+            '  ,'" + Nombresocio.ToString + "'
+            xSql = xSql + "  ,'" + nrosocio.ToString + "'"
+            '  ,'" + Tipocuentabanco.ToString + "'
+            '  ,'" + banco.ToString.ToString + "'
+            xSql = xSql + "  ,'" + nrocuentabanco.ToString + "'"
+            xSql = xSql + " ,'" + Tomacorrelativo.ToString + "'"
+            xSql = xSql + " ,'" + formapago.ToString + "'"
+            xSql = xSql + ",'" + Usuario.ToString + "'"
+            '   ,'" + Sucursal.ToString + "'
+            xSql = xSql + "  , 'SI' "
+            xSql = xSql + "  , '0'"
+            '   ,'" + codigobanco.ToString + "'
+            xSql = xSql + "  ,'" + tiporequerimiento.ToString + "'"
+            '  ,'" + Trim(frmEvaluarCapital.textnombres2.Text) + "'
+            '  ,'" + Trim(frmEvaluarCapital.textpaterno.Text) + "'
+            '  ,'" + Trim(frmEvaluarCapital.Textmaterno.Text) + "'
+            '  ," + Trim(montototal) + "
+            '  ," + Trim(correcionmonetaria) + "
+            '   ," + Trim(cuotasparticipacion) + "
+            ' ," + Trim(totalnoretirable) + "
+            '  ," + Trim(montodisponible) + "
+            '   ," + Trim(montomaximoretirabel) + "
+            xSql = xSql + "  ,'" + Trim(cumplecapitalminimo.ToString) + "'"
+            xSql = xSql + " ,'" + Trim(cumplemontosolicitado.ToString) + "'"
+            xSql = xSql + " ,'" + Trim(cumplenroretirosanuales.ToString) + "'"
+            xSql = xSql + "  ,'" + Trim(cumplenroretirosmensuales.ToString) + "'"
+            xSql = xSql + "  ,'" + Trim(cumplesociosinmora.ToString) + "'"
+            xSql = xSql + "  ,'" + Trim(cumpleavalsinmora.ToString) + "'"
+            xSql = xSql + "  ,'" + Trim(cumplerestriccion.ToString) + "'"
+            xSql = xSql + "  ,'" + Trim(cumplecapitalglobal.ToString) + "'"
+            xSql = xSql + "  ,'Por Analizar'"
+            xSql = xSql + "   ,'" + Estado_Solicitud2.ToString + "' "
+            xSql = xSql + "   ,'" + txtComentarioGirocapital.Text + "'"
+            xSql = xSql + "   ,'" + Sucursal2.ToString + "') COMMIT TRAN  "
 
-            Dim conexiones4 As New CConexion
-            conexiones4.conexion()                                                                                                                                                                                                                                          'cumplecapitalminimo As String = ""
-            'Dim cumpleavalsinmora As String = ""
-            _adaptador.InsertCommand = New SqlCommand("BEGIN TRAN  INSERT INTO _RIESGO_SOLICITUD_GIRO_CAPITAL([ID_SOLICITUD],[FECHA_SOLICITUD],[MONTO_SOLICITUD],[ESTADO_SOLICITUD],[RUT],[DVRUT],[NOMBRE_SOCIO],[NROSOCIO],[TIPO_CUENTA],[BANCO],[NRO_CUENTA] ,[CORRELATIVO],[FORMA_PAGO],[USUARIO],[SUCURSAL],[REEVALUACION],[EN_NOMINA],[CODBANCO],[TIPO_SOLICITUD],NOMBRES,PATERNO,MATERNO,TOTALCAPITALSOCIAL,CORRECCION_MONETARIA,CUOTAS_PARTICIPACION,TOTAL_NORETIRABLE,MONTO_DISPONIBLE,MONTO_MAXIMO_RETIRABLE,[FILTRO_CAPITAL_MINIMO],[FILTRO_MONTO_SOLICITADO],[FILTRO_GIROS_ANUAL],[FILTRO_GIROS_MENSUAL],[FILTRO_SOCIO_SINMORA],[FILTRO_AVAL_SINMORA],[FILTRO_RESTRICCIONES],[FILTRO_CAPITAL_GLOBAL],[Aprobacion_SubGerencia],[Estado_Solicitud2],[COMENTARIO_EVALUACION],[SUCURSAL2])VALUES((SELECT  max([ID_SOLICITUD]) + 1  FROM [_RIESGO_SOLICITUD_GIRO_CAPITAL]),(CONVERT(VARCHAR(8), GETDATE(), 112)  )," + Trim(Montosolicitado) + ",'" + Trim(Estado_Solicitud) + "','" + Trim(tomarut.ToString) + "','" + Trim(tomadigito.ToString) + "','" + Nombresocio.ToString + "','" + nrosocio.ToString + "','" + Tipocuentabanco.ToString + "','" + banco.ToString.ToString + "','" + nrocuentabanco.ToString + "','" + Tomacorrelativo.ToString + "','" + formapago.ToString + "','" + Usuario.ToString + "','" + Sucursal.ToString + "', 'SI' , '0','" + codigobanco.ToString + "','" + tiporequerimiento.ToString + "','" + Trim(frmEvaluarCapital.textnombres2.Text) + "','" + Trim(frmEvaluarCapital.textpaterno.Text) + "','" + Trim(frmEvaluarCapital.Textmaterno.Text) + "'," + Trim(montototal) + "," + Trim(correcionmonetaria) + "," + Trim(cuotasparticipacion) + "," + Trim(totalnoretirable) + "," + Trim(montodisponible) + "," + Trim(montomaximoretirabel) + ",'" + Trim(cumplecapitalminimo.ToString) + "','" + Trim(cumplemontosolicitado.ToString) + "','" + Trim(cumplenroretirosanuales.ToString) + "','" + Trim(cumplenroretirosmensuales.ToString) + "','" + Trim(cumplesociosinmora.ToString) + "','" + Trim(cumpleavalsinmora.ToString) + "','" + Trim(cumplerestriccion.ToString) + "','" + Trim(cumplecapitalglobal.ToString) + "','Por Analizar','" + Estado_Solicitud2.ToString + "' ,'" + txtComentarioGirocapital.Text + "','" + Sucursal2.ToString + "') COMMIT TRAN  ", conexiones4._conexion)
-            conexiones4.abrir()
-            _adaptador.InsertCommand.Connection = conexiones4._conexion
+
+
+
+            Dim conexiones60 As New CConexion
+            conexiones60.conexion()
+            _adaptador.InsertCommand = New SqlCommand(xSql, conexiones60._conexion)
+            conexiones60.abrir()
+            _adaptador.InsertCommand.Connection = conexiones60._conexion
             _adaptador.InsertCommand.ExecuteNonQuery()
-            conexiones4.cerrar()
+            conexiones60.cerrar()
+
+
+
+
+
+
+
+
+
+
+
+
+
+            'Dim conexiones4 As New CConexion
+            'conexiones4.conexion()                                                                                                                                                                                                                                          'cumplecapitalminimo As String = ""
+            ''Dim cumpleavalsinmora As String = ""
+            '_adaptador.InsertCommand = New SqlCommand("BEGIN TRAN  INSERT INTO _RIESGO_SOLICITUD_GIRO_CAPITAL([ID_SOLICITUD],[FECHA_SOLICITUD],[MONTO_SOLICITUD],[ESTADO_SOLICITUD],[RUT],[DVRUT],[NOMBRE_SOCIO],[NROSOCIO],[TIPO_CUENTA],[BANCO],[NRO_CUENTA] ,[CORRELATIVO],[FORMA_PAGO],[USUARIO],[SUCURSAL],[REEVALUACION],[EN_NOMINA],[CODBANCO],[TIPO_SOLICITUD],NOMBRES,PATERNO,MATERNO,TOTALCAPITALSOCIAL,CORRECCION_MONETARIA,CUOTAS_PARTICIPACION,TOTAL_NORETIRABLE,MONTO_DISPONIBLE,MONTO_MAXIMO_RETIRABLE,[FILTRO_CAPITAL_MINIMO],[FILTRO_MONTO_SOLICITADO],[FILTRO_GIROS_ANUAL],[FILTRO_GIROS_MENSUAL],[FILTRO_SOCIO_SINMORA],[FILTRO_AVAL_SINMORA],[FILTRO_RESTRICCIONES],[FILTRO_CAPITAL_GLOBAL],[Aprobacion_SubGerencia],[Estado_Solicitud2],[COMENTARIO_EVALUACION],[SUCURSAL2])VALUES((Select  max([ID_SOLICITUD]) + 1  FROM [_RIESGO_SOLICITUD_GIRO_CAPITAL]),(CONVERT(VARCHAR(8), GETDATE(), 112)  )," + Trim(Montosolicitado) + ",'" + Trim(Estado_Solicitud) + "','" + Trim(tomarut.ToString) + "','" + Trim(tomadigito.ToString) + "','" + Nombresocio.ToString + "','" + nrosocio.ToString + "','" + Tipocuentabanco.ToString + "','" + banco.ToString.ToString + "','" + nrocuentabanco.ToString + "','" + Tomacorrelativo.ToString + "','" + formapago.ToString + "','" + Usuario.ToString + "','" + Sucursal.ToString + "', 'SI' , '0','" + codigobanco.ToString + "','" + tiporequerimiento.ToString + "','" + Trim(frmEvaluarCapital.textnombres2.Text) + "','" + Trim(frmEvaluarCapital.textpaterno.Text) + "','" + Trim(frmEvaluarCapital.Textmaterno.Text) + "'," + Trim(montototal) + "," + Trim(correcionmonetaria) + "," + Trim(cuotasparticipacion) + "," + Trim(totalnoretirable) + "," + Trim(montodisponible) + "," + Trim(montomaximoretirabel) + ",'" + Trim(cumplecapitalminimo.ToString) + "','" + Trim(cumplemontosolicitado.ToString) + "','" + Trim(cumplenroretirosanuales.ToString) + "','" + Trim(cumplenroretirosmensuales.ToString) + "','" + Trim(cumplesociosinmora.ToString) + "','" + Trim(cumpleavalsinmora.ToString) + "','" + Trim(cumplerestriccion.ToString) + "','" + Trim(cumplecapitalglobal.ToString) + "','Por Analizar','" + Estado_Solicitud2.ToString + "' ,'" + txtComentarioGirocapital.Text + "','" + Sucursal2.ToString + "') COMMIT TRAN  ", conexiones4._conexion)
+            'conexiones4.abrir()
+            '_adaptador.InsertCommand.Connection = conexiones4._conexion
+            '_adaptador.InsertCommand.ExecuteNonQuery()
+            'conexiones4.cerrar()
             MsgBox("SOLICITUD DE GIRO DE CAPITAL INGRESADA")
             frmEvaluarCapital.Close()
             Me.Close()
@@ -1306,12 +1522,137 @@ Public Class frmMuestraEvaluacionCapital
             FECHACOMPLETA3 = Mid(FECHACOMPLETA2, 7, 10) + Mid(FECHACOMPLETA2, 4, 2) + Mid(FECHACOMPLETA2, 1, 2)
             AÑO = Mid(FECHACOMPLETA2, 7, 10)
 
-            Dim conexiones4 As New CConexion
-            conexiones4.conexion()
-            _adaptador.InsertCommand = New SqlCommand(" BEGIN TRAN INSERT INTO _RIESGO_SOLICITUD_GIRO_CAPITAL([ID_SOLICITUD],[FECHA_SOLICITUD],[MONTO_SOLICITUD],[ESTADO_SOLICITUD],[RUT],[DVRUT],[NOMBRE_SOCIO],[NROSOCIO],[TIPO_CUENTA],[BANCO],[NRO_CUENTA] ,[CORRELATIVO],[FORMA_PAGO],[USUARIO],[SUCURSAL],[REEVALUACION],[EN_NOMINA],[CODBANCO],[TIPO_SOLICITUD],NOMBRES,PATERNO,MATERNO,TOTALCAPITALSOCIAL,CORRECCION_MONETARIA,CUOTAS_PARTICIPACION,TOTAL_NORETIRABLE,MONTO_DISPONIBLE,MONTO_MAXIMO_RETIRABLE,[FILTRO_CAPITAL_MINIMO],[FILTRO_MONTO_SOLICITADO],[FILTRO_GIROS_ANUAL],[FILTRO_GIROS_MENSUAL],[FILTRO_SOCIO_SINMORA],[FILTRO_AVAL_SINMORA],[FILTRO_RESTRICCIONES],[FILTRO_CAPITAL_GLOBAL],[Aprobacion_SubGerencia],[Estado_Solicitud2],[COMENTARIO_EVALUACION],[SUCURSAL2],[VALORUFDIAACTUAL],[CUOTAGASTOS],[MONTOABONAPRESTAMOS],[TIPOSOLICITUD2],[SALDOVRUFCAPITAL],[MONTOPAGAOTROS])VALUES((SELECT  max([ID_SOLICITUD]) + 1  FROM [_RIESGO_SOLICITUD_GIRO_CAPITAL]), (CONVERT(VARCHAR(8), GETDATE(), 112) )," + Trim(Montosolicitado) + ",'" + Trim(Estado_Solicitud) + "','" + Trim(tomarut.ToString) + "','" + Trim(tomadigito.ToString) + "','" + Nombresocio.ToString + "','" + nrosocio.ToString + "','" + Tipocuentabanco.ToString + "','" + banco.ToString.ToString + "','" + nrocuentabanco.ToString + "','" + Tomacorrelativo.ToString + "','" + formapago.ToString + "','" + Usuario.ToString + "','" + Sucursal.ToString + "', 'NO' , '0' ,'" + codigobanco.ToString + "','" + tiporequerimiento.ToString + "','" + Trim(frmEvaluarCapital.textnombres2.Text) + "','" + Trim(frmEvaluarCapital.textpaterno.Text) + "','" + Trim(frmEvaluarCapital.Textmaterno.Text) + "'," + Trim(montototal) + "," + Trim(correcionmonetaria) + "," + Trim(cuotasparticipacion) + "," + Trim(totalnoretirable) + "," + Trim(montodisponible) + "," + Trim(montomaximoretirabel) + ",'" + Trim(cumplecapitalminimo.ToString) + "','" + Trim(cumplemontosolicitado.ToString) + "','" + Trim(cumplenroretirosanuales.ToString) + "','" + Trim(cumplenroretirosmensuales.ToString) + "','" + Trim(cumplesociosinmora.ToString) + "','" + Trim(cumpleavalsinmora.ToString) + "','" + Trim(cumplerestriccion.ToString) + "','NO','Por Analizar','0','" + txtComentarioGirocapital.Text + "' ,'" + Sucursal2.ToString + "',(select sum(movuf) from _Capitalsocial where nrosocio ='" + Trim(nrosocio) + "' and fecha >='" + Trim(AÑO) + "0101')," + Trim(valorcuotadegasto) + ", " + Trim(valorcapitalmonto) + ",'" + Trim(tiposolicitud2) + "'," + Trim(diferenciaufcapital) + ",'" + pagootros.ToString + "') COMMIT TRAN ", conexiones4._conexion)
-            conexiones4.abrir()
-            _adaptador.InsertCommand.Connection = conexiones4._conexion
+            Dim xSql As String
+            xSql = ""
+
+
+
+            xSql = xSql + "    BEGIN TRAN "
+            xSql = xSql + "    INSERT INTO _RIESGO_SOLICITUD_GIRO_CAPITAL"
+            xSql = xSql + "  ([ID_SOLICITUD]"
+            xSql = xSql + "  ,[FECHA_SOLICITUD]"
+            xSql = xSql + "  ,[MONTO_SOLICITUD]"
+            xSql = xSql + "  ,[ESTADO_SOLICITUD]"
+            ',[RUT]
+            ' ,[DVRUT]
+            ',[NOMBRE_SOCIO]
+            ' ,[NROSOCIO]
+            ' ,[TIPO_CUENTA]
+            ' ,[BANCO]
+            ' ,[NRO_CUENTA] 
+            xSql = xSql + "  ,[CORRELATIVO]"
+            xSql = xSql + " ,[FORMA_PAGO]"
+            xSql = xSql + "  ,[USUARIO]"
+            ' ,[SUCURSAL]
+            xSql = xSql + "  ,[REEVALUACION]"
+            xSql = xSql + "  ,[EN_NOMINA]"
+            ',[CODBANCO]
+            xSql = xSql + "  ,[TIPO_SOLICITUD]"
+            ' ,NOMBRES
+            ' ,PATERNO
+            ' ,MATERNO
+            ' ,TOTALCAPITALSOCIAL
+            ' ,CORRECCION_MONETARIA
+            ' ,CUOTAS_PARTICIPACION
+            ' ,TOTAL_NORETIRABLE
+            ' ,MONTO_DISPONIBLE
+            ' ,MONTO_MAXIMO_RETIRABLE
+            xSql = xSql + "  ,[FILTRO_CAPITAL_MINIMO]"
+            xSql = xSql + "  ,[FILTRO_MONTO_SOLICITADO]"
+            xSql = xSql + "  ,[FILTRO_GIROS_ANUAL]"
+            xSql = xSql + " ,[FILTRO_GIROS_MENSUAL]"
+            xSql = xSql + " ,[FILTRO_SOCIO_SINMORA]"
+            xSql = xSql + " ,[FILTRO_AVAL_SINMORA]"
+            xSql = xSql + " ,[FILTRO_RESTRICCIONES]"
+            xSql = xSql + " ,[FILTRO_CAPITAL_GLOBAL]"
+            xSql = xSql + " ,[Aprobacion_SubGerencia]"
+            xSql = xSql + "  ,[Estado_Solicitud2]"
+            xSql = xSql + " ,[COMENTARIO_EVALUACION]"
+            xSql = xSql + "  ,[SUCURSAL2]"
+            ' ,[VALORUFDIAACTUAL]
+            '  ,[CUOTAGASTOS]
+            ' ,[MONTOABONAPRESTAMOS]
+            xSql = xSql + "  ,[TIPOSOLICITUD2]"
+            ' ,[SALDOVRUFCAPITAL]
+            ',[MONTOPAGAOTROS])
+            xSql = xSql + "            VALUES((SELECT  max([ID_SOLICITUD]) + 1  FROM [_RIESGO_SOLICITUD_GIRO_CAPITAL])"
+            xSql = xSql + "  , (CONVERT(VARCHAR(8), GETDATE(), 112) )"
+            xSql = xSql + " ," + Trim(Montosolicitado) + ""
+            xSql = xSql + "  ,'" + Trim(Estado_Solicitud) + "'"
+            ' ,'" + Trim(tomarut.ToString) + "'
+            ' ,'" + Trim(tomadigito.ToString) + "'
+            ' ,'" + Nombresocio.ToString + "'
+            xSql = xSql + "  ,'" + nrosocio.ToString + "'"
+            ','" + Tipocuentabanco.ToString + "'
+            ' ,'" + banco.ToString.ToString + "'
+            xSql = xSql + "  ,'" + nrocuentabanco.ToString + "'"
+            xSql = xSql + " ,'" + Tomacorrelativo.ToString + "'"
+            xSql = xSql + "  ,'" + formapago.ToString + "'"
+            xSql = xSql + " ,'" + Usuario.ToString + "'"
+            ','" + Sucursal.ToString + "'
+            xSql = xSql + " , 'NO' "
+            xSql = xSql + "  , '0' "
+            ','" + codigobanco.ToString + "'
+            xSql = xSql + "  ,'" + tiporequerimiento.ToString + "'"
+            ','" + Trim(frmEvaluarCapital.textnombres2.Text) + "'
+            ','" + Trim(frmEvaluarCapital.textpaterno.Text) + "'
+            ','" + Trim(frmEvaluarCapital.Textmaterno.Text) + "'
+            ' ," + Trim(montototal) + "
+            ' ," + Trim(correcionmonetaria) + "
+            ' ," + Trim(cuotasparticipacion) + "
+            ' ," + Trim(totalnoretirable) + "
+            ' ," + Trim(montodisponible) + "
+            ' ," + Trim(montomaximoretirabel) + "
+            xSql = xSql + "  ,'" + Trim(cumplecapitalminimo.ToString) + "'"
+            xSql = xSql + " ,'" + Trim(cumplemontosolicitado.ToString) + "'"
+            xSql = xSql + "  ,'" + Trim(cumplenroretirosanuales.ToString) + "'"
+            xSql = xSql + "  ,'" + Trim(cumplenroretirosmensuales.ToString) + "'"
+            xSql = xSql + " ,'" + Trim(cumplesociosinmora.ToString) + "'"
+            xSql = xSql + " ,'" + Trim(cumpleavalsinmora.ToString) + "'"
+            xSql = xSql + "  ,'" + Trim(cumplerestriccion.ToString) + "'"
+            xSql = xSql + " ,'NO'"
+            xSql = xSql + "  ,'Por Analizar'"
+            xSql = xSql + " ,'0'"
+            xSql = xSql + " ,'" + txtComentarioGirocapital.Text + "' "
+            xSql = xSql + " ,'" + Sucursal2.ToString + "'"
+            '--,(select sum(movuf) from _Capitalsocial where nrosocio ='" + Trim(nrosocio) + "' and fecha >='" + Trim(AÑO) + "0101')
+            '--," + Trim(valorcuotadegasto) + "
+            ' --, " + Trim(valorcapitalmonto) + "
+            xSql = xSql + " ,'" + Trim(tiposolicitud2) + "'"
+            ' ," + Trim(diferenciaufcapital) + "
+            ' ,'" + pagootros.ToString + "') COMMIT TRAN
+            Dim conexiones60 As New CConexion
+            conexiones60.conexion()
+            _adaptador.InsertCommand = New SqlCommand(xSql, conexiones60._conexion)
+            conexiones60.abrir()
+            _adaptador.InsertCommand.Connection = conexiones60._conexion
             _adaptador.InsertCommand.ExecuteNonQuery()
+            conexiones60.cerrar()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            'Dim conexiones4 As New CConexion
+            'conexiones4.conexion()
+            '_adaptador.InsertCommand = New SqlCommand(" BEGIN TRAN INSERT INTO _RIESGO_SOLICITUD_GIRO_CAPITAL([ID_SOLICITUD],[FECHA_SOLICITUD],[MONTO_SOLICITUD],[ESTADO_SOLICITUD],[RUT],[DVRUT],[NOMBRE_SOCIO],[NROSOCIO],[TIPO_CUENTA],[BANCO],[NRO_CUENTA] ,[CORRELATIVO],[FORMA_PAGO],[USUARIO],[SUCURSAL],[REEVALUACION],[EN_NOMINA],[CODBANCO],[TIPO_SOLICITUD],NOMBRES,PATERNO,MATERNO,TOTALCAPITALSOCIAL,CORRECCION_MONETARIA,CUOTAS_PARTICIPACION,TOTAL_NORETIRABLE,MONTO_DISPONIBLE,MONTO_MAXIMO_RETIRABLE,[FILTRO_CAPITAL_MINIMO],[FILTRO_MONTO_SOLICITADO],[FILTRO_GIROS_ANUAL],[FILTRO_GIROS_MENSUAL],[FILTRO_SOCIO_SINMORA],[FILTRO_AVAL_SINMORA],[FILTRO_RESTRICCIONES],[FILTRO_CAPITAL_GLOBAL],[Aprobacion_SubGerencia],[Estado_Solicitud2],[COMENTARIO_EVALUACION],[SUCURSAL2],[VALORUFDIAACTUAL],[CUOTAGASTOS],[MONTOABONAPRESTAMOS],[TIPOSOLICITUD2],[SALDOVRUFCAPITAL],[MONTOPAGAOTROS])VALUES((Select  max([ID_SOLICITUD]) + 1  FROM [_RIESGO_SOLICITUD_GIRO_CAPITAL]), (CONVERT(VARCHAR(8), GETDATE(), 112) )," + Trim(Montosolicitado) + ",'" + Trim(Estado_Solicitud) + "','" + Trim(tomarut.ToString) + "','" + Trim(tomadigito.ToString) + "','" + Nombresocio.ToString + "','" + nrosocio.ToString + "','" + Tipocuentabanco.ToString + "','" + banco.ToString.ToString + "','" + nrocuentabanco.ToString + "','" + Tomacorrelativo.ToString + "','" + formapago.ToString + "','" + Usuario.ToString + "','" + Sucursal.ToString + "', 'NO' , '0' ,'" + codigobanco.ToString + "','" + tiporequerimiento.ToString + "','" + Trim(frmEvaluarCapital.textnombres2.Text) + "','" + Trim(frmEvaluarCapital.textpaterno.Text) + "','" + Trim(frmEvaluarCapital.Textmaterno.Text) + "'," + Trim(montototal) + "," + Trim(correcionmonetaria) + "," + Trim(cuotasparticipacion) + "," + Trim(totalnoretirable) + "," + Trim(montodisponible) + "," + Trim(montomaximoretirabel) + ",'" + Trim(cumplecapitalminimo.ToString) + "','" + Trim(cumplemontosolicitado.ToString) + "','" + Trim(cumplenroretirosanuales.ToString) + "','" + Trim(cumplenroretirosmensuales.ToString) + "','" + Trim(cumplesociosinmora.ToString) + "','" + Trim(cumpleavalsinmora.ToString) + "','" + Trim(cumplerestriccion.ToString) + "','NO','Por Analizar','0','" + txtComentarioGirocapital.Text + "' ,'" + Sucursal2.ToString + "',(select sum(movuf) from _Capitalsocial where nrosocio ='" + Trim(nrosocio) + "' and fecha >='" + Trim(AÑO) + "0101')," + Trim(valorcuotadegasto) + ", " + Trim(valorcapitalmonto) + ",'" + Trim(tiposolicitud2) + "'," + Trim(diferenciaufcapital) + ",'" + pagootros.ToString + "') COMMIT TRAN ", conexiones4._conexion)
+            'conexiones4.abrir()
+            '_adaptador.InsertCommand.Connection = conexiones4._conexion
+            '_adaptador.InsertCommand.ExecuteNonQuery()
             MsgBox("SOLICITUD DE GIRO DE CAPITAL INGRESADA")
             frmEvaluarCapital.Close()
             Me.Close()

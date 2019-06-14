@@ -324,6 +324,7 @@ Public Class frmEvaluarCapital
         Dim totalfilas As Integer = 0
         Dim TOMAFEHCACOMPELTA As String = ""
         Dim TOMAFECHAAÑOMESDIA As String = ""
+
         TOMAFEHCACOMPELTA = DateTime.Now().ToShortDateString()  '"16/06/2009"
         TOMAFECHAAÑOMESDIA = Mid(TOMAFEHCACOMPELTA, 7, 10) + Mid(TOMAFEHCACOMPELTA, 4, 2) + Mid(TOMAFEHCACOMPELTA, 1, 2) '201410'
 
@@ -354,20 +355,16 @@ Public Class frmEvaluarCapital
             AÑOPERIODO = Int(AÑO) + 2
             FECHAMUESTRA = AÑOPERIODO.ToString + Mid(maximafecha, 5, 2) + Mid(maximafecha, 7, 2)
             FECHAMUESTRA2 = AÑOPERIODO.ToString + "/" + Mid(maximafecha, 5, 2) + "/" + Mid(maximafecha, 7, 2)
-            '   MsgBox(FECHAMUESTRA2)
+            'MsgBox(FECHAMUESTRA2)
         Else
 
         End If
 
-
-        '  MsgBox("ola")
-
-
+        'MsgBox("ola")
         If Textmontorequerido.Text = 0 Then
             MsgBox("Debe ingresar un valor mayor  a  0")
         Else
             If cboformapago.SelectedItem = "TRANSFERENCIA" And IsNumeric(Replace(Trim(Textmontorequerido.Text), ".", "")) Then
-
                 'SI SELECCIONO TRANSFERENCIA  COMO FORMA DE PAGO  Y SELECCIONO  EL CHECK DE LA CUENTA BANCARIA EN LA GRILLA (validarcolumnacheckcreada = True)
                 If validarcolumnacheckcreada = True Then
                     totalfilas = Gridcuentas.RowCount - 1
@@ -1334,23 +1331,8 @@ Public Class frmEvaluarCapital
                 MsgBox("Monto solicitado supera al monto maximo retirable")
             End If
 
-
-        '
-
-
-
-
-
         'MsgBox("El socio Numero :" + nrosocio.ToString + " utilizo  el  Beneficio Prelación Avanza por lo cual segun los reglamentos no puede volver a solicitar un giro dentro de 24 meses a contar de la fecha " + FECHAMUESTRA.ToString + "", MessageBoxIcon.Stop)
         'MsgBox("Error no concuerda el R.U.T ", MessageBoxIcon.Stop)
-
-
-
-
-
-
-
-
         ' End If
 
 

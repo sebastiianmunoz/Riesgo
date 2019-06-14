@@ -286,7 +286,7 @@ Partial Class frmBandejaCapital5
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(207, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(177, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(789, 251)
+        Me.ClientSize = New System.Drawing.Size(789, 261)
         Me.Controls.Add(Me.TextCoreoElectronico)
         Me.Controls.Add(Me.BtncartaCapital)
         Me.Controls.Add(Me.Label10)
