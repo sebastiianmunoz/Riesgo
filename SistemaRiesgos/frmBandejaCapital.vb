@@ -244,6 +244,7 @@ Public Class frmBandejaCapital
 
     'GENERA LA NOMINA  PARA SU ENVIO 
     Sub llenanominaseleccion()
+
         '0ID_SOLICITUD
         '1FECHA_SOLICITUD
         '2ESTADO
@@ -256,8 +257,8 @@ Public Class frmBandejaCapital
         '9CUENTA
         '10FORMA_PAGO
         '11EJECUTIVO
-        '12 Nombrecol
-        '13 TIPOSOLICITUD2
+        '12Nombrecol
+        '13TIPOSOLICITUD2
 
         Dim totalfilas As Integer = GridbandejaCapital.RowCount - 1
         Dim GUARDAIDOPERACION As String = ""
@@ -608,6 +609,7 @@ Public Class frmBandejaCapital
         Finally
             conexiones4.cerrar()
         End Try
+
     End Sub
 
     Private Sub TextBuscarID_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBuscarID.TextChanged

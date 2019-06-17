@@ -23,12 +23,10 @@ Public Class frmAprobarNominaGiroCapital
 
 
     Sub crearcolumna()
-
         newcol.HeaderText = "SELECCION"
         newcol.Name = "Nombrecol"
         newcol.DataPropertyName = "nombre_campo" 'Campo de enlace a datos
         Gridnomina.Columns.Add(newcol)
-
     End Sub
 
 
@@ -48,8 +46,6 @@ Public Class frmAprobarNominaGiroCapital
         Gridnomina.DataSource = _TABLA30
         conexiones4.cerrar()
 
-
-
         Dim conexiones5 As New CConexion
         conexiones5.conexion()
         Dim command5 As SqlCommand = New SqlCommand("SELECT [SUCURSAL],[USUARIO],SUBSTRING(FECHA_NOMINA,7,8)+'/'+SUBSTRING(FECHA_NOMINA,5,2)+'/'+SUBSTRING(FECHA_NOMINA,1,4) AS [FECHA_NOMINA],[NRO_NOMINA],[MONTO_NOMINA] ,ESTADO_NOMINA FROM [_RIESGO_ENCA_NOMINA_TRANSFERENCIA] WHERE NRO_NOMINA='" + Trim(id) + "' ", conexiones5._conexion)
@@ -58,7 +54,6 @@ Public Class frmAprobarNominaGiroCapital
         If reader5.HasRows Then
             Do While reader5.Read()
 
-     
 
                 txtSucursal.Text = reader5(0).ToString
                 txtEjecutivo.Text = reader5(1).ToString
@@ -74,9 +69,6 @@ Public Class frmAprobarNominaGiroCapital
 
 
         crearcolumna()
-
-
-
 
 
         CboAprobar.Items.Add("APROBADO")
@@ -103,6 +95,7 @@ Public Class frmAprobarNominaGiroCapital
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+
         Dim totalfilas As Integer = Gridnomina.RowCount - 1
         Dim id_fila As String = ""
         Dim MontoNomina As Integer = 0
@@ -111,21 +104,13 @@ Public Class frmAprobarNominaGiroCapital
         Dim Contrasena As String = ""
         Dim estadonomina As String = ""
 
-
-
-        'MsgBox(totalfilas)
-
-
-
         USUARIO = frmPerfil.CbmUsuario.SelectedItem
 
 
         If CboAprobar.SelectedItem = "" Then
 
             MsgBox("Debe selecionar una opción de Aprobación")
-
         Else
-
             If txtContrasena.Text = "" Then
 
                 MsgBox("Debe indicar contraseña de seguridad ")
@@ -152,7 +137,6 @@ Public Class frmAprobarNominaGiroCapital
                 If Contrasena.ToString.Trim = txtContrasena.Text.Trim Then
 
                     estadonomina = ""
-
                     Dim conexiones As New CConexion
                     conexiones.conexion()
                     Dim command As SqlCommand = New SqlCommand("SELECT [APROBACION_SUBGERENTE_FINANZA],[ID_FILA] FROM [_RIESGO_ENCA_NOMINA_TRANSFERENCIA] where nro_nomina = '" + Trim(txtCodigoId.Text.ToString) + "'  ", conexiones._conexion)
@@ -168,18 +152,11 @@ Public Class frmAprobarNominaGiroCapital
                     End If
                     reader.Close()
 
-
-
                     If Trim(estadonomina) = "Por Analizar" Or estadonomina = "" Then
-
-                   
                         'id = txtCodigoId.Text.ToString
-                
-
                         For i = 0 To totalfilas
 
                             If Gridnomina.Rows(i).Cells(0).Value() = True Then
-
                                 id_fila = Gridnomina.Rows(i).Cells(1).Value()
 
 
@@ -211,11 +188,7 @@ Public Class frmAprobarNominaGiroCapital
 
 
 
-                                    '  estadonomina = "APROBADA"
-
-
-
-
+                                    'estadonomina = "APROBADA"
                                     MontoNomina = MontoNomina + CInt(Gridnomina.Rows(i).Cells(8).Value())
 
 
@@ -232,7 +205,6 @@ Public Class frmAprobarNominaGiroCapital
                                     conexiones60.cerrar()
 
 
-
                                     Dim conexiones61 As New CConexion
                                     conexiones61.conexion()
                                     _adaptador.UpdateCommand = New SqlCommand("update [_RIESGO_SOLICITUD_GIRO_CAPITAL] set EN_NOMINA  = 0, estado_solicitud='PREAPROBADO'  where ID_SOLICITUD  = '" + Trim(id_fila) + "'", conexiones61._conexion)
@@ -240,15 +212,16 @@ Public Class frmAprobarNominaGiroCapital
                                     _adaptador.UpdateCommand.Connection = conexiones61._conexion
                                     _adaptador.UpdateCommand.ExecuteNonQuery()
                                     conexiones61.cerrar()
-
-                                    '  estadonomina = "RECHAZADA"
+                                    'estadonomina = "RECHAZADA"
                                     MontoNomina = MontoNomina + CInt(Gridnomina.Rows(i).Cells(8).Value())
+
+
 
                                 End If
 
                                 sumanroseleccionados = sumanroseleccionados + 1
 
-                               
+
 
 
                             ElseIf Gridnomina.Rows(i).Cells(0).Value() = False Or Gridnomina.Rows(i).Cells(0).Value() <> False And Gridnomina.Rows(i).Cells(0).Value() <> True Then
@@ -274,9 +247,6 @@ Public Class frmAprobarNominaGiroCapital
                                     _adaptador.UpdateCommand.ExecuteNonQuery()
                                     conexiones61.cerrar()
 
-
-
-
                                 ElseIf Aprobacionsubgerencia = "NO" Then
 
 
@@ -297,19 +267,9 @@ Public Class frmAprobarNominaGiroCapital
                                     _adaptador.UpdateCommand.ExecuteNonQuery()
                                     conexiones61.cerrar()
 
-
-
-
                                 End If
-
-                                
-
-
-
-
-
-
                             End If
+
                             'MsgBox(Gridnomina.Rows(i).Cells(0).Value())
                         Next
 
@@ -320,6 +280,7 @@ Public Class frmAprobarNominaGiroCapital
                             ElseIf Aprobacionsubgerencia = "NO" Then
                                 estadonomina = "RECHAZADA"
                             End If
+
 
                             Dim conexiones6 As New CConexion
                             conexiones6.conexion()
@@ -400,20 +361,20 @@ Public Class frmAprobarNominaGiroCapital
                         End If
 
 
-                            Dim plantillas2 As Metodos = New Metodos
-                            Dim tabla As New DataTable
+                        Dim plantillas2 As Metodos = New Metodos
+                        Dim tabla As New DataTable
 
-                            plantillas2._tabla.Rows.Clear()
-                            plantillas2._tabla.Columns.Clear()
+                        plantillas2._tabla.Rows.Clear()
+                        plantillas2._tabla.Columns.Clear()
 
-                            If plantillas2.Consultar_Creditos_Aprobar_Con_Nomina_Transferencia Then
-                                tabla = plantillas2.tabla
-                                frmCreditosPorAprobar.DGreditosAprobar.DataSource = tabla
-                            End If
-                            Me.Close()
+                        If plantillas2.Consultar_Creditos_Aprobar_Con_Nomina_Transferencia Then
+                            tabla = plantillas2.tabla
+                            frmCreditosPorAprobar.DGreditosAprobar.DataSource = tabla
+                        End If
+                        Me.Close()
 
 
-                        Else
+                    Else
                         MsgBox("ESTA NOMINA  YA FUE ANALIZADA")
                         frmCreditosPorAprobar.CheckBox1.Checked = False
                             Me.Close()

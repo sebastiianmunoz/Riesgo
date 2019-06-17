@@ -850,7 +850,7 @@ Public Class Metodos
     End Function
 
     '***** SOLICITUDES PENDIENTES  ****'
-    Public Function Consultar_Creditos_Aprobar_EFECTIVO() As Boolean
+    Public Function Consultar_Capital_estado_pendiente() As Boolean
         ' CALFARO REEMPLAZAR ESTE MODULO
         conexiones.conexion()
         conexiones.abrir()

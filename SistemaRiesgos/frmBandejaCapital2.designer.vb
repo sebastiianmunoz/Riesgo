@@ -226,7 +226,7 @@ Partial Class frmBandejaCapital2
         'Checkparaactualizaciongrilla
         '
         Me.Checkparaactualizaciongrilla.AutoSize = True
-        Me.Checkparaactualizaciongrilla.Location = New System.Drawing.Point(807, 458)
+        Me.Checkparaactualizaciongrilla.Location = New System.Drawing.Point(787, 401)
         Me.Checkparaactualizaciongrilla.Name = "Checkparaactualizaciongrilla"
         Me.Checkparaactualizaciongrilla.Size = New System.Drawing.Size(133, 17)
         Me.Checkparaactualizaciongrilla.TabIndex = 65

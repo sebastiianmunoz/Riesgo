@@ -333,7 +333,7 @@ Public Class frmMuestraEvaluacionCapital
             'xSql = xSql + " ,'" + ID_SOLICITUD.ToString + "'"
             'xSql = xSql + ",'" + CODTIPOLOGIA.ToString + "','" + tipo2.ToString + "','" + tipo3.ToString + "' )"
 
-            xSql = xSql + "     BEGIN TRAN  "
+            xSql = xSql + "   BEGIN TRAN "
             xSql = xSql + "  INSERT INTO _RIESGO_SOLICITUD_GIRO_CAPITAL"
             xSql = xSql + " ([ID_SOLICITUD]"
             xSql = xSql + " ,[FECHA_SOLICITUD]"
@@ -363,14 +363,14 @@ Public Class frmMuestraEvaluacionCapital
             '  ,TOTAL_NORETIRABLE
             ' ,MONTO_DISPONIBLE
             '  ,MONTO_MAXIMO_RETIRABLE
-            xSql = xSql + "  ,[FILTRO_CAPITAL_MINIMO]"
-            xSql = xSql + " ,[FILTRO_MONTO_SOLICITADO]"
+            xSql = xSql + ",[FILTRO_CAPITAL_MINIMO]"
+            xSql = xSql + ",[FILTRO_MONTO_SOLICITADO]"
             xSql = xSql + ",[FILTRO_GIROS_ANUAL]"
-            xSql = xSql + " ,[FILTRO_GIROS_MENSUAL]"
-            xSql = xSql + " ,[FILTRO_SOCIO_SINMORA]"
+            xSql = xSql + ",[FILTRO_GIROS_MENSUAL]"
+            xSql = xSql + ",[FILTRO_SOCIO_SINMORA]"
             xSql = xSql + ",[FILTRO_AVAL_SINMORA]"
             xSql = xSql + ",[FILTRO_RESTRICCIONES]"
-            xSql = xSql + " ,[FILTRO_CAPITAL_GLOBAL]"
+            xSql = xSql + ",[FILTRO_CAPITAL_GLOBAL]"
             xSql = xSql + ",[Aprobacion_SubGerencia]"
             xSql = xSql + ",[Estado_Solicitud2] "
             xSql = xSql + ",[COMENTARIO_EVALUACION]"
@@ -442,7 +442,6 @@ Public Class frmMuestraEvaluacionCapital
 
     'Sub AUTORIZAR_RENUNCIA_FALLECMIENTO() ' sucursal 2 lista para autorizar 
     '    If txtComentarioGirocapital.Text.Length <= 250 Then
-
     '        Dim Estado_Solicitud As String = ""
     '        Dim Estado_Solicitud2 As Integer = 1
     '        Dim Tomacorrelativo As Integer = 0
@@ -765,6 +764,8 @@ Public Class frmMuestraEvaluacionCapital
     '        Else
     '        End If
     '        reader6.Close()
+
+
 
     '        Dim conexiones60 As New CConexion
     '        conexiones60.conexion()
@@ -1187,7 +1188,7 @@ Public Class frmMuestraEvaluacionCapital
             '   ,CUOTAS_PARTICIPACION
             '  ,TOTAL_NORETIRABLE
             '   ,MONTO_DISPONIBLE
-            '--   ,MONTO_MAXIMO_RETIRABLE
+            ' ,MONTO_MAXIMO_RETIRABLE
             xSql = xSql + "   ,[FILTRO_CAPITAL_MINIMO]"
             xSql = xSql + "   ,[FILTRO_MONTO_SOLICITADO]"
             xSql = xSql + "   ,[FILTRO_GIROS_ANUAL]"
@@ -1284,6 +1285,7 @@ Public Class frmMuestraEvaluacionCapital
 
     Sub PENDIENTE() ' pendiente listo cvon surcursal 2
         If txtComentarioGirocapital.Text.Length <= 250 Then
+
             Dim Estado_Solicitud As String = ""
             Dim Estado_Solicitud2 As Integer = 1
             Dim Tomacorrelativo As Integer = 0

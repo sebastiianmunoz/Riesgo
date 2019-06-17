@@ -19,7 +19,7 @@ Public Class frmBandejaCapital2
         GridbandejaCapital.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells
         plantillas._tabla.Rows.Clear()
         plantillas._tabla.Columns.Clear()
-        plantillas.Consultar_Creditos_Aprobar_EFECTIVO() 'metodo que se  debe  ver en profundiad  =) 
+        plantillas.Consultar_Capital_estado_pendiente() 'metodo que se  debe  ver en profundiad  =) 
         tabla7 = plantillas.tabla
         GridbandejaCapital.DataSource = tabla7
         crearcolumna()
@@ -58,6 +58,7 @@ Public Class frmBandejaCapital2
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+
         Dim totalfilas As Integer = GridbandejaCapital.RowCount - 1
         Dim totalselecionado As Integer = 0
         Dim id_fila As String = ""
@@ -107,7 +108,7 @@ Public Class frmBandejaCapital2
         sacarcolumna()
         plantillas._tabla.Rows.Clear()
         plantillas._tabla.Columns.Clear()
-        plantillas.Consultar_Creditos_Aprobar_EFECTIVO() 'metodo que se  debe  ver en profundiad  =) 
+        plantillas.Consultar_Capital_estado_pendiente() 'metodo que se  debe  ver en profundiad  =) 
         tabla7 = plantillas.tabla
         GridbandejaCapital.DataSource = tabla7
         crearcolumna()
@@ -125,7 +126,5 @@ Public Class frmBandejaCapital2
         GridbandejaCapital.Columns.Remove(newcol)
     End Sub
 
-    Private Sub GridbandejaCapital_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles GridbandejaCapital.CellContentClick
 
-    End Sub
 End Class

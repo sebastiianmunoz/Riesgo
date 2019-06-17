@@ -112,13 +112,13 @@ Public Class frmEvaluarCapital
 
     Sub usuarioblokeado()
         'ByVal RUT As String
-        ' SELECT * FROM _BLOQUEO_CAPITAL WHERE NROSOCIO = 5203 ORDER BY FECHAHORA DESC
-        ' BANDERASOCIOBLOKEADO()
+        'SELECT * FROM _BLOQUEO_CAPITAL WHERE NROSOCIO = 5203 ORDER BY FECHAHORA DESC
+        'BANDERASOCIOBLOKEADO()
         NOMBRECOMPLETO = ""
         FECHA = ""
-
         txtNrosocio.Clear()
-        ' Try
+
+        'Try
         Dim conexiones33 As New CConexion
         conexiones33.conexion()
         Dim command33 As SqlCommand = New SqlCommand("SELECT nrosocio  ,NOMBRES,PATERNO ,MATERNO  from _socios WHERE  RUT = " + Trim(tomarut.ToString) + " and estado = 0 ", conexiones33._conexion)
@@ -133,12 +133,12 @@ Public Class frmEvaluarCapital
         End If
         reader33.Close()
         conexiones33.cerrar()
-        ' Catch ex As Exception
+        'Catch ex As Exception
         'MsgBox("No Existe Socio ")
-        ' End Try
+        'End Try
 
 
-        ' Try
+        'Try
         GridBlokeo.Rows.Clear()
         Dim conexiones3 As New CConexion
         conexiones3.conexion()
@@ -149,7 +149,6 @@ Public Class frmEvaluarCapital
             Do While reader3.Read()
                 GridBlokeo.Rows.Add((Trim(reader3(0).ToString)))
                 FECHA = (Trim(reader3(1).ToString))
-
             Loop
         Else
         End If
@@ -173,7 +172,6 @@ Public Class frmEvaluarCapital
             'Next
         Else
             BANDERASOCIOBLOKEADO = False
-
         End If
 
 
@@ -289,7 +287,7 @@ Public Class frmEvaluarCapital
     End Sub
     Private Sub frmEvaluarCapital_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        ' MsgBox("ola1")
+        'MsgBox("ola1")
         LLENACOMBOFORMADEPAGO()
         frmMuestraEvaluacionCapital.BtnPendiente.Visible = False
         Label38.Visible = False
@@ -314,6 +312,7 @@ Public Class frmEvaluarCapital
         '---------------------------------------------
     End Sub
     Private Sub txtNrosocio_KeyUp(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtNrosocio.KeyUp
+
         If Not IsNumeric(Replace(Trim(txtNrosocio.Text), ".", "")) Then
             MsgBox("Debe ingresar un valor numerico")
         End If
@@ -1211,8 +1210,9 @@ Public Class frmEvaluarCapital
                         If reader22.HasRows Then
                             Do While reader22.Read()
                                 filtroestatico = reader22(0).ToString
-                                'MsgBox(filtroestatico)
-                            Loop
+                            '  MsgBox(filtroestatico)
+                            ' filtroestatico = "NO"
+                        Loop
                         Else
                         End If
                         reader22.Close()
@@ -1281,8 +1281,9 @@ Public Class frmEvaluarCapital
                             frmMuestraEvaluacionCapital.PicAprobado.Visible = False
                             frmMuestraEvaluacionCapital.btnAutoriza.Enabled = True
                             frmMuestraEvaluacionCapital.btnReconcideracion.Enabled = False
-                            MsgBox("CUMPLE PERO QUEDA EN ESTADO  PENDIENTE  POR CAPITAL DISPONIBLE")
-                        ElseIf cumplecapitalminimo = True And cumplesaldoencapital = True And (cumplemontosolicitado = False Or cumplenroretirosanuales = False Or cumplesociosinmora = False Or cumpleavalsinmora = True Or cumplerestricciones = False) Then
+                        MsgBox("CUMPLE PERO QUEDA EN ESTADO  PENDIENTE  POR CAPITAL DISPONIBLE")
+
+                    ElseIf cumplecapitalminimo = True And cumplesaldoencapital = True And (cumplemontosolicitado = False Or cumplenroretirosanuales = False Or cumplesociosinmora = False Or cumpleavalsinmora = True Or cumplerestricciones = False) Then
                             'cumplemontosolicitado =    False ' monto solicitado es mayor al monto maximo retirable 
                             'cumplenroretirosanuales =  False pose mas de 5 retiros en el año 
                             'cumplesociosinmora = True  Socio  sin mora 
