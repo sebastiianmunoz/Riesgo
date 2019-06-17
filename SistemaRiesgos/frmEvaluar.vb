@@ -1877,6 +1877,8 @@ Public Class frmEvaluar
             'MsgBox(capcidadDePago)
         End If
 
+        txtScoringCapacidadNumero.Text = capcidadDePago.ToString
+
         If (Integer.Parse(lvl) > Integer.Parse(LVLCORRESPONDIENTE)) Then
 
             txtScoringLvl.Text = "MALO"

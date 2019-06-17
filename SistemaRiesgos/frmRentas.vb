@@ -279,7 +279,7 @@ Public Class frmRentas
 
     Sub calcularRPLTotal()
 
-        txtRLPTotal.Text = Double.Parse(Replace(Replace(TxtRLPEmpleados.Text, ".", ""), "$", "")) + Double.Parse(Replace(Replace(txtRPLIndependientes.Text, ".", ""), "$", ""))
+        txtRLPTotal.Text = Double.Parse(Replace(Replace(TxtRLPEmpleados.Text, ".", ""), "$", "")) + Double.Parse(Replace(Replace(txtRPLIndependientes.Text, ".", ""), "$", "")) - Double.Parse(Replace(Replace(txtCuotaTrimestral.Text, ".", ""), "$", ""))
         txtRLPTotal.Text = "$" + Puntos(txtRLPTotal.Text)
 
     End Sub
@@ -1561,13 +1561,7 @@ Public Class frmRentas
         txtcaracteres.Text = 600 - (txtComentario.Text.Length)
     End Sub
 
-    Private Sub PanelEmpleadoPlanilla_Paint(sender As Object, e As PaintEventArgs) Handles PanelEmpleadoPlanilla.Paint
 
-    End Sub
-
-    Private Sub PanelIndependiente_Paint(sender As Object, e As PaintEventArgs) Handles PanelIndependiente.Paint
-
-    End Sub
 
     Private Sub cboPorcentajeDescuento_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cboPorcentajeDescuento.KeyPress
         e.Handled = True
@@ -1639,6 +1633,17 @@ Public Class frmRentas
             tabla = plantillas2.tabla
             DGGuardado.DataSource = tabla
             LViendo.Text = "Se muestran todas rentas guardadas del usuario"
+        End If
+    End Sub
+
+
+
+    Private Sub txtCuotaTrimestral_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCuotaTrimestral.KeyPress
+        If IsNumeric(txtCuotaTrimestral.Text) Then
+            calcularRPLTotal()
+        Else
+            MsgBox("De indicar un valor numerico")
+            txtCuotaTrimestral.Text = 0
         End If
     End Sub
 End Class

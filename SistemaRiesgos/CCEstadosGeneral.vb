@@ -232,7 +232,7 @@ Public Class CCEstadosGeneral
             _adaptador.InsertCommand.Parameters.Add("@monto_solicitado", SqlDbType.VarChar, 11).Value = datos._monto_solicitado
             _adaptador.InsertCommand.Parameters.Add("@capital", SqlDbType.VarChar, 10).Value = datos._capital
             _adaptador.InsertCommand.Parameters.Add("@prepago", SqlDbType.VarChar, 25).Value = datos._prepago
-            _adaptador.InsertCommand.Parameters.Add("@NroPrepagos", SqlDbType.VarChar, 35).Value = datos._NroPrepagos
+            _adaptador.InsertCommand.Parameters.Add("@NroPrepagos", SqlDbType.VarChar, 60).Value = datos._NroPrepagos
             _adaptador.InsertCommand.Parameters.Add("@nrocuotas", SqlDbType.VarChar, 3).Value = datos._nrocuotas
             _adaptador.InsertCommand.Parameters.Add("@primera_cuota", SqlDbType.VarChar, 12).Value = datos._primera_cuota
             _adaptador.InsertCommand.Parameters.Add("@tasa", SqlDbType.VarChar, 6).Value = datos._tasa

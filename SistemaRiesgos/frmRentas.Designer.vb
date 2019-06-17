@@ -22,13 +22,13 @@ Partial Class frmRentas
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button11 = New System.Windows.Forms.Button()
@@ -68,14 +68,17 @@ Partial Class frmRentas
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtCuotaTrimestral = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.Button21 = New System.Windows.Forms.Button()
         Me.Button19 = New System.Windows.Forms.Button()
         Me.TxtRLPEmpleados = New System.Windows.Forms.TextBox()
         Me.Button14 = New System.Windows.Forms.Button()
-        Me.txtRLPTotal = New System.Windows.Forms.TextBox()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Button20 = New System.Windows.Forms.Button()
         Me.Button22 = New System.Windows.Forms.Button()
+        Me.txtRLPTotal = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.CboFormaDePago = New System.Windows.Forms.ComboBox()
         Me.lxtMaxCuotaaDescontar = New System.Windows.Forms.Label()
         Me.LGEmpreadosyPensionados = New System.Windows.Forms.Label()
@@ -118,14 +121,15 @@ Partial Class frmRentas
         Me.Label5 = New System.Windows.Forms.Label()
         Me.CboPlazo = New System.Windows.Forms.ComboBox()
         Me.CboTasa = New System.Windows.Forms.ComboBox()
-        Me.Label18 = New System.Windows.Forms.Label()
         Me.txtComentario = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.DGEmpreadosyPensionados, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DGEDescuentos, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DGProfesionalesyTrabajadoresIndependientes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DGProfesionalesyTrabajadoresIndependientes2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
+        Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DGGuardado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelEmpleadoPlanilla.SuspendLayout()
@@ -308,25 +312,25 @@ Partial Class frmRentas
         Me.DGEmpreadosyPensionados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGEmpreadosyPensionados.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Tipos, Me.Mes_1, Me.Mes_2, Me.Mes_3, Me.Total, Me.Promedio})
         Me.DGEmpreadosyPensionados.Cursor = System.Windows.Forms.Cursors.IBeam
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DGEmpreadosyPensionados.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.WhiteSmoke
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGEmpreadosyPensionados.DefaultCellStyle = DataGridViewCellStyle8
         Me.DGEmpreadosyPensionados.GridColor = System.Drawing.Color.DimGray
         Me.DGEmpreadosyPensionados.Location = New System.Drawing.Point(506, 35)
         Me.DGEmpreadosyPensionados.Name = "DGEmpreadosyPensionados"
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGEmpreadosyPensionados.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGEmpreadosyPensionados.RowHeadersDefaultCellStyle = DataGridViewCellStyle9
         Me.DGEmpreadosyPensionados.RowHeadersVisible = False
         Me.DGEmpreadosyPensionados.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.DGEmpreadosyPensionados.Size = New System.Drawing.Size(570, 564)
@@ -387,25 +391,25 @@ Partial Class frmRentas
         Me.DGEDescuentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGEDescuentos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2})
         Me.DGEDescuentos.Cursor = System.Windows.Forms.Cursors.IBeam
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.WhiteSmoke
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DGEDescuentos.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.WhiteSmoke
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGEDescuentos.DefaultCellStyle = DataGridViewCellStyle10
         Me.DGEDescuentos.GridColor = System.Drawing.Color.DimGray
         Me.DGEDescuentos.Location = New System.Drawing.Point(16, 330)
         Me.DGEDescuentos.Name = "DGEDescuentos"
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGEDescuentos.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGEDescuentos.RowHeadersDefaultCellStyle = DataGridViewCellStyle11
         Me.DGEDescuentos.RowHeadersVisible = False
         Me.DGEDescuentos.Size = New System.Drawing.Size(484, 269)
         Me.DGEDescuentos.TabIndex = 31
@@ -449,14 +453,14 @@ Partial Class frmRentas
         Me.DGProfesionalesyTrabajadoresIndependientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGProfesionalesyTrabajadoresIndependientes.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.HonorariosFormulario29yBoletas, Me.Monto})
         Me.DGProfesionalesyTrabajadoresIndependientes.Cursor = System.Windows.Forms.Cursors.IBeam
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.WhiteSmoke
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DGProfesionalesyTrabajadoresIndependientes.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.Color.WhiteSmoke
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGProfesionalesyTrabajadoresIndependientes.DefaultCellStyle = DataGridViewCellStyle12
         Me.DGProfesionalesyTrabajadoresIndependientes.GridColor = System.Drawing.Color.DimGray
         Me.DGProfesionalesyTrabajadoresIndependientes.Location = New System.Drawing.Point(6, 61)
         Me.DGProfesionalesyTrabajadoresIndependientes.Name = "DGProfesionalesyTrabajadoresIndependientes"
@@ -492,14 +496,14 @@ Partial Class frmRentas
         Me.DGProfesionalesyTrabajadoresIndependientes2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGProfesionalesyTrabajadoresIndependientes2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ValorDeclaraciónRentaAnual, Me.Montos})
         Me.DGProfesionalesyTrabajadoresIndependientes2.Cursor = System.Windows.Forms.Cursors.IBeam
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.WhiteSmoke
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DGProfesionalesyTrabajadoresIndependientes2.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.WhiteSmoke
+        DataGridViewCellStyle13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGProfesionalesyTrabajadoresIndependientes2.DefaultCellStyle = DataGridViewCellStyle13
         Me.DGProfesionalesyTrabajadoresIndependientes2.GridColor = System.Drawing.Color.DimGray
         Me.DGProfesionalesyTrabajadoresIndependientes2.Location = New System.Drawing.Point(323, 61)
         Me.DGProfesionalesyTrabajadoresIndependientes2.Name = "DGProfesionalesyTrabajadoresIndependientes2"
@@ -541,11 +545,11 @@ Partial Class frmRentas
         '
         'txtRPLIndependientes
         '
-        Me.txtRPLIndependientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtRPLIndependientes.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRPLIndependientes.Location = New System.Drawing.Point(3, 156)
         Me.txtRPLIndependientes.Name = "txtRPLIndependientes"
         Me.txtRPLIndependientes.ReadOnly = True
-        Me.txtRPLIndependientes.Size = New System.Drawing.Size(182, 21)
+        Me.txtRPLIndependientes.Size = New System.Drawing.Size(182, 20)
         Me.txtRPLIndependientes.TabIndex = 37
         Me.txtRPLIndependientes.Text = "$0"
         '
@@ -575,7 +579,8 @@ Partial Class frmRentas
         '
         Me.TableLayoutPanel1.ColumnCount = 1
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.Label8, 0, 9)
+        Me.TableLayoutPanel1.Controls.Add(Me.txtCuotaTrimestral, 0, 10)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label11, 0, 9)
         Me.TableLayoutPanel1.Controls.Add(Me.Button21, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.txtRPLIndependientes, 0, 8)
         Me.TableLayoutPanel1.Controls.Add(Me.Button19, 0, 0)
@@ -583,48 +588,58 @@ Partial Class frmRentas
         Me.TableLayoutPanel1.Controls.Add(Me.TxtRLPEmpleados, 0, 6)
         Me.TableLayoutPanel1.Controls.Add(Me.Label2, 0, 5)
         Me.TableLayoutPanel1.Controls.Add(Me.Button14, 0, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.txtRLPTotal, 0, 10)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button20, 0, 11)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button22, 0, 12)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(1086, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 0, 13)
+        Me.TableLayoutPanel1.Controls.Add(Me.txtRLPTotal, 0, 12)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label8, 0, 11)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(1092, 3)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 18
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26.0!))
+        Me.TableLayoutPanel1.RowCount = 14
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 14.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 15.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 19.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 73.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 162.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(188, 278)
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 19.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 76.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(188, 303)
         Me.TableLayoutPanel1.TabIndex = 40
         '
-        'Label8
+        'txtCuotaTrimestral
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(3, 180)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(80, 15)
-        Me.Label8.TabIndex = 45
-        Me.Label8.Text = "RLP TOTAL"
+        Me.txtCuotaTrimestral.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCuotaTrimestral.Location = New System.Drawing.Point(3, 202)
+        Me.txtCuotaTrimestral.Name = "txtCuotaTrimestral"
+        Me.txtCuotaTrimestral.Size = New System.Drawing.Size(182, 20)
+        Me.txtCuotaTrimestral.TabIndex = 73
+        Me.txtCuotaTrimestral.Text = "0"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.Black
+        Me.Label11.Location = New System.Drawing.Point(3, 180)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(132, 13)
+        Me.Label11.TabIndex = 73
+        Me.Label11.Text = "Total Cuota Trimestral"
         '
         'Button21
         '
-        Me.Button21.Location = New System.Drawing.Point(3, 29)
+        Me.Button21.Location = New System.Drawing.Point(3, 30)
         Me.Button21.Name = "Button21"
-        Me.Button21.Size = New System.Drawing.Size(182, 21)
+        Me.Button21.Size = New System.Drawing.Size(182, 20)
         Me.Button21.TabIndex = 57
         Me.Button21.Text = "Independiente"
         Me.Button21.UseVisualStyleBackColor = True
@@ -640,11 +655,11 @@ Partial Class frmRentas
         '
         'TxtRLPEmpleados
         '
-        Me.TxtRLPEmpleados.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtRLPEmpleados.Location = New System.Drawing.Point(3, 114)
+        Me.TxtRLPEmpleados.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtRLPEmpleados.Location = New System.Drawing.Point(3, 116)
         Me.TxtRLPEmpleados.Name = "TxtRLPEmpleados"
         Me.TxtRLPEmpleados.ReadOnly = True
-        Me.TxtRLPEmpleados.Size = New System.Drawing.Size(182, 21)
+        Me.TxtRLPEmpleados.Size = New System.Drawing.Size(182, 20)
         Me.TxtRLPEmpleados.TabIndex = 62
         Me.TxtRLPEmpleados.Text = "$0"
         '
@@ -657,33 +672,57 @@ Partial Class frmRentas
         Me.Button14.Text = "Ver Rentas Guardadas"
         Me.Button14.UseVisualStyleBackColor = True
         '
-        'txtRLPTotal
+        'TableLayoutPanel2
         '
-        Me.txtRLPTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtRLPTotal.Location = New System.Drawing.Point(3, 202)
-        Me.txtRLPTotal.Name = "txtRLPTotal"
-        Me.txtRLPTotal.ReadOnly = True
-        Me.txtRLPTotal.Size = New System.Drawing.Size(182, 21)
-        Me.txtRLPTotal.TabIndex = 45
-        Me.txtRLPTotal.Text = "$0"
+        Me.TableLayoutPanel2.ColumnCount = 2
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.Button20, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.Button22, 1, 0)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 274)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 1
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(182, 26)
+        Me.TableLayoutPanel2.TabIndex = 73
         '
         'Button20
         '
-        Me.Button20.Location = New System.Drawing.Point(3, 230)
+        Me.Button20.Location = New System.Drawing.Point(3, 3)
         Me.Button20.Name = "Button20"
-        Me.Button20.Size = New System.Drawing.Size(182, 21)
+        Me.Button20.Size = New System.Drawing.Size(85, 20)
         Me.Button20.TabIndex = 62
         Me.Button20.Text = "Guardar y Salir"
         Me.Button20.UseVisualStyleBackColor = True
         '
         'Button22
         '
-        Me.Button22.Location = New System.Drawing.Point(3, 257)
+        Me.Button22.Location = New System.Drawing.Point(94, 3)
         Me.Button22.Name = "Button22"
-        Me.Button22.Size = New System.Drawing.Size(182, 20)
+        Me.Button22.Size = New System.Drawing.Size(85, 20)
         Me.Button22.TabIndex = 62
         Me.Button22.Text = "Salir"
         Me.Button22.UseVisualStyleBackColor = True
+        '
+        'txtRLPTotal
+        '
+        Me.txtRLPTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtRLPTotal.Location = New System.Drawing.Point(3, 248)
+        Me.txtRLPTotal.Name = "txtRLPTotal"
+        Me.txtRLPTotal.ReadOnly = True
+        Me.txtRLPTotal.Size = New System.Drawing.Size(182, 21)
+        Me.txtRLPTotal.TabIndex = 45
+        Me.txtRLPTotal.Text = "$0"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(3, 226)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(80, 15)
+        Me.Label8.TabIndex = 45
+        Me.Label8.Text = "RLP TOTAL"
         '
         'CboFormaDePago
         '
@@ -841,14 +880,14 @@ Partial Class frmRentas
         Me.DGEmpreadosyPensionados4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGEmpreadosyPensionados4.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.Column1, Me.Column2, Me.Column3, Me.Column4})
         Me.DGEmpreadosyPensionados4.Cursor = System.Windows.Forms.Cursors.IBeam
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.WhiteSmoke
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DGEmpreadosyPensionados4.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle14.BackColor = System.Drawing.Color.WhiteSmoke
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGEmpreadosyPensionados4.DefaultCellStyle = DataGridViewCellStyle14
         Me.DGEmpreadosyPensionados4.GridColor = System.Drawing.Color.DimGray
         Me.DGEmpreadosyPensionados4.Location = New System.Drawing.Point(15, 66)
         Me.DGEmpreadosyPensionados4.Name = "DGEmpreadosyPensionados4"
@@ -1044,8 +1083,8 @@ Partial Class frmRentas
         Me.LViendo.Name = "LViendo"
         Me.LViendo.Size = New System.Drawing.Size(712, 13)
         Me.LViendo.TabIndex = 50
-        Me.LViendo.Text = "Rentas Guardadas                                                                 " & _
-    "                                                                                " & _
+        Me.LViendo.Text = "Rentas Guardadas                                                                 " &
+    "                                                                                " &
     "     "
         '
         'TableMax
@@ -1060,11 +1099,11 @@ Partial Class frmRentas
         Me.TableMax.Controls.Add(Me.Label5, 0, 2)
         Me.TableMax.Controls.Add(Me.CboPlazo, 0, 3)
         Me.TableMax.Controls.Add(Me.CboTasa, 0, 1)
-        Me.TableMax.Controls.Add(Me.Label18, 0, 0)
         Me.TableMax.Controls.Add(Me.lxtMaxCuotaaDescontar, 0, 4)
         Me.TableMax.Controls.Add(Me.txtMaxCuota, 0, 5)
         Me.TableMax.Controls.Add(Me.txtComentario, 0, 10)
-        Me.TableMax.Location = New System.Drawing.Point(1089, 286)
+        Me.TableMax.Controls.Add(Me.Label18, 0, 0)
+        Me.TableMax.Location = New System.Drawing.Point(1094, 309)
         Me.TableMax.Name = "TableMax"
         Me.TableMax.RowCount = 13
         Me.TableMax.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 14.0!))
@@ -1077,16 +1116,16 @@ Partial Class frmRentas
         Me.TableMax.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 14.0!))
         Me.TableMax.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29.0!))
         Me.TableMax.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16.0!))
-        Me.TableMax.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 87.0!))
-        Me.TableMax.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17.0!))
-        Me.TableMax.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableMax.Size = New System.Drawing.Size(185, 316)
+        Me.TableMax.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64.0!))
+        Me.TableMax.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 19.0!))
+        Me.TableMax.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41.0!))
+        Me.TableMax.Size = New System.Drawing.Size(185, 296)
         Me.TableMax.TabIndex = 72
         Me.TableMax.Visible = False
         '
         'txtcaracteres
         '
-        Me.txtcaracteres.Location = New System.Drawing.Point(3, 293)
+        Me.txtcaracteres.Location = New System.Drawing.Point(3, 272)
         Me.txtcaracteres.Name = "txtcaracteres"
         Me.txtcaracteres.ReadOnly = True
         Me.txtcaracteres.Size = New System.Drawing.Size(179, 20)
@@ -1098,7 +1137,7 @@ Partial Class frmRentas
         Me.Label28.AutoSize = True
         Me.Label28.BackColor = System.Drawing.Color.Transparent
         Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.Location = New System.Drawing.Point(3, 273)
+        Me.Label28.Location = New System.Drawing.Point(3, 250)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(132, 15)
         Me.Label28.TabIndex = 74
@@ -1169,6 +1208,15 @@ Partial Class frmRentas
         Me.CboTasa.TabIndex = 73
         Me.CboTasa.ValueMember = """"""
         '
+        'txtComentario
+        '
+        Me.txtComentario.Location = New System.Drawing.Point(3, 189)
+        Me.txtComentario.Multiline = True
+        Me.txtComentario.Name = "txtComentario"
+        Me.txtComentario.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.txtComentario.Size = New System.Drawing.Size(179, 58)
+        Me.txtComentario.TabIndex = 75
+        '
         'Label18
         '
         Me.Label18.AutoSize = True
@@ -1178,21 +1226,12 @@ Partial Class frmRentas
         Me.Label18.TabIndex = 73
         Me.Label18.Text = "Tasa"
         '
-        'txtComentario
-        '
-        Me.txtComentario.Location = New System.Drawing.Point(3, 189)
-        Me.txtComentario.Multiline = True
-        Me.txtComentario.Name = "txtComentario"
-        Me.txtComentario.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtComentario.Size = New System.Drawing.Size(179, 81)
-        Me.txtComentario.TabIndex = 75
-        '
         'frmRentas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(205, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1289, 667)
+        Me.ClientSize = New System.Drawing.Size(1289, 610)
         Me.ControlBox = False
         Me.Controls.Add(Me.TableMax)
         Me.Controls.Add(Me.DataGridView1)
@@ -1223,6 +1262,7 @@ Partial Class frmRentas
         CType(Me.DGProfesionalesyTrabajadoresIndependientes2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
+        Me.TableLayoutPanel2.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DGGuardado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelEmpleadoPlanilla.ResumeLayout(False)
@@ -1329,4 +1369,7 @@ Partial Class frmRentas
     Friend WithEvents Button23 As Button
     Friend WithEvents Button17 As Button
     Friend WithEvents Button16 As Button
+    Friend WithEvents txtCuotaTrimestral As TextBox
+    Friend WithEvents Label11 As Label
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
 End Class

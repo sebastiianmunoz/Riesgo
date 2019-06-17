@@ -412,6 +412,7 @@ Partial Class frmEvaluar
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.txtCOD_INST = New System.Windows.Forms.TextBox()
         Me.txtCOD_FORMAPAGO = New System.Windows.Forms.TextBox()
+        Me.txtScoringCapacidadNumero = New System.Windows.Forms.TextBox()
         Me.TXTANUNCIO2.SuspendLayout()
         Me.TabPage7.SuspendLayout()
         CType(Me.DGHistoricoPrestamos, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -480,7 +481,7 @@ Partial Class frmEvaluar
         Me.TabPage7.Controls.Add(Me.DGHistoricoPrestamos)
         Me.TabPage7.Location = New System.Drawing.Point(4, 22)
         Me.TabPage7.Name = "TabPage7"
-        Me.TabPage7.Size = New System.Drawing.Size(1009, 518)
+        Me.TabPage7.Size = New System.Drawing.Size(1009, 510)
         Me.TabPage7.TabIndex = 6
         Me.TabPage7.Text = "SOLICITUDES HISTORICAS"
         '
@@ -1400,9 +1401,9 @@ Partial Class frmEvaluar
         '
         Me.cboCompartamiento.BackColor = System.Drawing.Color.MistyRose
         Me.cboCompartamiento.FormattingEnabled = True
-        Me.cboCompartamiento.Items.AddRange(New Object() {"", "En los últimos 24 meses registra cuotas con morosidad mayor a 90 días", "En los últimos 24 meses registra cuotas con morosidad mayor a 60 días y menor a 9" & _
-                "0 días", "En los últimos 24 meses registra cuotas con morosidad mayor a 30 días Menor a 60 " & _
-                "días", "En los últimos 24 meses registra cuotas con morosidad menor a 30 días", "En los últimos 03 meses no registra morosidad interna, 1 o más cuotas pagadas con" & _
+        Me.cboCompartamiento.Items.AddRange(New Object() {"", "En los últimos 24 meses registra cuotas con morosidad mayor a 90 días", "En los últimos 24 meses registra cuotas con morosidad mayor a 60 días y menor a 9" &
+                "0 días", "En los últimos 24 meses registra cuotas con morosidad mayor a 30 días Menor a 60 " &
+                "días", "En los últimos 24 meses registra cuotas con morosidad menor a 30 días", "En los últimos 03 meses no registra morosidad interna, 1 o más cuotas pagadas con" &
                 " capital", "En los últimos 24 meses no registra morosidad interna", "Sin Comportamiento Anterior"})
         Me.cboCompartamiento.Location = New System.Drawing.Point(391, 519)
         Me.cboCompartamiento.Name = "cboCompartamiento"
@@ -1456,7 +1457,7 @@ Partial Class frmEvaluar
         Me.TabPage5.Controls.Add(Me.Label45)
         Me.TabPage5.Location = New System.Drawing.Point(4, 22)
         Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Size = New System.Drawing.Size(1009, 518)
+        Me.TabPage5.Size = New System.Drawing.Size(1009, 510)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "DEUDAS E INGRESOS"
         '
@@ -1669,7 +1670,7 @@ Partial Class frmEvaluar
         Me.TableLayoutPanel9.ColumnCount = 3
         Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.20942!))
         Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.79058!))
-        Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 168.0!))
+        Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 170.0!))
         Me.TableLayoutPanel9.Controls.Add(Me.txtMaxMontoPlanilla, 1, 10)
         Me.TableLayoutPanel9.Controls.Add(Me.Label40, 0, 10)
         Me.TableLayoutPanel9.Controls.Add(Me.txtMaxCuotaPlanilla, 1, 9)
@@ -1717,7 +1718,7 @@ Partial Class frmEvaluar
         '
         'txtMaxMontoPlanilla
         '
-        Me.txtMaxMontoPlanilla.Location = New System.Drawing.Point(240, 252)
+        Me.txtMaxMontoPlanilla.Location = New System.Drawing.Point(239, 252)
         Me.txtMaxMontoPlanilla.Name = "txtMaxMontoPlanilla"
         Me.txtMaxMontoPlanilla.ReadOnly = True
         Me.txtMaxMontoPlanilla.Size = New System.Drawing.Size(149, 20)
@@ -1735,7 +1736,7 @@ Partial Class frmEvaluar
         '
         'txtMaxCuotaPlanilla
         '
-        Me.txtMaxCuotaPlanilla.Location = New System.Drawing.Point(240, 228)
+        Me.txtMaxCuotaPlanilla.Location = New System.Drawing.Point(239, 228)
         Me.txtMaxCuotaPlanilla.Name = "txtMaxCuotaPlanilla"
         Me.txtMaxCuotaPlanilla.ReadOnly = True
         Me.txtMaxCuotaPlanilla.Size = New System.Drawing.Size(149, 20)
@@ -1764,7 +1765,7 @@ Partial Class frmEvaluar
         'TXTRENTALIQUIDA
         '
         Me.TXTRENTALIQUIDA.Enabled = False
-        Me.TXTRENTALIQUIDA.Location = New System.Drawing.Point(240, 3)
+        Me.TXTRENTALIQUIDA.Location = New System.Drawing.Point(239, 3)
         Me.TXTRENTALIQUIDA.Name = "TXTRENTALIQUIDA"
         Me.TXTRENTALIQUIDA.Size = New System.Drawing.Size(149, 20)
         Me.TXTRENTALIQUIDA.TabIndex = 58
@@ -1784,7 +1785,7 @@ Partial Class frmEvaluar
         '
         Me.ChkAval2.AutoSize = True
         Me.ChkAval2.BackColor = System.Drawing.Color.Transparent
-        Me.ChkAval2.Location = New System.Drawing.Point(396, 178)
+        Me.ChkAval2.Location = New System.Drawing.Point(394, 178)
         Me.ChkAval2.Name = "ChkAval2"
         Me.ChkAval2.Size = New System.Drawing.Size(71, 17)
         Me.ChkAval2.TabIndex = 104
@@ -1794,7 +1795,7 @@ Partial Class frmEvaluar
         'txtCargaFinanciera
         '
         Me.txtCargaFinanciera.Enabled = False
-        Me.txtCargaFinanciera.Location = New System.Drawing.Point(240, 28)
+        Me.txtCargaFinanciera.Location = New System.Drawing.Point(239, 28)
         Me.txtCargaFinanciera.Name = "txtCargaFinanciera"
         Me.txtCargaFinanciera.Size = New System.Drawing.Size(149, 20)
         Me.txtCargaFinanciera.TabIndex = 59
@@ -1804,7 +1805,7 @@ Partial Class frmEvaluar
         '
         Me.ChkAval1.AutoSize = True
         Me.ChkAval1.BackColor = System.Drawing.Color.Transparent
-        Me.ChkAval1.Location = New System.Drawing.Point(396, 153)
+        Me.ChkAval1.Location = New System.Drawing.Point(394, 153)
         Me.ChkAval1.Name = "ChkAval1"
         Me.ChkAval1.Size = New System.Drawing.Size(71, 17)
         Me.ChkAval1.TabIndex = 103
@@ -1823,7 +1824,7 @@ Partial Class frmEvaluar
         '
         'txtRutAval2
         '
-        Me.txtRutAval2.Location = New System.Drawing.Point(240, 178)
+        Me.txtRutAval2.Location = New System.Drawing.Point(239, 178)
         Me.txtRutAval2.Name = "txtRutAval2"
         Me.txtRutAval2.ReadOnly = True
         Me.txtRutAval2.Size = New System.Drawing.Size(149, 20)
@@ -1833,7 +1834,7 @@ Partial Class frmEvaluar
         'txtExternaAcreditado
         '
         Me.txtExternaAcreditado.Enabled = False
-        Me.txtExternaAcreditado.Location = New System.Drawing.Point(240, 53)
+        Me.txtExternaAcreditado.Location = New System.Drawing.Point(239, 53)
         Me.txtExternaAcreditado.Name = "txtExternaAcreditado"
         Me.txtExternaAcreditado.Size = New System.Drawing.Size(149, 20)
         Me.txtExternaAcreditado.TabIndex = 60
@@ -1841,7 +1842,7 @@ Partial Class frmEvaluar
         '
         'txtrutaval1
         '
-        Me.txtrutaval1.Location = New System.Drawing.Point(240, 153)
+        Me.txtrutaval1.Location = New System.Drawing.Point(239, 153)
         Me.txtrutaval1.Name = "txtrutaval1"
         Me.txtrutaval1.ReadOnly = True
         Me.txtrutaval1.Size = New System.Drawing.Size(149, 20)
@@ -1852,7 +1853,7 @@ Partial Class frmEvaluar
         '
         Me.ChkVehiculos.AutoSize = True
         Me.ChkVehiculos.BackColor = System.Drawing.Color.Transparent
-        Me.ChkVehiculos.Location = New System.Drawing.Point(396, 128)
+        Me.ChkVehiculos.Location = New System.Drawing.Point(394, 128)
         Me.ChkVehiculos.Name = "ChkVehiculos"
         Me.ChkVehiculos.Size = New System.Drawing.Size(71, 17)
         Me.ChkVehiculos.TabIndex = 84
@@ -1873,7 +1874,7 @@ Partial Class frmEvaluar
         '
         Me.ChkPropiedades.AutoSize = True
         Me.ChkPropiedades.BackColor = System.Drawing.Color.Transparent
-        Me.ChkPropiedades.Location = New System.Drawing.Point(396, 103)
+        Me.ChkPropiedades.Location = New System.Drawing.Point(394, 103)
         Me.ChkPropiedades.Name = "ChkPropiedades"
         Me.ChkPropiedades.Size = New System.Drawing.Size(71, 17)
         Me.ChkPropiedades.TabIndex = 81
@@ -1894,7 +1895,7 @@ Partial Class frmEvaluar
         '
         Me.ChkActivos.AutoSize = True
         Me.ChkActivos.BackColor = System.Drawing.Color.Transparent
-        Me.ChkActivos.Location = New System.Drawing.Point(396, 78)
+        Me.ChkActivos.Location = New System.Drawing.Point(394, 78)
         Me.ChkActivos.Name = "ChkActivos"
         Me.ChkActivos.Size = New System.Drawing.Size(71, 17)
         Me.ChkActivos.TabIndex = 78
@@ -1904,7 +1905,7 @@ Partial Class frmEvaluar
         'txtActivos
         '
         Me.txtActivos.Enabled = False
-        Me.txtActivos.Location = New System.Drawing.Point(240, 78)
+        Me.txtActivos.Location = New System.Drawing.Point(239, 78)
         Me.txtActivos.Name = "txtActivos"
         Me.txtActivos.Size = New System.Drawing.Size(149, 20)
         Me.txtActivos.TabIndex = 77
@@ -1914,7 +1915,7 @@ Partial Class frmEvaluar
         '
         Me.ChkExternaAcreditado.AutoSize = True
         Me.ChkExternaAcreditado.BackColor = System.Drawing.Color.Transparent
-        Me.ChkExternaAcreditado.Location = New System.Drawing.Point(396, 53)
+        Me.ChkExternaAcreditado.Location = New System.Drawing.Point(394, 53)
         Me.ChkExternaAcreditado.Name = "ChkExternaAcreditado"
         Me.ChkExternaAcreditado.Size = New System.Drawing.Size(71, 17)
         Me.ChkExternaAcreditado.TabIndex = 75
@@ -1944,7 +1945,7 @@ Partial Class frmEvaluar
         'txtRentaLiquidaDepurada
         '
         Me.txtRentaLiquidaDepurada.Enabled = False
-        Me.txtRentaLiquidaDepurada.Location = New System.Drawing.Point(240, 203)
+        Me.txtRentaLiquidaDepurada.Location = New System.Drawing.Point(239, 203)
         Me.txtRentaLiquidaDepurada.Name = "txtRentaLiquidaDepurada"
         Me.txtRentaLiquidaDepurada.Size = New System.Drawing.Size(149, 20)
         Me.txtRentaLiquidaDepurada.TabIndex = 61
@@ -1953,7 +1954,7 @@ Partial Class frmEvaluar
         'txtPropiedades
         '
         Me.txtPropiedades.Enabled = False
-        Me.txtPropiedades.Location = New System.Drawing.Point(240, 103)
+        Me.txtPropiedades.Location = New System.Drawing.Point(239, 103)
         Me.txtPropiedades.Name = "txtPropiedades"
         Me.txtPropiedades.Size = New System.Drawing.Size(149, 20)
         Me.txtPropiedades.TabIndex = 80
@@ -1972,7 +1973,7 @@ Partial Class frmEvaluar
         'txtVehiculos
         '
         Me.txtVehiculos.Enabled = False
-        Me.txtVehiculos.Location = New System.Drawing.Point(240, 128)
+        Me.txtVehiculos.Location = New System.Drawing.Point(239, 128)
         Me.txtVehiculos.Name = "txtVehiculos"
         Me.txtVehiculos.Size = New System.Drawing.Size(149, 20)
         Me.txtVehiculos.TabIndex = 83
@@ -2305,7 +2306,7 @@ Partial Class frmEvaluar
         Me.TabPage4.Controls.Add(Me.DgAmortizacion)
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(1009, 518)
+        Me.TabPage4.Size = New System.Drawing.Size(1009, 510)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "PRESTAMO"
         '
@@ -3186,7 +3187,7 @@ Partial Class frmEvaluar
         Me.TabPage6.Controls.Add(Me.txtvalidaciones2)
         Me.TabPage6.Location = New System.Drawing.Point(4, 22)
         Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Size = New System.Drawing.Size(1009, 518)
+        Me.TabPage6.Size = New System.Drawing.Size(1009, 510)
         Me.TabPage6.TabIndex = 5
         Me.TabPage6.Text = "RESUMEN"
         Me.TabPage6.ToolTipText = "LAUTARO ROSAS"
@@ -3202,6 +3203,7 @@ Partial Class frmEvaluar
         '
         'PanelResumen
         '
+        Me.PanelResumen.Controls.Add(Me.txtScoringCapacidadNumero)
         Me.PanelResumen.Controls.Add(Me.Label47)
         Me.PanelResumen.Controls.Add(Me.txtestado2)
         Me.PanelResumen.Controls.Add(Me.txtTasaCastigadaAumenta)
@@ -3224,7 +3226,7 @@ Partial Class frmEvaluar
         '
         Me.Label47.AutoSize = True
         Me.Label47.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label47.Location = New System.Drawing.Point(31, 88)
+        Me.Label47.Location = New System.Drawing.Point(31, 91)
         Me.Label47.Name = "Label47"
         Me.Label47.Size = New System.Drawing.Size(93, 20)
         Me.Label47.TabIndex = 44
@@ -3233,16 +3235,16 @@ Partial Class frmEvaluar
         'txtestado2
         '
         Me.txtestado2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtestado2.Location = New System.Drawing.Point(16, 144)
+        Me.txtestado2.Location = New System.Drawing.Point(16, 158)
         Me.txtestado2.Multiline = True
         Me.txtestado2.Name = "txtestado2"
-        Me.txtestado2.Size = New System.Drawing.Size(484, 194)
+        Me.txtestado2.Size = New System.Drawing.Size(484, 152)
         Me.txtestado2.TabIndex = 65
         Me.txtestado2.Visible = False
         '
         'txtTasaCastigadaAumenta
         '
-        Me.txtTasaCastigadaAumenta.Location = New System.Drawing.Point(224, 115)
+        Me.txtTasaCastigadaAumenta.Location = New System.Drawing.Point(224, 118)
         Me.txtTasaCastigadaAumenta.Name = "txtTasaCastigadaAumenta"
         Me.txtTasaCastigadaAumenta.ReadOnly = True
         Me.txtTasaCastigadaAumenta.Size = New System.Drawing.Size(292, 20)
@@ -3261,7 +3263,7 @@ Partial Class frmEvaluar
         '
         'txtpuntaje4
         '
-        Me.txtpuntaje4.Location = New System.Drawing.Point(224, 87)
+        Me.txtpuntaje4.Location = New System.Drawing.Point(224, 90)
         Me.txtpuntaje4.Name = "txtpuntaje4"
         Me.txtpuntaje4.ReadOnly = True
         Me.txtpuntaje4.Size = New System.Drawing.Size(292, 20)
@@ -3271,7 +3273,7 @@ Partial Class frmEvaluar
         '
         Me.Label122.AutoSize = True
         Me.Label122.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label122.Location = New System.Drawing.Point(29, 62)
+        Me.Label122.Location = New System.Drawing.Point(29, 65)
         Me.Label122.Name = "Label122"
         Me.Label122.Size = New System.Drawing.Size(98, 20)
         Me.Label122.TabIndex = 90
@@ -3291,7 +3293,7 @@ Partial Class frmEvaluar
         '
         Me.Label63.AutoSize = True
         Me.Label63.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label63.Location = New System.Drawing.Point(31, 115)
+        Me.Label63.Location = New System.Drawing.Point(31, 118)
         Me.Label63.Name = "Label63"
         Me.Label63.Size = New System.Drawing.Size(138, 20)
         Me.Label63.TabIndex = 63
@@ -3321,12 +3323,12 @@ Partial Class frmEvaluar
         Me.txtScoringCapacidad.Location = New System.Drawing.Point(224, 33)
         Me.txtScoringCapacidad.Name = "txtScoringCapacidad"
         Me.txtScoringCapacidad.ReadOnly = True
-        Me.txtScoringCapacidad.Size = New System.Drawing.Size(292, 20)
+        Me.txtScoringCapacidad.Size = New System.Drawing.Size(146, 20)
         Me.txtScoringCapacidad.TabIndex = 89
         '
         'txtAntecedentes
         '
-        Me.txtAntecedentes.Location = New System.Drawing.Point(224, 61)
+        Me.txtAntecedentes.Location = New System.Drawing.Point(224, 64)
         Me.txtAntecedentes.Name = "txtAntecedentes"
         Me.txtAntecedentes.ReadOnly = True
         Me.txtAntecedentes.Size = New System.Drawing.Size(292, 20)
@@ -3400,7 +3402,7 @@ Partial Class frmEvaluar
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88.0!))
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 107.0!))
         Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88.0!))
-        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 239.0!))
+        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 241.0!))
         Me.TableLayoutPanel8.Controls.Add(Me.txtScoringMorosidades500000, 1, 6)
         Me.TableLayoutPanel8.Controls.Add(Me.txtScoringAntecedentes, 4, 13)
         Me.TableLayoutPanel8.Controls.Add(Me.txtScoringMorosidades, 1, 4)
@@ -3493,23 +3495,23 @@ Partial Class frmEvaluar
         '
         'txtScoringMorosidades500000
         '
-        Me.txtScoringMorosidades500000.Location = New System.Drawing.Point(66, 153)
+        Me.txtScoringMorosidades500000.Location = New System.Drawing.Point(65, 153)
         Me.txtScoringMorosidades500000.Name = "txtScoringMorosidades500000"
-        Me.txtScoringMorosidades500000.Size = New System.Drawing.Size(37, 20)
+        Me.txtScoringMorosidades500000.Size = New System.Drawing.Size(36, 20)
         Me.txtScoringMorosidades500000.TabIndex = 124
         '
         'txtScoringAntecedentes
         '
-        Me.txtScoringAntecedentes.Location = New System.Drawing.Point(304, 313)
+        Me.txtScoringAntecedentes.Location = New System.Drawing.Point(302, 313)
         Me.txtScoringAntecedentes.Name = "txtScoringAntecedentes"
         Me.txtScoringAntecedentes.Size = New System.Drawing.Size(82, 20)
         Me.txtScoringAntecedentes.TabIndex = 122
         '
         'txtScoringMorosidades
         '
-        Me.txtScoringMorosidades.Location = New System.Drawing.Point(66, 103)
+        Me.txtScoringMorosidades.Location = New System.Drawing.Point(65, 103)
         Me.txtScoringMorosidades.Name = "txtScoringMorosidades"
-        Me.txtScoringMorosidades.Size = New System.Drawing.Size(37, 20)
+        Me.txtScoringMorosidades.Size = New System.Drawing.Size(36, 20)
         Me.txtScoringMorosidades.TabIndex = 123
         '
         'Label127
@@ -3524,7 +3526,7 @@ Partial Class frmEvaluar
         'Label100
         '
         Me.Label100.AutoSize = True
-        Me.Label100.Location = New System.Drawing.Point(304, 270)
+        Me.Label100.Location = New System.Drawing.Point(302, 270)
         Me.Label100.Name = "Label100"
         Me.Label100.Size = New System.Drawing.Size(82, 20)
         Me.Label100.TabIndex = 98
@@ -3532,14 +3534,14 @@ Partial Class frmEvaluar
         '
         'txtScoringAntiguedadLab
         '
-        Me.txtScoringAntiguedadLab.Location = New System.Drawing.Point(392, 273)
+        Me.txtScoringAntiguedadLab.Location = New System.Drawing.Point(390, 273)
         Me.txtScoringAntiguedadLab.Name = "txtScoringAntiguedadLab"
         Me.txtScoringAntiguedadLab.Size = New System.Drawing.Size(122, 20)
         Me.txtScoringAntiguedadLab.TabIndex = 98
         '
         'txtTasaConvenio
         '
-        Me.txtTasaConvenio.Location = New System.Drawing.Point(304, 203)
+        Me.txtTasaConvenio.Location = New System.Drawing.Point(302, 203)
         Me.txtTasaConvenio.Name = "txtTasaConvenio"
         Me.txtTasaConvenio.ReadOnly = True
         Me.txtTasaConvenio.Size = New System.Drawing.Size(82, 20)
@@ -3547,15 +3549,15 @@ Partial Class frmEvaluar
         '
         'TXTPE
         '
-        Me.TXTPE.Location = New System.Drawing.Point(66, 203)
+        Me.TXTPE.Location = New System.Drawing.Point(65, 203)
         Me.TXTPE.Name = "TXTPE"
-        Me.TXTPE.Size = New System.Drawing.Size(37, 20)
+        Me.TXTPE.Size = New System.Drawing.Size(36, 20)
         Me.TXTPE.TabIndex = 98
         '
         'Label121
         '
         Me.Label121.AutoSize = True
-        Me.Label121.Location = New System.Drawing.Point(197, 200)
+        Me.Label121.Location = New System.Drawing.Point(195, 200)
         Me.Label121.Name = "Label121"
         Me.Label121.Size = New System.Drawing.Size(79, 13)
         Me.Label121.TabIndex = 118
@@ -3563,28 +3565,28 @@ Partial Class frmEvaluar
         '
         'txtPDI
         '
-        Me.txtPDI.Location = New System.Drawing.Point(66, 178)
+        Me.txtPDI.Location = New System.Drawing.Point(65, 178)
         Me.txtPDI.Name = "txtPDI"
-        Me.txtPDI.Size = New System.Drawing.Size(37, 20)
+        Me.txtPDI.Size = New System.Drawing.Size(36, 20)
         Me.txtPDI.TabIndex = 98
         '
         'txtScoringRenta
         '
-        Me.txtScoringRenta.Location = New System.Drawing.Point(197, 273)
+        Me.txtScoringRenta.Location = New System.Drawing.Point(195, 273)
         Me.txtScoringRenta.Name = "txtScoringRenta"
         Me.txtScoringRenta.Size = New System.Drawing.Size(101, 20)
         Me.txtScoringRenta.TabIndex = 95
         '
         'txtScoringPropiedad
         '
-        Me.txtScoringPropiedad.Location = New System.Drawing.Point(66, 273)
+        Me.txtScoringPropiedad.Location = New System.Drawing.Point(65, 273)
         Me.txtScoringPropiedad.Name = "txtScoringPropiedad"
-        Me.txtScoringPropiedad.Size = New System.Drawing.Size(37, 20)
+        Me.txtScoringPropiedad.Size = New System.Drawing.Size(36, 20)
         Me.txtScoringPropiedad.TabIndex = 95
         '
         'txtScoringEstadoCivil
         '
-        Me.txtScoringEstadoCivil.Location = New System.Drawing.Point(392, 253)
+        Me.txtScoringEstadoCivil.Location = New System.Drawing.Point(390, 253)
         Me.txtScoringEstadoCivil.Name = "txtScoringEstadoCivil"
         Me.txtScoringEstadoCivil.Size = New System.Drawing.Size(122, 20)
         Me.txtScoringEstadoCivil.TabIndex = 95
@@ -3592,7 +3594,7 @@ Partial Class frmEvaluar
         'Label107
         '
         Me.Label107.AutoSize = True
-        Me.Label107.Location = New System.Drawing.Point(109, 270)
+        Me.Label107.Location = New System.Drawing.Point(107, 270)
         Me.Label107.Name = "Label107"
         Me.Label107.Size = New System.Drawing.Size(36, 13)
         Me.Label107.TabIndex = 96
@@ -3610,7 +3612,7 @@ Partial Class frmEvaluar
         'Label105
         '
         Me.Label105.AutoSize = True
-        Me.Label105.Location = New System.Drawing.Point(304, 250)
+        Me.Label105.Location = New System.Drawing.Point(302, 250)
         Me.Label105.Name = "Label105"
         Me.Label105.Size = New System.Drawing.Size(61, 13)
         Me.Label105.TabIndex = 95
@@ -3618,9 +3620,9 @@ Partial Class frmEvaluar
         '
         'txtNuevo
         '
-        Me.txtNuevo.Location = New System.Drawing.Point(66, 253)
+        Me.txtNuevo.Location = New System.Drawing.Point(65, 253)
         Me.txtNuevo.Name = "txtNuevo"
-        Me.txtNuevo.Size = New System.Drawing.Size(37, 20)
+        Me.txtNuevo.Size = New System.Drawing.Size(36, 20)
         Me.txtNuevo.TabIndex = 94
         '
         'Label104
@@ -3636,9 +3638,9 @@ Partial Class frmEvaluar
         '
         Me.Label102.AutoSize = True
         Me.Label102.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label102.Location = New System.Drawing.Point(66, 225)
+        Me.Label102.Location = New System.Drawing.Point(65, 225)
         Me.Label102.Name = "Label102"
-        Me.Label102.Size = New System.Drawing.Size(37, 25)
+        Me.Label102.Size = New System.Drawing.Size(34, 25)
         Me.Label102.TabIndex = 94
         Me.Label102.Text = "Rechazo"
         '
@@ -3654,14 +3656,14 @@ Partial Class frmEvaluar
         '
         'txtMonto2
         '
-        Me.txtMonto2.Location = New System.Drawing.Point(66, 53)
+        Me.txtMonto2.Location = New System.Drawing.Point(65, 53)
         Me.txtMonto2.Name = "txtMonto2"
-        Me.txtMonto2.Size = New System.Drawing.Size(37, 20)
+        Me.txtMonto2.Size = New System.Drawing.Size(36, 20)
         Me.txtMonto2.TabIndex = 70
         '
         'txtTasaMaxima
         '
-        Me.txtTasaMaxima.Location = New System.Drawing.Point(392, 53)
+        Me.txtTasaMaxima.Location = New System.Drawing.Point(390, 53)
         Me.txtTasaMaxima.Name = "txtTasaMaxima"
         Me.txtTasaMaxima.Size = New System.Drawing.Size(117, 20)
         Me.txtTasaMaxima.TabIndex = 70
@@ -3669,7 +3671,7 @@ Partial Class frmEvaluar
         'Label94
         '
         Me.Label94.AutoSize = True
-        Me.Label94.Location = New System.Drawing.Point(304, 50)
+        Me.Label94.Location = New System.Drawing.Point(302, 50)
         Me.Label94.Name = "Label94"
         Me.Label94.Size = New System.Drawing.Size(70, 13)
         Me.Label94.TabIndex = 71
@@ -3686,37 +3688,37 @@ Partial Class frmEvaluar
         '
         'txtFactorCI
         '
-        Me.txtFactorCI.Location = New System.Drawing.Point(392, 78)
+        Me.txtFactorCI.Location = New System.Drawing.Point(390, 78)
         Me.txtFactorCI.Name = "txtFactorCI"
         Me.txtFactorCI.Size = New System.Drawing.Size(117, 20)
         Me.txtFactorCI.TabIndex = 70
         '
         'txtFactorPlazoCI
         '
-        Me.txtFactorPlazoCI.Location = New System.Drawing.Point(392, 103)
+        Me.txtFactorPlazoCI.Location = New System.Drawing.Point(390, 103)
         Me.txtFactorPlazoCI.Name = "txtFactorPlazoCI"
         Me.txtFactorPlazoCI.Size = New System.Drawing.Size(117, 20)
         Me.txtFactorPlazoCI.TabIndex = 70
         '
         'txtFactorSI
         '
-        Me.txtFactorSI.Location = New System.Drawing.Point(197, 78)
+        Me.txtFactorSI.Location = New System.Drawing.Point(195, 78)
         Me.txtFactorSI.Name = "txtFactorSI"
         Me.txtFactorSI.Size = New System.Drawing.Size(101, 20)
         Me.txtFactorSI.TabIndex = 70
         '
         'txtFactorPlazoSI
         '
-        Me.txtFactorPlazoSI.Location = New System.Drawing.Point(197, 103)
+        Me.txtFactorPlazoSI.Location = New System.Drawing.Point(195, 103)
         Me.txtFactorPlazoSI.Name = "txtFactorPlazoSI"
         Me.txtFactorPlazoSI.Size = New System.Drawing.Size(101, 20)
         Me.txtFactorPlazoSI.TabIndex = 70
         '
         'txtRango2
         '
-        Me.txtRango2.Location = New System.Drawing.Point(66, 28)
+        Me.txtRango2.Location = New System.Drawing.Point(65, 28)
         Me.txtRango2.Name = "txtRango2"
-        Me.txtRango2.Size = New System.Drawing.Size(37, 20)
+        Me.txtRango2.Size = New System.Drawing.Size(36, 20)
         Me.txtRango2.TabIndex = 70
         '
         'Label91
@@ -3731,7 +3733,7 @@ Partial Class frmEvaluar
         'Label90
         '
         Me.Label90.AutoSize = True
-        Me.Label90.Location = New System.Drawing.Point(304, 100)
+        Me.Label90.Location = New System.Drawing.Point(302, 100)
         Me.Label90.Name = "Label90"
         Me.Label90.Size = New System.Drawing.Size(71, 25)
         Me.Label90.TabIndex = 72
@@ -3740,7 +3742,7 @@ Partial Class frmEvaluar
         'Label89
         '
         Me.Label89.AutoSize = True
-        Me.Label89.Location = New System.Drawing.Point(109, 100)
+        Me.Label89.Location = New System.Drawing.Point(107, 100)
         Me.Label89.Name = "Label89"
         Me.Label89.Size = New System.Drawing.Size(71, 25)
         Me.Label89.TabIndex = 68
@@ -3748,22 +3750,22 @@ Partial Class frmEvaluar
         '
         'txtRango1
         '
-        Me.txtRango1.Location = New System.Drawing.Point(392, 3)
+        Me.txtRango1.Location = New System.Drawing.Point(390, 3)
         Me.txtRango1.Name = "txtRango1"
         Me.txtRango1.Size = New System.Drawing.Size(117, 20)
         Me.txtRango1.TabIndex = 69
         '
         'txtTipo
         '
-        Me.txtTipo.Location = New System.Drawing.Point(66, 3)
+        Me.txtTipo.Location = New System.Drawing.Point(65, 3)
         Me.txtTipo.Name = "txtTipo"
-        Me.txtTipo.Size = New System.Drawing.Size(37, 20)
+        Me.txtTipo.Size = New System.Drawing.Size(36, 20)
         Me.txtTipo.TabIndex = 69
         '
         'Label88
         '
         Me.Label88.AutoSize = True
-        Me.Label88.Location = New System.Drawing.Point(304, 0)
+        Me.Label88.Location = New System.Drawing.Point(302, 0)
         Me.Label88.Name = "Label88"
         Me.Label88.Size = New System.Drawing.Size(45, 13)
         Me.Label88.TabIndex = 68
@@ -3781,7 +3783,7 @@ Partial Class frmEvaluar
         'Label87
         '
         Me.Label87.AutoSize = True
-        Me.Label87.Location = New System.Drawing.Point(109, 0)
+        Me.Label87.Location = New System.Drawing.Point(107, 0)
         Me.Label87.Name = "Label87"
         Me.Label87.Size = New System.Drawing.Size(52, 13)
         Me.Label87.TabIndex = 72
@@ -3789,7 +3791,7 @@ Partial Class frmEvaluar
         '
         'txtCategoria
         '
-        Me.txtCategoria.Location = New System.Drawing.Point(197, 3)
+        Me.txtCategoria.Location = New System.Drawing.Point(195, 3)
         Me.txtCategoria.Name = "txtCategoria"
         Me.txtCategoria.Size = New System.Drawing.Size(101, 20)
         Me.txtCategoria.TabIndex = 73
@@ -3797,7 +3799,7 @@ Partial Class frmEvaluar
         'Label92
         '
         Me.Label92.AutoSize = True
-        Me.Label92.Location = New System.Drawing.Point(304, 125)
+        Me.Label92.Location = New System.Drawing.Point(302, 125)
         Me.Label92.Name = "Label92"
         Me.Label92.Size = New System.Drawing.Size(74, 13)
         Me.Label92.TabIndex = 67
@@ -3805,7 +3807,7 @@ Partial Class frmEvaluar
         '
         'TXTTasaFinalCI
         '
-        Me.TXTTasaFinalCI.Location = New System.Drawing.Point(392, 128)
+        Me.TXTTasaFinalCI.Location = New System.Drawing.Point(390, 128)
         Me.TXTTasaFinalCI.Name = "TXTTasaFinalCI"
         Me.TXTTasaFinalCI.Size = New System.Drawing.Size(117, 20)
         Me.TXTTasaFinalCI.TabIndex = 69
@@ -3813,7 +3815,7 @@ Partial Class frmEvaluar
         'Label95
         '
         Me.Label95.AutoSize = True
-        Me.Label95.Location = New System.Drawing.Point(109, 125)
+        Me.Label95.Location = New System.Drawing.Point(107, 125)
         Me.Label95.Name = "Label95"
         Me.Label95.Size = New System.Drawing.Size(74, 13)
         Me.Label95.TabIndex = 67
@@ -3821,7 +3823,7 @@ Partial Class frmEvaluar
         '
         'txtTasaFinalSI
         '
-        Me.txtTasaFinalSI.Location = New System.Drawing.Point(197, 128)
+        Me.txtTasaFinalSI.Location = New System.Drawing.Point(195, 128)
         Me.txtTasaFinalSI.Name = "txtTasaFinalSI"
         Me.txtTasaFinalSI.Size = New System.Drawing.Size(101, 20)
         Me.txtTasaFinalSI.TabIndex = 69
@@ -3829,7 +3831,7 @@ Partial Class frmEvaluar
         'Label97
         '
         Me.Label97.AutoSize = True
-        Me.Label97.Location = New System.Drawing.Point(109, 75)
+        Me.Label97.Location = New System.Drawing.Point(107, 75)
         Me.Label97.Name = "Label97"
         Me.Label97.Size = New System.Drawing.Size(55, 13)
         Me.Label97.TabIndex = 67
@@ -3838,7 +3840,7 @@ Partial Class frmEvaluar
         'Label98
         '
         Me.Label98.AutoSize = True
-        Me.Label98.Location = New System.Drawing.Point(304, 75)
+        Me.Label98.Location = New System.Drawing.Point(302, 75)
         Me.Label98.Name = "Label98"
         Me.Label98.Size = New System.Drawing.Size(55, 13)
         Me.Label98.TabIndex = 71
@@ -3846,7 +3848,7 @@ Partial Class frmEvaluar
         '
         'txtPlazo2
         '
-        Me.txtPlazo2.Location = New System.Drawing.Point(392, 28)
+        Me.txtPlazo2.Location = New System.Drawing.Point(390, 28)
         Me.txtPlazo2.Name = "txtPlazo2"
         Me.txtPlazo2.Size = New System.Drawing.Size(117, 20)
         Me.txtPlazo2.TabIndex = 69
@@ -3854,7 +3856,7 @@ Partial Class frmEvaluar
         'Label99
         '
         Me.Label99.AutoSize = True
-        Me.Label99.Location = New System.Drawing.Point(304, 25)
+        Me.Label99.Location = New System.Drawing.Point(302, 25)
         Me.Label99.Name = "Label99"
         Me.Label99.Size = New System.Drawing.Size(33, 13)
         Me.Label99.TabIndex = 67
@@ -3862,7 +3864,7 @@ Partial Class frmEvaluar
         '
         'txtTasaActual
         '
-        Me.txtTasaActual.Location = New System.Drawing.Point(197, 28)
+        Me.txtTasaActual.Location = New System.Drawing.Point(195, 28)
         Me.txtTasaActual.Name = "txtTasaActual"
         Me.txtTasaActual.Size = New System.Drawing.Size(101, 20)
         Me.txtTasaActual.TabIndex = 68
@@ -3870,7 +3872,7 @@ Partial Class frmEvaluar
         'Label103
         '
         Me.Label103.AutoSize = True
-        Me.Label103.Location = New System.Drawing.Point(109, 25)
+        Me.Label103.Location = New System.Drawing.Point(107, 25)
         Me.Label103.Name = "Label103"
         Me.Label103.Size = New System.Drawing.Size(56, 13)
         Me.Label103.TabIndex = 0
@@ -3879,7 +3881,7 @@ Partial Class frmEvaluar
         'Label110
         '
         Me.Label110.AutoSize = True
-        Me.Label110.Location = New System.Drawing.Point(109, 50)
+        Me.Label110.Location = New System.Drawing.Point(107, 50)
         Me.Label110.Name = "Label110"
         Me.Label110.Size = New System.Drawing.Size(54, 13)
         Me.Label110.TabIndex = 70
@@ -3887,7 +3889,7 @@ Partial Class frmEvaluar
         '
         'txtMontoUF
         '
-        Me.txtMontoUF.Location = New System.Drawing.Point(197, 53)
+        Me.txtMontoUF.Location = New System.Drawing.Point(195, 53)
         Me.txtMontoUF.Name = "txtMontoUF"
         Me.txtMontoUF.Size = New System.Drawing.Size(101, 20)
         Me.txtMontoUF.TabIndex = 69
@@ -3903,15 +3905,15 @@ Partial Class frmEvaluar
         '
         'txtPregago2
         '
-        Me.txtPregago2.Location = New System.Drawing.Point(66, 78)
+        Me.txtPregago2.Location = New System.Drawing.Point(65, 78)
         Me.txtPregago2.Name = "txtPregago2"
-        Me.txtPregago2.Size = New System.Drawing.Size(37, 20)
+        Me.txtPregago2.Size = New System.Drawing.Size(36, 20)
         Me.txtPregago2.TabIndex = 71
         '
         'Label117
         '
         Me.Label117.AutoSize = True
-        Me.Label117.Location = New System.Drawing.Point(109, 250)
+        Me.Label117.Location = New System.Drawing.Point(107, 250)
         Me.Label117.Name = "Label117"
         Me.Label117.Size = New System.Drawing.Size(32, 13)
         Me.Label117.TabIndex = 93
@@ -3919,7 +3921,7 @@ Partial Class frmEvaluar
         '
         'txtEdad
         '
-        Me.txtEdad.Location = New System.Drawing.Point(197, 253)
+        Me.txtEdad.Location = New System.Drawing.Point(195, 253)
         Me.txtEdad.Name = "txtEdad"
         Me.txtEdad.Size = New System.Drawing.Size(101, 20)
         Me.txtEdad.TabIndex = 93
@@ -3953,15 +3955,15 @@ Partial Class frmEvaluar
         '
         'txtScoringLvlnumerico
         '
-        Me.txtScoringLvlnumerico.Location = New System.Drawing.Point(66, 293)
+        Me.txtScoringLvlnumerico.Location = New System.Drawing.Point(65, 293)
         Me.txtScoringLvlnumerico.Name = "txtScoringLvlnumerico"
-        Me.txtScoringLvlnumerico.Size = New System.Drawing.Size(37, 20)
+        Me.txtScoringLvlnumerico.Size = New System.Drawing.Size(36, 20)
         Me.txtScoringLvlnumerico.TabIndex = 96
         '
         'Label72
         '
         Me.Label72.AutoSize = True
-        Me.Label72.Location = New System.Drawing.Point(109, 290)
+        Me.Label72.Location = New System.Drawing.Point(107, 290)
         Me.Label72.Name = "Label72"
         Me.Label72.Size = New System.Drawing.Size(58, 13)
         Me.Label72.TabIndex = 99
@@ -3969,7 +3971,7 @@ Partial Class frmEvaluar
         '
         'txtScoringCapacidadnumerico
         '
-        Me.txtScoringCapacidadnumerico.Location = New System.Drawing.Point(197, 293)
+        Me.txtScoringCapacidadnumerico.Location = New System.Drawing.Point(195, 293)
         Me.txtScoringCapacidadnumerico.Name = "txtScoringCapacidadnumerico"
         Me.txtScoringCapacidadnumerico.Size = New System.Drawing.Size(101, 20)
         Me.txtScoringCapacidadnumerico.TabIndex = 96
@@ -3977,7 +3979,7 @@ Partial Class frmEvaluar
         'Label112
         '
         Me.Label112.AutoSize = True
-        Me.Label112.Location = New System.Drawing.Point(304, 290)
+        Me.Label112.Location = New System.Drawing.Point(302, 290)
         Me.Label112.Name = "Label112"
         Me.Label112.Size = New System.Drawing.Size(82, 20)
         Me.Label112.TabIndex = 119
@@ -3985,7 +3987,7 @@ Partial Class frmEvaluar
         '
         'txtScoringAntiguedadLab2
         '
-        Me.txtScoringAntiguedadLab2.Location = New System.Drawing.Point(392, 293)
+        Me.txtScoringAntiguedadLab2.Location = New System.Drawing.Point(390, 293)
         Me.txtScoringAntiguedadLab2.Name = "txtScoringAntiguedadLab2"
         Me.txtScoringAntiguedadLab2.Size = New System.Drawing.Size(122, 20)
         Me.txtScoringAntiguedadLab2.TabIndex = 120
@@ -3993,7 +3995,7 @@ Partial Class frmEvaluar
         'Label113
         '
         Me.Label113.AutoSize = True
-        Me.Label113.Location = New System.Drawing.Point(197, 310)
+        Me.Label113.Location = New System.Drawing.Point(195, 310)
         Me.Label113.Name = "Label113"
         Me.Label113.Size = New System.Drawing.Size(73, 13)
         Me.Label113.TabIndex = 121
@@ -4010,9 +4012,9 @@ Partial Class frmEvaluar
         '
         'txtScoringComportamiento
         '
-        Me.txtScoringComportamiento.Location = New System.Drawing.Point(66, 128)
+        Me.txtScoringComportamiento.Location = New System.Drawing.Point(65, 128)
         Me.txtScoringComportamiento.Name = "txtScoringComportamiento"
-        Me.txtScoringComportamiento.Size = New System.Drawing.Size(37, 20)
+        Me.txtScoringComportamiento.Size = New System.Drawing.Size(36, 20)
         Me.txtScoringComportamiento.TabIndex = 125
         '
         'Label139
@@ -4036,21 +4038,21 @@ Partial Class frmEvaluar
         'Label111
         '
         Me.Label111.AutoSize = True
-        Me.Label111.Location = New System.Drawing.Point(109, 310)
+        Me.Label111.Location = New System.Drawing.Point(107, 310)
         Me.Label111.Name = "Label111"
         Me.Label111.Size = New System.Drawing.Size(0, 13)
         Me.Label111.TabIndex = 90
         '
         'txtScoringClasificacion
         '
-        Me.txtScoringClasificacion.Location = New System.Drawing.Point(66, 313)
+        Me.txtScoringClasificacion.Location = New System.Drawing.Point(65, 313)
         Me.txtScoringClasificacion.Name = "txtScoringClasificacion"
-        Me.txtScoringClasificacion.Size = New System.Drawing.Size(37, 20)
+        Me.txtScoringClasificacion.Size = New System.Drawing.Size(36, 20)
         Me.txtScoringClasificacion.TabIndex = 96
         '
         'txtRenta
         '
-        Me.txtRenta.Location = New System.Drawing.Point(392, 203)
+        Me.txtRenta.Location = New System.Drawing.Point(390, 203)
         Me.txtRenta.Name = "txtRenta"
         Me.txtRenta.Size = New System.Drawing.Size(84, 20)
         Me.txtRenta.TabIndex = 107
@@ -4471,6 +4473,14 @@ Partial Class frmEvaluar
         Me.txtCOD_FORMAPAGO.Name = "txtCOD_FORMAPAGO"
         Me.txtCOD_FORMAPAGO.Size = New System.Drawing.Size(199, 20)
         Me.txtCOD_FORMAPAGO.TabIndex = 125
+        '
+        'txtScoringCapacidadNumero
+        '
+        Me.txtScoringCapacidadNumero.Location = New System.Drawing.Point(377, 32)
+        Me.txtScoringCapacidadNumero.Name = "txtScoringCapacidadNumero"
+        Me.txtScoringCapacidadNumero.ReadOnly = True
+        Me.txtScoringCapacidadNumero.Size = New System.Drawing.Size(139, 20)
+        Me.txtScoringCapacidadNumero.TabIndex = 92
         '
         'frmEvaluar
         '
@@ -4966,4 +4976,5 @@ Partial Class frmEvaluar
     Friend WithEvents Label146 As Label
     Friend WithEvents Label148 As Label
     Friend WithEvents txtCampanaRefinancia As System.Windows.Forms.TextBox
+    Friend WithEvents txtScoringCapacidadNumero As TextBox
 End Class
